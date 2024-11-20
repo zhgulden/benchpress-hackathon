@@ -1,0 +1,301 @@
+{
+    "problem_id": 2774,
+    "question": "### Background\n\nWe **all** know about \"balancing parentheses\" (plus brackets, braces and chevrons) and even balancing characters that are identical.  \n\nRead that last sentence again, I balanced different characters and identical characters twice and you didn't even notice... :)\n\n### Kata\nYour challenge in this kata is to write a piece of code to validate that a supplied string is balanced.\n\nYou must determine if all that is open is then closed, and nothing is closed which is not already open!\n\nYou will be given a string to validate, and a second string, where each pair of characters defines an opening and closing sequence that needs balancing.\n\nYou may assume that the second string always has an even number of characters.\n\n### Example\n```python\n# In this case '(' opens a section, and ')' closes a section\nis_balanced(\"(Sensei says yes!)\", \"()\")       # => True\nis_balanced(\"(Sensei says no!\", \"()\")         # => False\n\n# In this case '(' and '[' open a section, while ')' and ']' close a section\nis_balanced(\"(Sensei [says] yes!)\", \"()[]\")   # => True\nis_balanced(\"(Sensei [says) no!]\", \"()[]\")    # => False\n\n# In this case a single quote (') both opens and closes a section\nis_balanced(\"Sensei says 'yes'!\", \"''\")       # => True\nis_balanced(\"Sensei say's no!\", \"''\")         # => False\n```",
+    "input_output": {
+        "fn_name": "is_balanced",
+        "inputs": [
+            [
+                "(Sensei says yes!)",
+                "()"
+            ],
+            [
+                "(Sensei says no!",
+                "()"
+            ],
+            [
+                "(Sensei [says] yes!)",
+                "()[]"
+            ],
+            [
+                "(Sensei [says) no!]",
+                "()[]"
+            ],
+            [
+                "Sensei says -yes-!",
+                "--"
+            ],
+            [
+                "Sensei -says no!",
+                "--"
+            ],
+            [
+                "Hello Mother can you hear me?",
+                "()"
+            ],
+            [
+                "(Hello Mother can you hear me?)",
+                "()"
+            ],
+            [
+                "(Hello Mother can you hear me?",
+                ""
+            ],
+            [
+                "(Hello Mother can you hear me?",
+                "()"
+            ],
+            [
+                "(Hello Mother can you hear me?))",
+                "()"
+            ],
+            [
+                ")Hello Mother can you hear me?",
+                "()"
+            ],
+            [
+                "(Hello Mother can you hear me?)[Monkeys, in my pockets!!]",
+                "()[]"
+            ],
+            [
+                "(Hello Mother can you hear me?)[Monkeys, in my pockets!!](Gosh!!)",
+                "()[]"
+            ],
+            [
+                "Hello Mother can you hear me?)[Monkeys, in my pockets!!]",
+                "()[]"
+            ],
+            [
+                "(Hello Mother can you hear me?[Monkeys, in my pockets!!]",
+                "()[]"
+            ],
+            [
+                "(Hello Mother can you hear me?)Monkeys, in my pockets!!]",
+                "()[]"
+            ],
+            [
+                "(Hello Mother can you hear me?)[Monkeys, in my pockets!!",
+                "()[]"
+            ],
+            [
+                "((Hello))",
+                "()"
+            ],
+            [
+                "(((Hello)))",
+                "()"
+            ],
+            [
+                "((()Hello()))",
+                "()"
+            ],
+            [
+                "((()Hello())",
+                "()"
+            ],
+            [
+                "(()Hello()))",
+                "()"
+            ],
+            [
+                "([{-Hello!-}])",
+                "()[]{}"
+            ],
+            [
+                "([{([{Hello}])}])",
+                "()[]{}"
+            ],
+            [
+                "([{-Hello!-})]",
+                "()[]{}"
+            ],
+            [
+                "-Hello Mother can you hear me?-",
+                "--"
+            ],
+            [
+                "-Hello Mother can you hear me?",
+                "--"
+            ],
+            [
+                "Hello Mother can you hear me?-",
+                "--"
+            ],
+            [
+                "-abcd-e@fghi@",
+                "--@@"
+            ],
+            [
+                "abcd-e@fghi@",
+                "--@@"
+            ],
+            [
+                "-abcde@fghi@",
+                "--@@"
+            ],
+            [
+                "-abcd-efghi@",
+                "--@@"
+            ],
+            [
+                "-abcd-e@fghi",
+                "--@@"
+            ],
+            [
+                "-a@b@cd@e@fghi-",
+                "--@@"
+            ],
+            [
+                "-ab@cd@e@fghi-",
+                "--@@"
+            ],
+            [
+                "-a@bcd@e@fghi-",
+                "--@@"
+            ],
+            [
+                "-a@b@cde@fghi-",
+                "--@@"
+            ],
+            [
+                "-a@b@cd@efghi-",
+                "--@@"
+            ],
+            [
+                "a@b@cd@e@fghi-",
+                "--@@"
+            ],
+            [
+                "-a@b@cd@e@fghi",
+                "--@@"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55679d644c58e2df2a00009c",
+    "difficulty": "introductory",
+    "starter_code": "def is_balanced(source, caps):\n\t"
+}

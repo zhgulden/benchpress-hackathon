@@ -1,0 +1,50 @@
+{
+    "problem_id": 3170,
+    "question": "Create a function `longer` that accepts a string and sorts the words in it based on their respective lengths in an ascending order. If there are two words of the same lengths, sort them alphabetically. Look at the examples below for more details.\n\n```python\nlonger(\"Another Green World\") => Green World Another\nlonger(\"Darkness on the edge of Town\") => of on the Town edge Darkness\nlonger(\"Have you ever Seen the Rain\") => the you Have Rain Seen ever\n```\n\nAssume that only only Alphabets will be entered as the input.\nUppercase characters have priority over lowercase characters. That is,\n```python\nlonger(\"hello Hello\") => Hello hello\n```\n\nDon't forget to rate this kata and leave your feedback!! \nThanks",
+    "input_output": {
+        "fn_name": "longer",
+        "inputs": [
+            [
+                "Another Green World"
+            ],
+            [
+                "Darkness on the edge of Town"
+            ],
+            [
+                "Have you ever Seen the Rain"
+            ],
+            [
+                "Like a Rolling Stone"
+            ],
+            [
+                "This will be our Year"
+            ],
+            [
+                "hello Hello"
+            ]
+        ],
+        "outputs": [
+            [
+                "Green World Another"
+            ],
+            [
+                "of on the Town edge Darkness"
+            ],
+            [
+                "the you Have Rain Seen ever"
+            ],
+            [
+                "a Like Stone Rolling"
+            ],
+            [
+                "be our This Year will"
+            ],
+            [
+                "Hello hello"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5963314a51c68a26600000ae",
+    "difficulty": "introductory",
+    "starter_code": "def longer(s):\n\t"
+}

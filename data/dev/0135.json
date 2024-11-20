@@ -1,0 +1,53 @@
+{
+    "problem_id": 3178,
+    "question": "Our friendly friend Pete is really a nice person, but he tends to be rather... Inappropriate.\n\nAnd possibly loud, if given enough ethanol and free rein, so we ask you to write a function that should take its not always \"clean\" speech and cover as much as possible of it, in order not to offend some more sensible spirits.\n\nFor example, given an input like\n```\nWhat the hell am I doing here? And where is my wallet? PETE SMASH!\n```\nYou are expected to turn it into something like:\n```\nW**t t*e h**l am i d***g h**e? A*d w***e is my w****t? P**e s***h!\n```\nIn case you didn't figure out the rules yet: any words longer than 2 characters need to have its \"inside\" (meaning every character which is not the first or the last) changed into `*`;  as we do not want Pete to scream too much, every uppercase letter which is not at the beginning of the string or coming after a punctuation mark among [\".\",\"!\",\"?\"] needs to be put to lowercase; spaces and other punctuation marks can be ignored.\n\nConversely, you need to be sure that the start of each sentence has a capitalized word at the beginning. Sentences are divided by the aforementioned punctuation marks.\n\nFinally, the function will take an additional parameter consisting of an array/list of allowed words (upper or lower case) which are not to be replaced (the match has to be case insensitive).\n\nExtra cookies if you can do it all in some efficient way and/or using our dear regexes ;)\n\n**Note:** Absolutely not related to [a certain codewarrior I know](http://www.codewars.com/users/petegarvin1) :p",
+    "input_output": {
+        "fn_name": "pete_talk",
+        "inputs": [
+            [
+                "I want to punch someone in the face"
+            ],
+            [
+                "uh!"
+            ],
+            [
+                "What the hell am I doing here? And where is my wallet? PETE SMASH!"
+            ],
+            [
+                "I want to punch someone in the face",
+                [
+                    "someone",
+                    "face"
+                ]
+            ],
+            [
+                "I want to punch someone in the face",
+                [
+                    "drink",
+                    "job",
+                    "girls"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "I w**t to p***h s*****e in t*e f**e"
+            ],
+            [
+                "Uh!"
+            ],
+            [
+                "W**t t*e h**l am i d***g h**e? A*d w***e is my w****t? P**e s***h!"
+            ],
+            [
+                "I w**t to p***h someone in t*e face"
+            ],
+            [
+                "I w**t to p***h s*****e in t*e f**e"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/571d0c80eed4a1c850000ef2",
+    "difficulty": "introductory",
+    "starter_code": "def pete_talk(speech, ok = []):\n\t"
+}

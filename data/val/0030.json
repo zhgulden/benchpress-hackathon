@@ -1,0 +1,57 @@
+{
+    "problem_id": 3734,
+    "question": "# The die is cast!\n\nYour task in this kata is to write a \"dice roller\" that interprets a subset of [dice notation](http://en.wikipedia.org/wiki/Dice_notation).\n\n# Description\n\nIn most role-playing games, die rolls required by the system are given in the form `AdX`. `A` and `X` are variables, separated by the letter **d**, which stands for *die* or *dice*.\n\n - `A` is the number of dice to be rolled (usually omitted if 1).\n - `X` is the number of faces of each die.\n\nHere are some examples of input:\n\n# Modifiers\n\nAs an addition to the above rules the input may also contain modifiers in the form `+N` or `-N` where `N` is an integer.\n\nHere are some examples of input containing modifiers:\n\n*Modifiers must be applied **after** all dice has been summed up.*\n\n# Output\n\nYour function must support two types of output depending on the second argument; *verbose* and *summed*.\n\n## Summed output\nIf the verbose flag isn't set your function should sum up all the dice and modifiers and return the result as an integer.\n\n## Verbose output\nWith the verbose flag your function should return an object/hash containing an array (`dice`) with all the dice rolls, and a integer (`modifier`) containing the sum of the modifiers which defaults to zero.\n\nExample of verbose output:\n\n# Invalid input\nHere are some examples of invalid inputs:\n\n# Additional information\n\n - Your solution should ignore all whitespace.\n - `roll` should return `false` for invalid input.",
+    "input_output": {
+        "fn_name": "roll",
+        "inputs": [
+            [
+                ""
+            ],
+            [
+                {}
+            ],
+            [
+                "abc"
+            ],
+            [
+                "2d6+3 abc"
+            ],
+            [
+                "abc 2d6+3"
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/549cb9c0c36a02ce2e000156",
+    "difficulty": "introductory",
+    "starter_code": "def roll(desc, verbose=False):\n\t",
+    "test_cases": {
+        "fn_name": "roll",
+        "inputs": [
+            [
+                "2d6++4"
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ]
+        ]
+    }
+}

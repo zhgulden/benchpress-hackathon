@@ -1,0 +1,63 @@
+{
+    "problem_id": 3792,
+    "question": "# Task\n You know the slogan `p`, which the agitators have been chanting for quite a while now. Roka has heard this slogan a few times, but he missed almost all of them and grasped only their endings. You know the string `r` that Roka has heard. \n \n You need to determine what is the `minimal number` of times agitators repeated the slogan `p`, such that Roka could hear `r`.\n\n It is guaranteed the Roka heard nothing but the endings of the slogan P repeated several times.\n\n# Example\n\n For `p = \"glorytoukraine\", r = \"ukraineaineaine\"`, the output should be `3`.\n\n The slogan was `\"glorytoukraine\"`, and Roka heard `\"ukraineaineaine\"`.\n \n He could hear it as follows: `\"ukraine\"` + `\"aine\"` + `\"aine\"` = `\"ukraineaineaine\"`.\n\n# Input/Output\n\n\n - `[input]` string `p`\n\n  The slogan the agitators chanted, a string of lowecase Latin letters.\n\n\n - `[input]` string `r`\n\n  The string of lowercase Latin letters Roka has heard.\n\n\n - `[output]` an integer\n\n  The `minimum number` of times the agitators chanted.",
+    "input_output": {
+        "fn_name": "slogans",
+        "inputs": [
+            [
+                "glorytoukraine",
+                "ukraineaineaine"
+            ],
+            [
+                "glorytoukraine",
+                "ukraineaineainee"
+            ],
+            [
+                "glorytoukraine",
+                "einene"
+            ],
+            [
+                "programming",
+                "ingmingmming"
+            ],
+            [
+                "mcoecqwmjdudc",
+                "dcoecqwmjdudcdcudc"
+            ],
+            [
+                "erjernhxvbqfjsj",
+                "ernhxvbqfjsjjrnhxvbqfjsjjernhxvbqfjsj"
+            ],
+            [
+                "dhgusdlifons",
+                "lifonsssdlifonsgusdlifonssnsdlifonsslifonsifonsdlifonsfonsifons"
+            ]
+        ],
+        "outputs": [
+            [
+                3
+            ],
+            [
+                4
+            ],
+            [
+                3
+            ],
+            [
+                3
+            ],
+            [
+                4
+            ],
+            [
+                4
+            ],
+            [
+                13
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58bf79fdc8bd4432d6000029",
+    "difficulty": "introductory",
+    "starter_code": "def slogans(p,r):\n\t"
+}

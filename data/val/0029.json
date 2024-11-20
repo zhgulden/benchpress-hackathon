@@ -1,0 +1,107 @@
+{
+    "problem_id": 2878,
+    "question": "Given a string `S` and a character `C`, return an array of integers representing the shortest distance from the current character in `S` to `C`.\n\n### Notes\n\n* All letters will be lowercase.\n* If the string is empty, return an empty array.\n* If the character is not present, return an empty array.\n\n## Examples\n\n```python\nshortest_to_char(\"lovecodewars\", \"e\") == [3, 2, 1, 0, 1, 2, 1, 0, 1, 2, 3, 4]\nshortest_to_char(\"aaaabbbb\", \"b\") == [4, 3, 2, 1, 0, 0, 0, 0]\nshortest_to_char(\"\", \"b\") == []\nshortest_to_char(\"abcde\", \"\") == []\n```\n\n___\n\nIf you liked it, please rate  :D",
+    "input_output": {
+        "fn_name": "shortest_to_char",
+        "inputs": [
+            [
+                "lovecodewars",
+                "e"
+            ],
+            [
+                "aaaaa",
+                "a"
+            ],
+            [
+                "aabbaabb",
+                "a"
+            ],
+            [
+                "aaaabbbb",
+                "b"
+            ],
+            [
+                "aaaaa",
+                "b"
+            ],
+            [
+                "lovecoding",
+                ""
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    3,
+                    2,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    1,
+                    2
+                ]
+            ],
+            [
+                [
+                    4,
+                    3,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            [
+                []
+            ],
+            [
+                []
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5c8bf3ec5048ca2c8e954bf3",
+    "difficulty": "introductory",
+    "starter_code": "def shortest_to_char(s, c):\n\t",
+    "test_cases": {
+        "fn_name": "shortest_to_char",
+        "inputs": [
+            [
+                "",
+                ""
+            ]
+        ],
+        "outputs": [
+            [
+                []
+            ]
+        ]
+    }
+}

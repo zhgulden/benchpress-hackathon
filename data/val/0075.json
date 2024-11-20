@@ -1,0 +1,81 @@
+{
+    "problem_id": 4090,
+    "question": "Farmer Bob have a big farm, where he growths chickens, rabbits and cows. It is very difficult to count the number of animals for each type manually, so he diceded to buy a system to do it. But he bought a cheap system that can count only total number of heads, total number of legs and total number of horns of animals on the farm.\nHelp Bob to figure out how many chickens, rabbits and cows does he have?\n\nAll chickens have 2 legs, 1 head and no horns; all rabbits have 4 legs, 1 head and no horns; all cows have 4 legs, 1 head and 2 horns.\n\nYour task is to write a function \n```Python\nget_animals_count(legs_number, heads_number, horns_number)\n```\n```Csharp\nDictionary get_animals_count(int legs_number, int heads_number, int horns_number)\n```\n, which returns a dictionary \n```python\n{\"rabbits\" : rabbits_count, \"chickens\" : chickens_count, \"cows\" : cows_count}\n``` \n```Csharp\nnew Dictionary(){{\"rabbits\", rabbits_count},{\"chickens\", chickens_count},{\"cows\", cows_count}}\n```\n\nParameters `legs_number, heads_number, horns_number` are integer, all tests have valid input.\n\nExample:\n\n```python\nget_animals_count(34, 11, 6); # Should return {\"rabbits\" : 3, \"chickens\" : 5, \"cows\" : 3}\nget_animals_count(154, 42, 10); # Should return {\"rabbits\" : 30, \"chickens\" : 7, \"cows\" : 5}\n```\n\n```Csharp\nget_animals_count(34, 11, 6); //Should return  Dictionary(){{\"rabbits\", 3},{\"chickens\", 5},{\"cows\", 3}}\nget_animals_count(154, 42, 10); //Should return Dictionary(){{\"rabbits\", 30},{\"chickens\", 7},{\"cows\", 5}}\n```",
+    "input_output": {
+        "fn_name": "get_animals_count",
+        "inputs": [
+            [
+                34,
+                11,
+                6
+            ],
+            [
+                154,
+                42,
+                10
+            ],
+            [
+                74,
+                20,
+                34
+            ],
+            [
+                152,
+                38,
+                34
+            ]
+        ],
+        "outputs": [
+            [
+                {
+                    "rabbits": 3,
+                    "chickens": 5,
+                    "cows": 3
+                }
+            ],
+            [
+                {
+                    "rabbits": 30,
+                    "chickens": 7,
+                    "cows": 5
+                }
+            ],
+            [
+                {
+                    "rabbits": 0,
+                    "chickens": 3,
+                    "cows": 17
+                }
+            ],
+            [
+                {
+                    "rabbits": 21,
+                    "chickens": 0,
+                    "cows": 17
+                }
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a02037ac374cbab41000089",
+    "difficulty": "introductory",
+    "starter_code": "def get_animals_count(legs, heads, horns):\n\t",
+    "test_cases": {
+        "fn_name": "get_animals_count",
+        "inputs": [
+            [
+                56,
+                17,
+                0
+            ]
+        ],
+        "outputs": [
+            [
+                {
+                    "rabbits": 11,
+                    "chickens": 6,
+                    "cows": 0
+                }
+            ]
+        ]
+    }
+}

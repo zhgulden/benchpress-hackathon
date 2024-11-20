@@ -1,0 +1,51 @@
+{
+    "problem_id": 2732,
+    "question": "## Task\n\nYou will receive a string consisting of lowercase letters, uppercase letters and digits as input. Your task is to return this string as blocks separated by dashes (`\"-\"`). The elements of a block should be sorted with respect to the hierarchy listed below, and each block cannot contain multiple instances of the same character. Elements should be put into the first suitable block.\n\nThe hierarchy is:\n1. lowercase letters (`a - z`), in alphabetical order\n2. uppercase letters (`A - Z`), in alphabetical order\n3. digits (`0 - 9`), in ascending order\n\n## Examples\n\n* `\"21AxBz\" -> \"xzAB12\"` - since input does not contain repeating characters, you only need 1 block\n* `\"abacad\" -> \"abcd-a-a\"` - character \"a\" repeats 3 times, thus 3 blocks are needed\n* `\"\" -> \"\"` - an empty input should result in an empty output\n* `\"hbh420sUUW222IWOxndjn93cdop69NICEep832\" -> \"bcdehjnopsxCEINOUW0234689-dhnpIUW239-2-2-2\"` - a more sophisticated example\n\nGood luck!",
+    "input_output": {
+        "fn_name": "blocks",
+        "inputs": [
+            [
+                "heyitssampletestkk"
+            ],
+            [
+                "dasf6ds65f45df65gdf651vdf5s1d6g5f65vqweAQWIDKsdds"
+            ],
+            [
+                "SDF45648374RHF8BFVYg378rg3784rf87g3278bdqG"
+            ],
+            [
+                ""
+            ]
+        ],
+        "outputs": [
+            [
+                "aehiklmpsty-ekst-est"
+            ],
+            [
+                "adefgqsvwADIKQW1456-dfgsv156-dfs56-dfs56-dfs56-df56-d5-d"
+            ],
+            [
+                "bdfgqrBDFGHRSVY2345678-grF3478-gF3478-3478-78-8"
+            ],
+            [
+                ""
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5e0f6a3a2964c800238ca87d",
+    "difficulty": "introductory",
+    "starter_code": "def blocks(s):\n\t",
+    "test_cases": {
+        "fn_name": "blocks",
+        "inputs": [
+            [
+                "aaaaaaaaaa"
+            ]
+        ],
+        "outputs": [
+            [
+                "a-a-a-a-a-a-a-a-a-a"
+            ]
+        ]
+    }
+}

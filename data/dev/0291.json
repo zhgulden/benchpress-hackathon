@@ -1,0 +1,74 @@
+{
+    "problem_id": 3865,
+    "question": "In this kata we are focusing on the Numpy python package. You must write a function called `looper` which takes three integers `start, stop and number` as input and returns a list from `start` to `stop` with `number` total values in the list.  Five examples are shown below:\n\n```\nlooper(1, 5, 1) = [1.0]\nlooper(1, 5, 2) = [1.0, 5.0]\nlooper(1, 5, 3) = [1.0, 3.0, 5.0]\nlooper(1, 5, 4) = [1.0, 2.333333333333333, 3.6666666666666665, 5.0]\nlooper(1, 5, 5) = [1.0, 2.0, 3.0, 4.0, 5.0]\n```",
+    "input_output": {
+        "fn_name": "looper",
+        "inputs": [
+            [
+                1,
+                5,
+                1
+            ],
+            [
+                1,
+                5,
+                2
+            ],
+            [
+                1,
+                5,
+                3
+            ],
+            [
+                1,
+                5,
+                4
+            ],
+            [
+                1,
+                5,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1.0
+                ]
+            ],
+            [
+                [
+                    1.0,
+                    5.0
+                ]
+            ],
+            [
+                [
+                    1.0,
+                    3.0,
+                    5.0
+                ]
+            ],
+            [
+                [
+                    1.0,
+                    2.333333333333333,
+                    3.6666666666666665,
+                    5.0
+                ]
+            ],
+            [
+                [
+                    1.0,
+                    2.0,
+                    3.0,
+                    4.0,
+                    5.0
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a35f08b9e5f4923790010dc",
+    "difficulty": "introductory",
+    "starter_code": "def looper(start, stop, number):\n\t"
+}

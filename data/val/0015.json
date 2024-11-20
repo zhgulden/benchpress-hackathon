@@ -1,0 +1,51 @@
+{
+    "problem_id": 3801,
+    "question": "If\u3000`a = 1, b = 2, c = 3 ... z = 26`\n\nThen `l + o + v + e = 54`\n\nand `f + r + i + e + n + d + s + h + i + p = 108`\n\nSo `friendship` is twice stronger than `love` :-)\n\nThe input will always be in lowercase and never be empty.",
+    "input_output": {
+        "fn_name": "words_to_marks",
+        "inputs": [
+            [
+                "attitude"
+            ],
+            [
+                "friends"
+            ],
+            [
+                "family"
+            ],
+            [
+                "selfness"
+            ]
+        ],
+        "outputs": [
+            [
+                100
+            ],
+            [
+                75
+            ],
+            [
+                66
+            ],
+            [
+                99
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59706036f6e5d1e22d000016",
+    "difficulty": "introductory",
+    "starter_code": "def words_to_marks(s):\n\t",
+    "test_cases": {
+        "fn_name": "words_to_marks",
+        "inputs": [
+            [
+                "knowledge"
+            ]
+        ],
+        "outputs": [
+            [
+                96
+            ]
+        ]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "problem_id": 2703,
+    "question": "Complete the square sum function so that it squares each number passed into it and then sums the results together.\n\nFor example, for `[1, 2, 2]` it should return `9` because `1^2 + 2^2 + 2^2 = 9`.\n\n```if:racket\nIn Racket, use a list instead of an array, so '(1 2 3) should return 9.\n```",
+    "input_output": {
+        "fn_name": "square_sum",
+        "inputs": [
+            [
+                [
+                    1,
+                    2
+                ]
+            ],
+            [
+                [
+                    0,
+                    3,
+                    4,
+                    5
+                ]
+            ],
+            [
+                []
+            ],
+            [
+                [
+                    -1,
+                    -2
+                ]
+            ],
+            [
+                [
+                    -1,
+                    0,
+                    1
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                5
+            ],
+            [
+                50
+            ],
+            [
+                0
+            ],
+            [
+                5
+            ],
+            [
+                2
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/515e271a311df0350d00000f",
+    "difficulty": "introductory",
+    "starter_code": "def square_sum(numbers):\n\t"
+}

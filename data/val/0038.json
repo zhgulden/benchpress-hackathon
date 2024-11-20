@@ -1,0 +1,45 @@
+{
+    "problem_id": 4331,
+    "question": "Your retro heavy metal band, V\u00c4x\u00ebn, originally started as kind of a joke, just because why would anyone want to use the crappy foosball table in your startup's game room when they could be rocking out at top volume in there instead? Yes, a joke, but now all the top tech companies are paying you top dollar to play at their conferences and big product-release events. And just as how in the early days of the Internet companies were naming everything \"i\"-this and \"e\"-that, now that V\u00c4x\u00ebnm\u00e4n\u00ef\u00e4 has conquered the tech world, any company that doesn't use H\u00eb\u00e4v\u00ff M\u00ebt\u00e4l \u00dcml\u00e4\u00fcts in \u00ebv\u00ebry p\u00f6ss\u00efbl\u00eb pl\u00e4c\u00eb is looking hopelessly behind the times.\n\nWell, with great power chords there must also come great responsibility! You need to help these companies out by writing a function that will guarantee that their web sites and ads and everything else will R\u00d6CK \u00c4S M\u00dcCH \u00c4S P\u00d6SS\u00cfBL\u00cb! Just think about it -- with the licensing fees you'll be getting from G\u00f6\u00f6gl\u00eb, F\u00e4c\u00ebb\u00f6\u00f6k, \u00c4ppl\u00eb, and \u00c4m\u00e4z\u00f6n alone, you'll probably be able to end world hunger, make college and Marshall stacks free to all, and invent self-driving bumper cars. S\u00f6 l\u00ebt's g\u00ebt r\u00f6ck\u00efng and r\u00f6ll\u00efng! P\u00ebdal t\u00f6 th\u00eb M\u00cbT\u00c4L!\n\nHere's a little cheatsheet that will help you write your function to replace the so-last-year letters a-e-i-o-u-and-sometimes-y with the following totally rocking letters:\n\n```\nA = \u00c4 = \\u00c4     E = \u00cb = \\u00cb     I = \u00cf = \\u00cf\nO = \u00d6 = \\u00d6     U = \u00dc = \\u00dc     Y = \u0178 = \\u0178\na = \u00e4 = \\u00e4     e = \u00eb = \\u00eb     i = \u00ef = \\u00ef\no = \u00f6 = \\u00f6     u = \u00fc = \\u00fc     y = \u00ff = \\u00ff\n```\n### Python issues\nFirst, Python in the Codewars environment has some codec/encoding issues with extended ASCII codes like the umlaut-letters required above. With Python 2.7.6, when writing your solution you can just copy the above umlaut-letters (instead of the unicode sequences) and paste them into your code, but I haven't found something yet that will work for *both* 2.7.6 and 3.4.3 -- hopefully I will find something soon (answers/suggestions are welcome!), and hopefully that part will also be easier with other languages when I add them.\n\nSecond, along the same lines, don't bother trying to use string translate() and maketrans() to solve this in Python 2.7.6, because maketrans will see the character-mapping strings as being different lengths. Use a different approach instead.",
+    "input_output": {
+        "fn_name": "heavy_metal_umlauts",
+        "inputs": [
+            [
+                "Announcing the Macbook Air Guitar"
+            ],
+            [
+                "Facebook introduces new heavy metal reaction buttons"
+            ],
+            [
+                "Strong sales of Google's VR Metalheadsets send tech stock prices soaring"
+            ]
+        ],
+        "outputs": [
+            [
+                "\u00c4nn\u00f6\u00fcnc\u00efng th\u00eb M\u00e4cb\u00f6\u00f6k \u00c4\u00efr G\u00fc\u00eft\u00e4r"
+            ],
+            [
+                "F\u00e4c\u00ebb\u00f6\u00f6k \u00efntr\u00f6d\u00fcc\u00ebs n\u00ebw h\u00eb\u00e4v\u00ff m\u00ebt\u00e4l r\u00eb\u00e4ct\u00ef\u00f6n b\u00fctt\u00f6ns"
+            ],
+            [
+                "Str\u00f6ng s\u00e4l\u00ebs \u00f6f G\u00f6\u00f6gl\u00eb's VR M\u00ebt\u00e4lh\u00eb\u00e4ds\u00ebts s\u00ebnd t\u00ebch st\u00f6ck pr\u00efc\u00ebs s\u00f6\u00e4r\u00efng"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57d4e99bec16701a67000033",
+    "difficulty": "introductory",
+    "starter_code": "def heavy_metal_umlauts(boring_text):\n\t",
+    "test_cases": {
+        "fn_name": "heavy_metal_umlauts",
+        "inputs": [
+            [
+                "Vegan Black Metal Chef hits the big time on Amazon TV"
+            ]
+        ],
+        "outputs": [
+            [
+                "V\u00ebg\u00e4n Bl\u00e4ck M\u00ebt\u00e4l Ch\u00ebf h\u00efts th\u00eb b\u00efg t\u00efm\u00eb \u00f6n \u00c4m\u00e4z\u00f6n TV"
+            ]
+        ]
+    }
+}

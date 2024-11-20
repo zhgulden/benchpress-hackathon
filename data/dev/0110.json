@@ -1,0 +1,50 @@
+{
+    "problem_id": 4633,
+    "question": "You have to create a function that converts integer given as string into ASCII uppercase letters.\n\nAll ASCII characters have their numerical order in table. \n\nFor example,\n\n```\nfrom ASCII table, character of number 65 is \"A\".\n```\n\nNumbers will be next to each other, So you have to split given number to two digit long integers.\n\nFor example, \n\n```\n'658776' to [65, 87, 76] and then turn it into 'AWL'.\n```",
+    "input_output": {
+        "fn_name": "convert",
+        "inputs": [
+            [
+                "65"
+            ],
+            [
+                "656667"
+            ],
+            [
+                "676584"
+            ],
+            [
+                "73327673756932858080698267658369"
+            ],
+            [
+                "32327332327679866932328380656769833232"
+            ],
+            [
+                "84726982693273833278793270857832737832657889327984726982326765836983"
+            ]
+        ],
+        "outputs": [
+            [
+                "A"
+            ],
+            [
+                "ABC"
+            ],
+            [
+                "CAT"
+            ],
+            [
+                "I LIKE UPPERCASE"
+            ],
+            [
+                "  I  LOVE  SPACES  "
+            ],
+            [
+                "THERE IS NO FUN IN ANY OTHER CASES"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/589ebcb9926baae92e000001",
+    "difficulty": "introductory",
+    "starter_code": "def convert(number):\n\t"
+}

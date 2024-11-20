@@ -1,0 +1,49 @@
+{
+    "problem_id": 2694,
+    "question": "Paul is an excellent coder and sits high on the CW leaderboard. He solves kata like a banshee but would also like to lead a normal life, with other activities. But he just can't stop solving all the kata!!\n\nGiven an array (x) you need to calculate the Paul Misery Score. The values are worth the following points:\n\nkata = 5\nPetes kata = 10\nlife = 0\neating = 1\n\nThe Misery Score is the total points gained from the array. Once you have the total, return as follows:\n\n<40        = 'Super happy!'<70   >=40 = 'Happy!'<100  >=70 = 'Sad!'\\>=100       = 'Miserable!'",
+    "input_output": {
+        "fn_name": "paul",
+        "inputs": [
+            [
+                [
+                    "life",
+                    "eating",
+                    "life"
+                ]
+            ],
+            [
+                [
+                    "life",
+                    "Petes kata",
+                    "Petes kata",
+                    "Petes kata",
+                    "eating"
+                ]
+            ],
+            [
+                [
+                    "Petes kata",
+                    "Petes kata",
+                    "eating",
+                    "Petes kata",
+                    "Petes kata",
+                    "eating"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "Super happy!"
+            ],
+            [
+                "Super happy!"
+            ],
+            [
+                "Happy!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57ee31c5e77282c24d000024",
+    "difficulty": "introductory",
+    "starter_code": "def paul(x):\n\t"
+}

@@ -1,0 +1,74 @@
+{
+    "problem_id": 2654,
+    "question": "Kate and Michael want to buy a pizza and share it. Depending on the price of the pizza, they are going to divide the costs:\n\n* If the pizza is less than \u20ac5,- Michael invites Kate, so Michael pays the full price.\n* Otherwise Kate will contribute 1/3 of the price, but no more than \u20ac10 (she's broke :-) and Michael pays the rest.\n\nHow much is Michael going to pay? Calculate the amount with two decimals, if necessary.",
+    "input_output": {
+        "fn_name": "michael_pays",
+        "inputs": [
+            [
+                15
+            ],
+            [
+                4
+            ],
+            [
+                4.99
+            ],
+            [
+                5
+            ],
+            [
+                30
+            ],
+            [
+                80
+            ],
+            [
+                22
+            ],
+            [
+                5.9181
+            ],
+            [
+                28.789
+            ],
+            [
+                4.325
+            ]
+        ],
+        "outputs": [
+            [
+                10
+            ],
+            [
+                4
+            ],
+            [
+                4.99
+            ],
+            [
+                3.33
+            ],
+            [
+                20
+            ],
+            [
+                70
+            ],
+            [
+                14.67
+            ],
+            [
+                3.95
+            ],
+            [
+                19.19
+            ],
+            [
+                4.33
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5b043e3886d0752685000009",
+    "difficulty": "introductory",
+    "starter_code": "def michael_pays(costs):\n\t"
+}

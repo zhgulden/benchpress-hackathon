@@ -1,0 +1,7 @@
+numpy
+pyext>=0.7
+aleph-alpha-client
+jupyterlab
+notebook
+ipykernel
+tqdm

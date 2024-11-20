@@ -1,0 +1,49 @@
+{
+    "problem_id": 3949,
+    "question": "Complete the function, which calculates how much you need to tip based on the total amount of the bill and the service. \n\nYou need to consider the following ratings:\n\n- Terrible: tip 0%\n- Poor: tip 5%\n- Good: tip 10%\n- Great: tip 15%\n- Excellent: tip 20%\n\nThe rating is **case insensitive** (so \"great\" = \"GREAT\"). If an unrecognised rating is received, then you need to return:\n\n* `\"Rating not recognised\"` in Javascript, Python and Ruby...\n* ...or `null` in Java\n* ...or `-1` in C#\n\nBecause you're a nice person, you **always round up** the tip, regardless of the service.",
+    "input_output": {
+        "fn_name": "calculate_tip",
+        "inputs": [
+            [
+                30,
+                "poor"
+            ],
+            [
+                20,
+                "Excellent"
+            ],
+            [
+                20,
+                "hi"
+            ],
+            [
+                107.65,
+                "GReat"
+            ],
+            [
+                20,
+                "great!"
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ],
+            [
+                4
+            ],
+            [
+                "Rating not recognised"
+            ],
+            [
+                17
+            ],
+            [
+                "Rating not recognised"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56598d8076ee7a0759000087",
+    "difficulty": "introductory",
+    "starter_code": "def calculate_tip(amount, rating):\n\t"
+}

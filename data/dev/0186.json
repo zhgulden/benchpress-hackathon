@@ -1,0 +1,119 @@
+{
+    "problem_id": 3657,
+    "question": "Write a program that will take a string of digits and give you all the possible consecutive slices of length `n` in that string.\n\nRaise an error if `n` is larger than the length of the string.\n\n\n## Examples\n\nFor example, the string `\"01234\"` has the following 2-digit slices:\n```\n[0, 1], [1, 2], [2, 3], [3, 4]\n```\n\n\nThe same string has the following 4-digit slices:\n```\n[0, 1, 2, 3], [1, 2, 3, 4]\n```",
+    "input_output": {
+        "fn_name": "series_slices",
+        "inputs": [
+            [
+                "01234",
+                1
+            ],
+            [
+                "01234",
+                2
+            ],
+            [
+                "01234",
+                3
+            ],
+            [
+                "01234",
+                4
+            ],
+            [
+                "01234",
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    [
+                        0
+                    ],
+                    [
+                        1
+                    ],
+                    [
+                        2
+                    ],
+                    [
+                        3
+                    ],
+                    [
+                        4
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        0,
+                        1
+                    ],
+                    [
+                        1,
+                        2
+                    ],
+                    [
+                        2,
+                        3
+                    ],
+                    [
+                        3,
+                        4
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        0,
+                        1,
+                        2
+                    ],
+                    [
+                        1,
+                        2,
+                        3
+                    ],
+                    [
+                        2,
+                        3,
+                        4
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        0,
+                        1,
+                        2,
+                        3
+                    ],
+                    [
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/53f9a36864b19d8be7000609",
+    "difficulty": "introductory",
+    "starter_code": "def series_slices(digits, n):\n\t"
+}

@@ -1,0 +1,35 @@
+{
+    "problem_id": 4737,
+    "question": "```if:python,php\nIn this kata you will have to write a function that takes `litres` and `price_per_litre` as arguments. Purchases of 2 or more litres get a discount of 5 cents per litre, purchases of 4 or more litres get a discount of 10 cents per litre, and so on every two litres, up to a maximum discount of 25 cents per litre. But total discount per litre cannot be more than 25 cents. Return the toal cost rounded to 2 decimal places. Also you can guess that there will not be negative or non-numeric inputs.\n\nGood Luck!\n```\n\n```if:csharp,java,javascript\nIn this kata you will have to write a function that takes `litres` and `pricePerLitre` as arguments. Purchases of 2 or more litres get a discount of 5 cents per litre, purchases of 4 or more litres get a discount of 10 cents per litre, and so on every two litres, up to a maximum discount of 25 cents per litre. But total discount per litre cannot be more than 25 cents. Return the toal cost rounded to 2 decimal places. Also you can guess that there will not be negative or non-numeric inputs.\n\nGood Luck!\n```",
+    "input_output": {
+        "fn_name": "fuel_price",
+        "inputs": [
+            [
+                10,
+                21.5
+            ],
+            [
+                40,
+                10
+            ],
+            [
+                15,
+                5.83
+            ]
+        ],
+        "outputs": [
+            [
+                212.5
+            ],
+            [
+                390
+            ],
+            [
+                83.7
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57b58827d2a31c57720012e8",
+    "difficulty": "introductory",
+    "starter_code": "def fuel_price(litres, price_per_liter):\n\t"
+}

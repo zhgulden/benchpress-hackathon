@@ -1,0 +1,114 @@
+{
+    "problem_id": 4113,
+    "question": "Write a function that takes an integer and returns an array `[A, B, C]`, where `A` is the number of multiples of 3 (but not 5) below the given integer, `B` is the number of multiples of 5 (but not 3) below the given integer and `C` is the number of multiples of 3 and 5 below the given integer. \n\nFor example, `solution(20)` should return `[5, 2, 1]`\n\n~~~if:r\n```r\n# in R, returns a numeric vector\nsolution(20)\n[1] 5 2 1\n\nclass(solution(20))\n[1] \"numeric\"\n```\n~~~",
+    "input_output": {
+        "fn_name": "solution",
+        "inputs": [
+            [
+                20
+            ],
+            [
+                2020
+            ],
+            [
+                4
+            ],
+            [
+                2
+            ],
+            [
+                30
+            ],
+            [
+                300
+            ],
+            [
+                14
+            ],
+            [
+                141
+            ],
+            [
+                1415
+            ],
+            [
+                91415
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    5,
+                    2,
+                    1
+                ]
+            ],
+            [
+                [
+                    539,
+                    269,
+                    134
+                ]
+            ],
+            [
+                [
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    8,
+                    4,
+                    1
+                ]
+            ],
+            [
+                [
+                    80,
+                    40,
+                    19
+                ]
+            ],
+            [
+                [
+                    4,
+                    2,
+                    0
+                ]
+            ],
+            [
+                [
+                    37,
+                    19,
+                    9
+                ]
+            ],
+            [
+                [
+                    377,
+                    188,
+                    94
+                ]
+            ],
+            [
+                [
+                    24377,
+                    12188,
+                    6094
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/51dda84f91f5b5608b0004cc",
+    "difficulty": "introductory",
+    "starter_code": "def solution(number):\n\t"
+}

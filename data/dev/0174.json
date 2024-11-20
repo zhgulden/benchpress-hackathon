@@ -1,0 +1,74 @@
+{
+    "problem_id": 3989,
+    "question": "## The galactic games have begun!\n\nIt's the galactic games! Beings of all worlds come together to compete in several interesting sports, like nroogring, fredling and buzzing (the beefolks love the last one). However, there's also the traditional marathon run.\n\nUnfortunately, there have been cheaters in the last years, and the committee decided to place sensors on the track. Committees being committees, they've come up with the following rule:\n\n> A sensor should be placed every 3 and 5 meters from the start, e.g.\n> at 3m, 5m, 6m, 9m, 10m, 12m, 15m, 18m\u2026.\n\nSince you're responsible for the track, you need to buy those sensors. Even worse, you don't know how long the track will be! And since there might be more than a single track, and you can't be bothered to do all of this by hand, you decide to write a program instead.\n\n## Task\nReturn the sum of the multiples of 3 and 5 __below__ a number. Being the _galactic_ games, the tracks can get rather large, so your solution should work for _really_ large numbers (greater than 1,000,000).\n\n### Examples\n```python\nsolution (10) # => 23 = 3 + 5 + 6 + 9\nsolution (20) # => 78 = 3 + 5 + 6 + 9 + 10 + 12 + 15 + 18\n```",
+    "input_output": {
+        "fn_name": "solution",
+        "inputs": [
+            [
+                10
+            ],
+            [
+                100
+            ],
+            [
+                1000
+            ],
+            [
+                10000
+            ],
+            [
+                16
+            ],
+            [
+                20
+            ],
+            [
+                200
+            ],
+            [
+                1000000
+            ],
+            [
+                50000000
+            ],
+            [
+                50000000000000000000000000000000000000000
+            ]
+        ],
+        "outputs": [
+            [
+                23
+            ],
+            [
+                2318
+            ],
+            [
+                233168
+            ],
+            [
+                23331668
+            ],
+            [
+                60
+            ],
+            [
+                78
+            ],
+            [
+                9168
+            ],
+            [
+                233333166668
+            ],
+            [
+                583333291666668
+            ],
+            [
+                583333333333333333333333333333333333333291666666666666666666666666666666666666668
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54bb6ee72c4715684d0008f9",
+    "difficulty": "introductory",
+    "starter_code": "def solution(number):\n\t"
+}

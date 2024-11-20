@@ -1,0 +1,72 @@
+{
+    "problem_id": 4326,
+    "question": "You are given a sequence of a journey in London, UK. The sequence will contain bus **numbers** and TFL tube names as **strings** e.g.\n\n```python\n['Northern', 'Central', 243, 1, 'Victoria']\n```\nJourneys will always only contain a combination of tube names and bus numbers. Each tube journey costs `\u00a32.40` and each bus journey costs `\u00a31.50`. If there are `2` or more adjacent bus journeys, the bus fare is capped for sets of two adjacent buses and calculated as one bus fare for each set.\n\nYour task is to calculate the total cost of the journey and return the cost `rounded to 2 decimal places` in the format (where x is a number): `\u00a3x.xx`",
+    "input_output": {
+        "fn_name": "london_city_hacker",
+        "inputs": [
+            [
+                [
+                    12,
+                    "Central",
+                    "Circle",
+                    21
+                ]
+            ],
+            [
+                [
+                    "Piccidilly",
+                    56
+                ]
+            ],
+            [
+                [
+                    "Northern",
+                    "Central",
+                    "Circle"
+                ]
+            ],
+            [
+                [
+                    "Piccidilly",
+                    56,
+                    93,
+                    243
+                ]
+            ],
+            [
+                [
+                    386,
+                    56,
+                    1,
+                    876
+                ]
+            ],
+            [
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                "\u00a37.80"
+            ],
+            [
+                "\u00a33.90"
+            ],
+            [
+                "\u00a37.20"
+            ],
+            [
+                "\u00a35.40"
+            ],
+            [
+                "\u00a33.00"
+            ],
+            [
+                "\u00a30.00"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5bce125d3bb2adff0d000245",
+    "difficulty": "introductory",
+    "starter_code": "def london_city_hacker(journey):\n\t"
+}

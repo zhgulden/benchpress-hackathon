@@ -1,0 +1,82 @@
+{
+    "problem_id": 3799,
+    "question": "You've came to visit your grandma and she straight away found you a job - her Christmas tree needs decorating!\n\nShe first shows you a tree with an identified number of branches, and then hands you a some baubles (or loads of them!).\n\nYou know your grandma is a very particular person and she would like the baubles to be distributed in the orderly manner. You decide the best course of action would be to put the same number of baubles on each of the branches (if possible) or add one more bauble to some of the branches - starting from the beginning of the tree. \n\nIn this kata you will return an array of baubles on each of the branches.\n\nFor example: \n\n10 baubles, 2 branches: [5,5]\n5 baubles, 7 branches: [1,1,1,1,1,0,0]\n12 baubles, 5 branches: [3,3,2,2,2]\n\nThe numbers of branches and baubles will be always greater or equal to 0.\nIf there are 0 branches return: \"Grandma, we will have to buy a Christmas tree first!\".\n\nGood luck - I think your granny may have some minced pies for you if you do a good job!",
+    "input_output": {
+        "fn_name": "baubles_on_tree",
+        "inputs": [
+            [
+                5,
+                5
+            ],
+            [
+                5,
+                0
+            ],
+            [
+                6,
+                5
+            ],
+            [
+                50,
+                9
+            ],
+            [
+                0,
+                10
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            ],
+            [
+                "Grandma, we will have to buy a Christmas tree first!"
+            ],
+            [
+                [
+                    2,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            ],
+            [
+                [
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    5,
+                    5,
+                    5,
+                    5
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5856c5f7f37aeceaa100008e",
+    "difficulty": "introductory",
+    "starter_code": "def baubles_on_tree(baubles, branches):\n\t"
+}

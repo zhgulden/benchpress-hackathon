@@ -1,0 +1,50 @@
+{
+    "problem_id": 2664,
+    "question": "In this Kata, you will check if it is possible to convert a string to a palindrome by changing one character. \n\nFor instance:\n```Haskell\nsolve (\"abbx\") = True, because we can convert 'x' to 'a' and get a palindrome. \nsolve (\"abba\") = False, because we cannot get a palindrome by changing any character. \nsolve (\"abcba\") = True. We can change the middle character. \nsolve (\"aa\") = False \nsolve (\"ab\") = True\n```\n\nGood luck!\n\nPlease also try [Single Character Palindromes](https://www.codewars.com/kata/5a2c22271f7f709eaa0005d3)",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                "abba"
+            ],
+            [
+                "abbaa"
+            ],
+            [
+                "abbx"
+            ],
+            [
+                "aa"
+            ],
+            [
+                "ab"
+            ],
+            [
+                "abcba"
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a66ea69e6be38219f000110",
+    "difficulty": "introductory",
+    "starter_code": "def solve(s):\n\t"
+}

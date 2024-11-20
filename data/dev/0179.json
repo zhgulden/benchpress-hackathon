@@ -1,0 +1,83 @@
+{
+    "problem_id": 3302,
+    "question": "# Task\n Define crossover operation over two equal-length strings A and B as follows:\n\n the result of that operation is a string of the same length as the input strings result[i] is chosen at random between A[i] and B[i]. \n \n Given array of strings `arr` and a string result, find for how many pairs of strings from `arr` the result of the crossover operation over them may be equal to result.\n\n Note that (A, B) and (B, A) are the same pair. Also note that the pair cannot include the same element of the array twice (however, if there are two equal elements in the array, they can form a pair).\n\n# Example\n\n For `arr = [\"abc\", \"aaa\", \"aba\", \"bab\"]` and `result = \"bbb\"`, the output should be `2`.\n\n ```\n\"abc\" and \"bab\" can crossover to \"bbb\"\n\"aba\" and \"bab\" can crossover to \"bbb\"\n```\n# Input/Output\n\n\n - `[input]` string array `arr`\n\n   A non-empty array of equal-length strings.\n\n   Constraints: `2 \u2264 arr.length \u2264 10, 1 \u2264 arr[i].length \u2264 10.`\n\n\n - `[input]` string `result`\n\n   A string of the same length as each of the arr elements.\n\n   Constraints: `result.length = arr[i].length.`\n\n\n - `[output]` an integer",
+    "input_output": {
+        "fn_name": "strings_crossover",
+        "inputs": [
+            [
+                [
+                    "abc",
+                    "aaa",
+                    "aba",
+                    "bab"
+                ],
+                "bbb"
+            ],
+            [
+                [
+                    "aacccc",
+                    "bbcccc"
+                ],
+                "abdddd"
+            ],
+            [
+                [
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "e"
+                ],
+                "c"
+            ],
+            [
+                [
+                    "aa",
+                    "ab",
+                    "ba"
+                ],
+                "bb"
+            ],
+            [
+                [
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "e"
+                ],
+                "f"
+            ],
+            [
+                [
+                    "aaa",
+                    "aaa"
+                ],
+                "aaa"
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ],
+            [
+                0
+            ],
+            [
+                4
+            ],
+            [
+                1
+            ],
+            [
+                0
+            ],
+            [
+                1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5889902f53ad4a227100003f",
+    "difficulty": "introductory",
+    "starter_code": "def strings_crossover(arr, result):\n\t"
+}

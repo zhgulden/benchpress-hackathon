@@ -1,0 +1,50 @@
+{
+    "problem_id": 3052,
+    "question": "### Description:\n\n Remove all exclamation marks from sentence except at the end.\n\n### Examples\n\n```\nremove(\"Hi!\") == \"Hi!\"\nremove(\"Hi!!!\") == \"Hi!!!\"\nremove(\"!Hi\") == \"Hi\"\nremove(\"!Hi!\") == \"Hi!\"\nremove(\"Hi! Hi!\") == \"Hi Hi!\"\nremove(\"Hi\") == \"Hi\"\n```",
+    "input_output": {
+        "fn_name": "remove",
+        "inputs": [
+            [
+                "Hi!"
+            ],
+            [
+                "Hi!!!"
+            ],
+            [
+                "!Hi"
+            ],
+            [
+                "!Hi!"
+            ],
+            [
+                "Hi! Hi!"
+            ],
+            [
+                "Hi"
+            ]
+        ],
+        "outputs": [
+            [
+                "Hi!"
+            ],
+            [
+                "Hi!!!"
+            ],
+            [
+                "Hi"
+            ],
+            [
+                "Hi!"
+            ],
+            [
+                "Hi Hi!"
+            ],
+            [
+                "Hi"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57faefc42b531482d5000123",
+    "difficulty": "introductory",
+    "starter_code": "def remove(s):\n\t"
+}

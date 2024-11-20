@@ -1,0 +1,74 @@
+{
+    "problem_id": 3048,
+    "question": "Write function alternateCase which switch every letter in string from upper to lower and from lower to upper.\nE.g: Hello World -> hELLO wORLD",
+    "input_output": {
+        "fn_name": "alternateCase",
+        "inputs": [
+            [
+                "ABC"
+            ],
+            [
+                ""
+            ],
+            [
+                " "
+            ],
+            [
+                "Hello World"
+            ],
+            [
+                "cODEwARS"
+            ],
+            [
+                "i LIKE MAKING KATAS VERY MUCH"
+            ],
+            [
+                "HuMpTy DuMpTy SaT On A WaLl"
+            ],
+            [
+                "aBracaDabRa"
+            ],
+            [
+                "Hickory DICKORY dock"
+            ],
+            [
+                "Jack JUMPED over THE CaNdLeStIcK"
+            ]
+        ],
+        "outputs": [
+            [
+                "abc"
+            ],
+            [
+                ""
+            ],
+            [
+                " "
+            ],
+            [
+                "hELLO wORLD"
+            ],
+            [
+                "CodeWars"
+            ],
+            [
+                "I like making katas very much"
+            ],
+            [
+                "hUmPtY dUmPtY sAt oN a wAlL"
+            ],
+            [
+                "AbRACAdABrA"
+            ],
+            [
+                "hICKORY dickory DOCK"
+            ],
+            [
+                "jACK jumped OVER the cAnDlEsTiCk"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57a62154cf1fa5b25200031e",
+    "difficulty": "introductory",
+    "starter_code": "def alternateCase(s):\n\t"
+}

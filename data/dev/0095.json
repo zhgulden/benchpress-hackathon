@@ -1,0 +1,77 @@
+{
+    "problem_id": 4642,
+    "question": "It's a Pokemon battle! Your task is to calculate the damage that a particular move would do using the following formula (not the actual one from the game):\n\nWhere:\n\n* attack = your attack power\n* defense = the opponent's defense\n* effectiveness = the effectiveness of the attack based on the matchup (see explanation below)\n\nEffectiveness:\n\nAttacks can be super effective, neutral, or not very effective depending on the matchup. For example, water would be super effective against fire, but not very effective against grass.\n\n* Super effective: 2x damage\n* Neutral: 1x damage\n* Not very effective: 0.5x damage\n\nTo prevent this kata from being tedious, you'll only be dealing with four types: `fire`, `water`, `grass`, and `electric`.  Here is the effectiveness of each matchup:\n\n* `fire > grass`\n* `fire < water`\n* `fire = electric`\n\n* `water < grass`\n* `water < electric`\n\n* `grass = electric`\n\nFor this kata, any type against itself is not very effective. Also, assume that the relationships between different types are symmetric (if `A` is super effective against `B`, then `B` is not very effective against `A`).\n\nThe function you must implement takes in:\n1. your type\n2. the opponent's type\n3. your attack power\n4. the opponent's defense",
+    "input_output": {
+        "fn_name": "calculate_damage",
+        "inputs": [
+            [
+                "fire",
+                "water",
+                100,
+                100
+            ],
+            [
+                "grass",
+                "water",
+                100,
+                100
+            ],
+            [
+                "electric",
+                "fire",
+                100,
+                100
+            ],
+            [
+                "grass",
+                "electric",
+                57,
+                19
+            ],
+            [
+                "grass",
+                "water",
+                40,
+                40
+            ],
+            [
+                "grass",
+                "fire",
+                35,
+                5
+            ],
+            [
+                "fire",
+                "electric",
+                10,
+                2
+            ]
+        ],
+        "outputs": [
+            [
+                25
+            ],
+            [
+                100
+            ],
+            [
+                50
+            ],
+            [
+                150
+            ],
+            [
+                100
+            ],
+            [
+                175
+            ],
+            [
+                250
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/536e9a7973130a06eb000e9f",
+    "difficulty": "introductory",
+    "starter_code": "def calculate_damage(your_type, opponent_type, attack, defense):\n\t"
+}

@@ -1,0 +1,44 @@
+{
+    "problem_id": 2946,
+    "question": "**This Kata is intended as a small challenge for my students**\n\nAll Star Code Challenge #29\n\nYour friend Nhoj has dislexia, but can easily read messages if the words are written backwards.  \nCreate a function called `reverseSentence()/reverse_sentence()` that accepts a string argument. The function returns a string of the same length with each word reversed, but still in their original order.\n\n```python\nreverse_sentence(\"Hello !Nhoj Want to have lunch?\") # \"olleH johN! tnaW ot evah ?hcnul\"\n```\nNote:  \nA \"word\" should be considered a string split by a space character, \" \"\nLetter capitalization should be maintained.",
+    "input_output": {
+        "fn_name": "reverse_sentence",
+        "inputs": [
+            [
+                "Hello !Nhoj Want to have lunch?"
+            ],
+            [
+                "1 2 3 4 5"
+            ],
+            [
+                "CodeWars"
+            ],
+            [
+                "CodeWars rules!"
+            ],
+            [
+                ""
+            ]
+        ],
+        "outputs": [
+            [
+                "olleH johN! tnaW ot evah ?hcnul"
+            ],
+            [
+                "1 2 3 4 5"
+            ],
+            [
+                "sraWedoC"
+            ],
+            [
+                "sraWedoC !selur"
+            ],
+            [
+                ""
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5866ec8b2e8d9cec7e0000bb",
+    "difficulty": "introductory",
+    "starter_code": "def reverse_sentence(sentence):\n\t"
+}

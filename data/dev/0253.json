@@ -1,0 +1,38 @@
+{
+    "problem_id": 4538,
+    "question": "You are going to be given a string. Your job is to return that string in a certain order that I will explain below:\n\nLet's say you start with this: `012345`\n\nThe first thing you do is reverse it:`543210`  \nThen you will take the string from the 1st position and reverse it again:`501234`  \nThen you will take the string from the 2nd position and reverse it again:`504321`  \nThen you will take the string from the 3rd position and reverse it again:`504123`\n\nContinue this pattern until you have done every single position, and then you will return the string you have created. For this particular number, you would return:`504132`\n\n#Input:\nA string of length 1 - 1000\n\n#Output:\nA correctly reordered string.",
+    "input_output": {
+        "fn_name": "reverse_fun",
+        "inputs": [
+            [
+                "012"
+            ],
+            [
+                "012345"
+            ],
+            [
+                "0123456789"
+            ],
+            [
+                "Hello"
+            ]
+        ],
+        "outputs": [
+            [
+                "201"
+            ],
+            [
+                "504132"
+            ],
+            [
+                "9081726354"
+            ],
+            [
+                "oHlel"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/566efcfbf521a3cfd2000056",
+    "difficulty": "introductory",
+    "starter_code": "def reverse_fun(n):\n\t"
+}

@@ -1,0 +1,68 @@
+{
+    "problem_id": 3368,
+    "question": "_Based on [Project Euler problem 35](https://projecteuler.net/problem=35)_\n\nA circular prime is a prime in which every circular permutation of that number is also prime. Circular permutations are created by rotating the digits of the number, for example: `197, 971, 719`. One-digit primes are circular primes by definition.\n\nComplete the function that dertermines if a number is a circular prime.\n\nThere are 100 random tests for numbers up to 10000.",
+    "input_output": {
+        "fn_name": "circular_prime",
+        "inputs": [
+            [
+                197
+            ],
+            [
+                179
+            ],
+            [
+                971
+            ],
+            [
+                222
+            ],
+            [
+                9377
+            ],
+            [
+                7
+            ],
+            [
+                213
+            ],
+            [
+                35
+            ],
+            [
+                1
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56b2333e2542c2aadb000079",
+    "difficulty": "introductory",
+    "starter_code": "def circular_prime(n):\n\t"
+}

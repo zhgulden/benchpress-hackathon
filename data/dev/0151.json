@@ -1,0 +1,74 @@
+{
+    "problem_id": 3114,
+    "question": "A variation of determining leap years, assuming only integers are used and years can be negative and positive.\n\nWrite a function which will return the days in the year and the year entered in a string.  For example 2000, entered as an integer, will return as a string 2000 has 366 days\n\nThere are a few assumptions we will accept the year 0, even though there is no year 0 in the Gregorian Calendar.\n\nAlso the basic rule for validating a leap year are as follows\n\nMost years that can be divided evenly by 4 are leap years. \n\nException: Century years are NOT leap years UNLESS they can be evenly divided by 400.\n\nSo the years 0, -64 and 2016 will return 366 days.\nWhilst 1974, -10 and 666 will return 365 days.",
+    "input_output": {
+        "fn_name": "year_days",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                -64
+            ],
+            [
+                2016
+            ],
+            [
+                1974
+            ],
+            [
+                -10
+            ],
+            [
+                666
+            ],
+            [
+                1857
+            ],
+            [
+                2000
+            ],
+            [
+                -300
+            ],
+            [
+                -1
+            ]
+        ],
+        "outputs": [
+            [
+                "0 has 366 days"
+            ],
+            [
+                "-64 has 366 days"
+            ],
+            [
+                "2016 has 366 days"
+            ],
+            [
+                "1974 has 365 days"
+            ],
+            [
+                "-10 has 365 days"
+            ],
+            [
+                "666 has 365 days"
+            ],
+            [
+                "1857 has 365 days"
+            ],
+            [
+                "2000 has 366 days"
+            ],
+            [
+                "-300 has 365 days"
+            ],
+            [
+                "-1 has 365 days"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56d6c333c9ae3fc32800070f",
+    "difficulty": "introductory",
+    "starter_code": "def year_days(year):\n\t"
+}

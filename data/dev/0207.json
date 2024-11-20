@@ -1,0 +1,168 @@
+{
+    "problem_id": 3786,
+    "question": "# Do you ever wish you could talk like Siegfried of KAOS ?\n\n## YES, of course you do!\n\nhttps://en.wikipedia.org/wiki/Get_Smart\n\n\n\n# Task\n\nWrite the function ```siegfried``` to replace the letters of a given sentence.\n\nApply the rules using the course notes below. Each week you will learn some more rules.\n\nUnd by ze fifz vek yu vil be speakink viz un aksent lik Siegfried viz no trubl at al!\n\n\n# Lessons\n\n## Week 1\n\n* ```ci``` -> ```si```\n* ```ce``` -> ```se```\n* ```c``` -> ```k``` (except ```ch``` leave alone)\n\n## Week 2\n\n* ```ph``` -> ```f```\n\n## Week 3\n\n* remove trailing ```e``` (except for all 2 and 3 letter words)\n* replace double letters with single letters (e.g. ```tt``` -> ```t```)\n\n## Week 4\n\n* ```th``` -> ```z```\n* ```wr``` -> ```r```\n* ```wh``` -> ```v```\n* ```w``` -> ```v```\n\n## Week 5\n\n* ```ou``` -> ```u```\n* ```an``` -> ```un```\n* ```ing``` -> ```ink``` (but only when ending words)\n* ```sm``` -> ```schm``` (but only when beginning words)\n\n\n\n# Notes\n\n* You must retain the case of the original sentence\n* Apply rules strictly in the order given above\n* Rules are cummulative. So for week 3 first apply week 1 rules, then week 2 rules, then week 3 rules",
+    "input_output": {
+        "fn_name": "siegfried",
+        "inputs": [
+            [
+                1,
+                "City civilians"
+            ],
+            [
+                1,
+                "Centre receiver"
+            ],
+            [
+                1,
+                "Chatanooga choo choo crashed"
+            ],
+            [
+                1,
+                "Capital city cats chew cheese"
+            ],
+            [
+                2,
+                "Photo of 5 pheasants with graphs"
+            ],
+            [
+                3,
+                "Meet me at the same place at noon"
+            ],
+            [
+                3,
+                "The time is now"
+            ],
+            [
+                3,
+                "Be quite quiet"
+            ],
+            [
+                3,
+                "Aardvarks are nice most of the time"
+            ],
+            [
+                5,
+                "And another thing Mr Smart, I want no more trouble!"
+            ],
+            [
+                5,
+                "You ought to behave yourself Smart!"
+            ],
+            [
+                5,
+                "Smart and 99 were husband and wife"
+            ],
+            [
+                5,
+                ".. Mr Maxwell be The Smart .."
+            ],
+            [
+                5,
+                ".. Mr Maxwell be We Smart .."
+            ],
+            [
+                5,
+                "Be be The the We we Me me She she"
+            ],
+            [
+                5,
+                "be Be the The we We me Me she She"
+            ],
+            [
+                5,
+                "be the wee me"
+            ],
+            [
+                5,
+                "be we Maxwell be We bee wee"
+            ],
+            [
+                5,
+                "Be like Me"
+            ],
+            [
+                5,
+                "be the same"
+            ],
+            [
+                5,
+                "The same bee we see"
+            ],
+            [
+                5,
+                "It was an inglorious ending"
+            ]
+        ],
+        "outputs": [
+            [
+                "Sity sivilians"
+            ],
+            [
+                "Sentre reseiver"
+            ],
+            [
+                "Chatanooga choo choo krashed"
+            ],
+            [
+                "Kapital sity kats chew cheese"
+            ],
+            [
+                "Foto of 5 feasants with grafs"
+            ],
+            [
+                "Met me at the sam plas at non"
+            ],
+            [
+                "The tim is now"
+            ],
+            [
+                "Be quit quiet"
+            ],
+            [
+                "Ardvarks are nis most of the tim"
+            ],
+            [
+                "Und unozer zink Mr Schmart, I vunt no mor trubl!"
+            ],
+            [
+                "Yu ught to behav yurself Schmart!"
+            ],
+            [
+                "Schmart und 99 ver husbund und vif"
+            ],
+            [
+                ".. Mr Maxvel be Ze Schmart .."
+            ],
+            [
+                ".. Mr Maxvel be Ve Schmart .."
+            ],
+            [
+                "Be be Ze ze Ve ve Me me She she"
+            ],
+            [
+                "be Be ze Ze ve Ve me Me she She"
+            ],
+            [
+                "be ze ve me"
+            ],
+            [
+                "be ve Maxvel be Ve be ve"
+            ],
+            [
+                "Be lik Me"
+            ],
+            [
+                "be ze sam"
+            ],
+            [
+                "Ze sam be ve se"
+            ],
+            [
+                "It vas un inglorius endink"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57fd6c4fa5372ead1f0004aa",
+    "difficulty": "introductory",
+    "starter_code": "def siegfried(week, txt):\n\t"
+}

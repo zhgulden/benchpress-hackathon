@@ -1,0 +1,70 @@
+{
+    "problem_id": 3029,
+    "question": "> In information theory and computer science, the Levenshtein distance is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other.\n\n(http://en.wikipedia.org/wiki/Levenshtein_distance)\n\n\nYour task is to implement a function which calculates the Levenshtein distance for two arbitrary strings.",
+    "input_output": {
+        "fn_name": "levenshtein",
+        "inputs": [
+            [
+                "kitten",
+                "sitting"
+            ],
+            [
+                "book",
+                "back"
+            ],
+            [
+                "book",
+                "book"
+            ],
+            [
+                "qlzcfayxiz",
+                "vezkvgejzb"
+            ],
+            [
+                "nayvyedosf",
+                "sjxen"
+            ],
+            [
+                "sjxen",
+                "sjxen"
+            ]
+        ],
+        "outputs": [
+            [
+                3
+            ],
+            [
+                2
+            ],
+            [
+                0
+            ],
+            [
+                9
+            ],
+            [
+                9
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/545cdb4f61778e52810003a2",
+    "difficulty": "introductory",
+    "starter_code": "def levenshtein(a,b):\n\t",
+    "test_cases": {
+        "fn_name": "levenshtein",
+        "inputs": [
+            [
+                "peter",
+                "peter"
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ]
+        ]
+    }
+}

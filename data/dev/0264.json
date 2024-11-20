@@ -1,0 +1,179 @@
+{
+    "problem_id": 3276,
+    "question": "Jenny is 9 years old. She is the youngest detective in North America. Jenny is a 3rd grader student, so when a new mission comes up, she gets a code to decipher in a form of a sticker (with numbers) in her math notebook and a comment (a sentence) in her writing notebook. All she needs to do is to figure out one word, from there she already knows what to do. \nAnd here comes your role - you can help Jenny find out what the word is! \n\nIn order to find out what the word is, you should use the sticker (array of 3 numbers) to retrive 3 letters from the comment (string) that create the word.\n\n- Each of the numbers in the array refers to the position of a letter in the string, in increasing order.\n- Spaces are not places, you need the actual letters. No spaces.\n- The returned word should be all lowercase letters.\n- if you can't find one of the letters using the index numbers, return \"No mission today\". Jenny would be very sad, but that's life... :( \n\nExample:\ninput: [5, 0, 3], \"I Love You\"\noutput: \"ivy\"\n(0 = \"i\", 3 = \"v\", 5 = \"y\")",
+    "input_output": {
+        "fn_name": "missing",
+        "inputs": [
+            [
+                [
+                    0,
+                    3,
+                    5
+                ],
+                "I love you"
+            ],
+            [
+                [
+                    7,
+                    10,
+                    1
+                ],
+                "see you later"
+            ],
+            [
+                [
+                    29,
+                    31,
+                    8
+                ],
+                "The quick brown fox jumps over the lazy dog"
+            ],
+            [
+                [
+                    12,
+                    4,
+                    6
+                ],
+                "Good Morning"
+            ],
+            [
+                [
+                    1,
+                    16,
+                    21
+                ],
+                "A purple pig and a green donkey flew a kite in the middle of the night"
+            ],
+            [
+                [
+                    35,
+                    8,
+                    20
+                ],
+                "A song can make or ruin your day if you let it get to you"
+            ],
+            [
+                [
+                    20,
+                    3,
+                    27
+                ],
+                "I love eating toasted cheese and tuna"
+            ],
+            [
+                [
+                    50,
+                    4,
+                    6
+                ],
+                "Hi everybody"
+            ],
+            [
+                [
+                    8,
+                    31,
+                    28
+                ],
+                "If I do not like something I will stay away from it"
+            ],
+            [
+                [
+                    12,
+                    22,
+                    28
+                ],
+                "Where do random thoughts come from"
+            ],
+            [
+                [
+                    41,
+                    7,
+                    18
+                ],
+                "The tape got stuck on my lips so I could not talk anymore"
+            ],
+            [
+                [
+                    33,
+                    8,
+                    12
+                ],
+                "My turtle Jim got out of his cage and ate a banana"
+            ],
+            [
+                [
+                    18,
+                    25,
+                    45
+                ],
+                "are you going to have a funnel birthday cake for your next birthday"
+            ],
+            [
+                [
+                    5,
+                    25,
+                    31
+                ],
+                "all moms and dads sat around drinking coffee"
+            ],
+            [
+                [
+                    24,
+                    36,
+                    8
+                ],
+                "My pen broke and now I have blue ink all over my dress"
+            ]
+        ],
+        "outputs": [
+            [
+                "ivy"
+            ],
+            [
+                "ear"
+            ],
+            [
+                "bay"
+            ],
+            [
+                "No mission today"
+            ],
+            [
+                "pen"
+            ],
+            [
+                "mug"
+            ],
+            [
+                "vet"
+            ],
+            [
+                "No mission today"
+            ],
+            [
+                "law"
+            ],
+            [
+                "mom"
+            ],
+            [
+                "gym"
+            ],
+            [
+                "job"
+            ],
+            [
+                "fix"
+            ],
+            [
+                "mic"
+            ],
+            [
+                "key"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58b972cae826b960a300003e",
+    "difficulty": "introductory",
+    "starter_code": "def missing(nums, str):\n\t"
+}

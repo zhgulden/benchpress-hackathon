@@ -1,0 +1,50 @@
+{
+    "problem_id": 2866,
+    "question": "# Task\n Mobius function - an important function in number theory. For each given n, it only has 3 values:\n```\n0  -- if n divisible by square of a prime. Such as: 4, 8, 9\n1  -- if n not divisible by any square of a prime \n        and have even number of prime factor. Such as: 6, 10, 21\n-1 -- otherwise. Such as: 3, 5, 7, 30```\nYour task is to find mobius(`n`)\n\n# Input/Output\n\n\n - `[input]` integer `n`\n\n\n `2 <= n <= 1e12`\n\n\n - `[output]` an integer",
+    "input_output": {
+        "fn_name": "mobius",
+        "inputs": [
+            [
+                10
+            ],
+            [
+                9
+            ],
+            [
+                8
+            ],
+            [
+                100000000001
+            ],
+            [
+                7
+            ],
+            [
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                1
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                -1
+            ],
+            [
+                -1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58aa5d32c9eb04d90b000107",
+    "difficulty": "introductory",
+    "starter_code": "def mobius(n):\n\t"
+}

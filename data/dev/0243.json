@@ -1,0 +1,64 @@
+{
+    "problem_id": 4595,
+    "question": "# Task\n In the Land Of Chess, bishops don't really like each other. In fact, when two bishops happen to stand on the same diagonal, they immediately rush towards the opposite ends of that same diagonal.\n\n Given the initial positions (in chess notation) of two bishops, `bishop1` and `bishop2`, calculate their future positions. Keep in mind that bishops won't move unless they see each other along the same diagonal.\n\n# Example\n\n For `bishop1 = \"d7\" and bishop2 = \"f5\"`, the output should be `[\"c8\", \"h3\"]`.\n\n ![](https://codefightsuserpics.s3.amazonaws.com/tasks/bishopDiagonal/img/ex_1.jpg?_tm=1473766087137)\n\n For `bishop1 = \"d8\" and bishop2 = \"b5\"`, the output should be `[\"b5\", \"d8\"]`.\n\n The bishops don't belong to the same diagonal, so they don't move.\n\n ![](https://codefightsuserpics.s3.amazonaws.com/tasks/bishopDiagonal/img/ex_2.jpg?_tm=1473766087425)\n\n# Input/Output\n\n\n - `[input]` string `bishop1`\n\n    Coordinates of the first bishop in chess notation.\n\n\n - `[input]` string `bishop2`\n\n    Coordinates of the second bishop in the same notation.\n\n\n - `[output]` a string array\n\n    Coordinates of the bishops in lexicographical order after they check the diagonals they stand on.",
+    "input_output": {
+        "fn_name": "bishop_diagonal",
+        "inputs": [
+            [
+                "d7",
+                "f5"
+            ],
+            [
+                "d8",
+                "b5"
+            ],
+            [
+                "a1",
+                "h8"
+            ],
+            [
+                "g3",
+                "e1"
+            ],
+            [
+                "b4",
+                "e7"
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    "c8",
+                    "h3"
+                ]
+            ],
+            [
+                [
+                    "b5",
+                    "d8"
+                ]
+            ],
+            [
+                [
+                    "a1",
+                    "h8"
+                ]
+            ],
+            [
+                [
+                    "e1",
+                    "h4"
+                ]
+            ],
+            [
+                [
+                    "a3",
+                    "f8"
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5897e394fcc4b9c310000051",
+    "difficulty": "introductory",
+    "starter_code": "def bishop_diagonal(bishop1, bishop2):\n\t"
+}

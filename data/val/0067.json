@@ -1,0 +1,56 @@
+{
+    "problem_id": 3872,
+    "question": "Write a function that accepts two parameters, i) a string (containing a list of words) and ii) an integer (n).  The function should alphabetize the list based on the nth letter of each word.\n\nThe letters should be compared case-insensitive. If both letters are the same, order them normally (lexicographically), again, case-insensitive.\n\nexample:\n```javascript \nfunction sortIt('bid, zag', 2) //=> 'zag, bid'\n```\n```ruby \nfunction sortIt('bid, zag', 2) //=> 'zag, bid'\n```\n```python \nfunction sortIt('bid, zag', 2) #=> 'zag, bid'\n```\n\nThe length of all words provided in the list will be >= n.  The format will be \"x, x, x\". In Haskell you'll get a list of `String`s instead.",
+    "input_output": {
+        "fn_name": "sort_it",
+        "inputs": [
+            [
+                "bill, bell, ball, bull",
+                2
+            ],
+            [
+                "words, wordz, wordy, wording",
+                5
+            ],
+            [
+                "he, hi, ha, ho",
+                2
+            ],
+            [
+                "zephyr, yellow, wax, a, ba, cat",
+                1
+            ]
+        ],
+        "outputs": [
+            [
+                "ball, bell, bill, bull"
+            ],
+            [
+                "wording, words, wordy, wordz"
+            ],
+            [
+                "ha, he, hi, ho"
+            ],
+            [
+                "a, ba, cat, wax, yellow, zephyr"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54eea36b7f914221eb000e2f",
+    "difficulty": "introductory",
+    "starter_code": "def sort_it(list_, n):\n\t",
+    "test_cases": {
+        "fn_name": "sort_it",
+        "inputs": [
+            [
+                "hello, how, are, you, doing, today",
+                3
+            ]
+        ],
+        "outputs": [
+            [
+                "today, are, doing, hello, you, how"
+            ]
+        ]
+    }
+}

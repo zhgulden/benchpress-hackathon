@@ -1,0 +1,35 @@
+{
+    "problem_id": 3998,
+    "question": "Write the following function:\n\n```python\ndef area_of_polygon_inside_circle(circle_radius, number_of_sides):\n```\n\nIt should calculate the area of a regular polygon of `numberOfSides`, `number-of-sides`, or `number_of_sides` sides inside a circle of radius `circleRadius`, `circle-radius`, or `circle_radius` which passes through all the vertices of the polygon (such circle is called [**circumscribed circle** or **circumcircle**](https://en.wikipedia.org/wiki/Circumscribed_circle)). The answer should be a number rounded to 3 decimal places. \n\nInput :: Output Examples \n\n```python\narea_of_polygon_inside_circle(3, 3) # returns 11.691\n\narea_of_polygon_inside_circle(5.8, 7) # returns 92.053\n\narea_of_polygon_inside_circle(4, 5) # returns 38.042\n```",
+    "input_output": {
+        "fn_name": "area_of_polygon_inside_circle",
+        "inputs": [
+            [
+                3,
+                3
+            ],
+            [
+                2,
+                4
+            ],
+            [
+                2.5,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                11.691
+            ],
+            [
+                8
+            ],
+            [
+                14.86
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a58ca28e626c55ae000018a",
+    "difficulty": "introductory",
+    "starter_code": "def area_of_polygon_inside_circle(r, n):\n\t"
+}

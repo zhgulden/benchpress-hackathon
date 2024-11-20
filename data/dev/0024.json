@@ -1,0 +1,74 @@
+{
+    "problem_id": 2899,
+    "question": "# Task\n You are given a binary string (a string consisting of only '1' and '0'). The only operation that can be performed on it is a Flip operation. \n \n It flips any binary character ( '0' to '1' and vice versa) and all characters to the `right` of it.\n\n For example, applying the Flip operation to the 4th character of string \"1001010\" produces the \"1000101\" string, since all characters from the 4th to the 7th are flipped.\n\n Your task is to find the minimum number of flips required to convert the binary string to string consisting of all '0'.\n\n# Example\n\n For `s = \"0101\"`, the output should be `3`.\n\n It's possible to convert the string in three steps:\n\n ```\n \"0101\" -> \"0010\"\n    ^^^\n \"0010\" -> \"0001\"\n     ^^\n \"0001\" -> \"0000\"\n      ^\n ```\n\n# Input/Output\n\n\n - `[input]` string `s`\n\n  A binary string.\n\n \n - `[output]` an integer\n\n  The minimum number of flips required.",
+    "input_output": {
+        "fn_name": "bin_str",
+        "inputs": [
+            [
+                "0101"
+            ],
+            [
+                "10000"
+            ],
+            [
+                "0000000000"
+            ],
+            [
+                "1111111111"
+            ],
+            [
+                "10101010101010"
+            ],
+            [
+                "11111000011111"
+            ],
+            [
+                "000001111100000"
+            ],
+            [
+                "111000000000"
+            ],
+            [
+                "00000000111111111"
+            ],
+            [
+                "1010101011111111111111000000000"
+            ]
+        ],
+        "outputs": [
+            [
+                3
+            ],
+            [
+                2
+            ],
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                14
+            ],
+            [
+                3
+            ],
+            [
+                2
+            ],
+            [
+                2
+            ],
+            [
+                1
+            ],
+            [
+                10
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58c218efd8d3cad11c0000ef",
+    "difficulty": "introductory",
+    "starter_code": "def bin_str(s):\n\t"
+}

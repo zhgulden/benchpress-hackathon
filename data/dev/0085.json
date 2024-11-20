@@ -1,0 +1,50 @@
+{
+    "problem_id": 3982,
+    "question": "You are the \"computer expert\" of a local Athletic Association (C.A.A.).\nMany teams of runners come to compete. Each time you get a string of \nall race results of every team who has run.\nFor example here is a string showing the individual results of a team of 5 runners:\n\n` \"01|15|59, 1|47|6, 01|17|20, 1|32|34, 2|3|17\" `\n\nEach part of the string is of the form: ` h|m|s `\nwhere h, m, s (h for hour, m for minutes, s for seconds) are positive or null integer (represented as strings) with one or two digits.\nThere are no traps in this format.\n\nTo compare the results of the teams you are asked for giving\nthree statistics; **range, average and median**.\n\n`Range` : difference between the lowest and highest values. \nIn {4, 6, 9, 3, 7} the lowest value is 3, and the highest is 9, \nso the range is 9 \u2212 3 = 6.\n\n`Mean or Average` : To calculate mean, add together all of the numbers \nin a set and then divide the sum by the total count of numbers.\n\n`Median` : In statistics, the median is the number separating the higher half \nof a data sample from the lower half. \nThe median of a finite list of numbers can be found by arranging all \nthe observations from lowest value to highest value and picking the middle one \n(e.g., the median of {3, 3, 5, 9, 11} is 5) when there is an odd number of observations. \nIf there is an even number of observations, then there is no single middle value; \nthe median is then defined to be the mean of the two middle values\n(the median of {3, 5, 6, 9} is (5 + 6) / 2 = 5.5).\n\nYour task is to return a string giving these 3 values.  For the example given above,\nthe string result will be\n\n`\"Range: 00|47|18 Average: 01|35|15 Median: 01|32|34\"`\n\nof the form:\n\n`\"Range: hh|mm|ss Average: hh|mm|ss Median: hh|mm|ss\"`\n\nwhere hh, mm, ss are integers (represented by strings) with *each 2 digits*.\n\n*Remarks*: \n\n1. if a result in seconds is ab.xy... it will be given **truncated** as ab.\n\n2. if the given string is \"\" you will return \"\"",
+    "input_output": {
+        "fn_name": "stat",
+        "inputs": [
+            [
+                "01|15|59, 1|47|16, 01|17|20, 1|32|34, 2|17|17"
+            ],
+            [
+                "02|15|59, 2|47|16, 02|17|20, 2|32|34, 2|17|17, 2|22|00, 2|31|41"
+            ],
+            [
+                "02|15|59, 2|47|16, 02|17|20, 2|32|34, 2|32|34, 2|17|17"
+            ],
+            [
+                "0|15|59, 0|16|16, 0|17|20, 0|22|34, 0|19|34, 0|15|0"
+            ],
+            [
+                "11|15|59, 10|16|16, 12|17|20, 9|22|34, 13|19|34, 11|15|17, 11|22|00, 10|26|37, 12|17|48, 9|16|30, 12|20|14, 11|25|11"
+            ],
+            [
+                "1|15|59, 1|16|16, 1|17|20, 1|22|34, 1|19|34, 1|15|17, 1|22|00, 1|26|37, 1|17|48, 1|16|30, 1|20|14, 1|25|11"
+            ]
+        ],
+        "outputs": [
+            [
+                "Range: 01|01|18 Average: 01|38|05 Median: 01|32|34"
+            ],
+            [
+                "Range: 00|31|17 Average: 02|26|18 Median: 02|22|00"
+            ],
+            [
+                "Range: 00|31|17 Average: 02|27|10 Median: 02|24|57"
+            ],
+            [
+                "Range: 00|07|34 Average: 00|17|47 Median: 00|16|48"
+            ],
+            [
+                "Range: 04|03|04 Average: 11|14|36 Median: 11|18|59"
+            ],
+            [
+                "Range: 00|11|20 Average: 01|19|36 Median: 01|18|41"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55b3425df71c1201a800009c",
+    "difficulty": "introductory",
+    "starter_code": "def stat(strg):\n\t"
+}

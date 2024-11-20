@@ -1,0 +1,32 @@
+{
+    "problem_id": 3392,
+    "question": "Create a function `sierpinski` to generate an ASCII representation of a Sierpinski triangle of order **N**. \n\nSeperate each line with `\\n`. You don't have to check the input value.\n\nThe output should look like this: \n\n     sierpinski(4)\n                   *               \n                  * *              \n                 *   *             \n                * * * *            \n               *       *           \n              * *     * *          \n             *   *   *   *         \n            * * * * * * * *        \n           *               *       \n          * *             * *      \n         *   *           *   *     \n        * * * *         * * * *    \n       *       *       *       *   \n      * *     * *     * *     * *  \n     *   *   *   *   *   *   *   * \n    * * * * * * * * * * * * * * * *",
+    "input_output": {
+        "fn_name": "sierpinski",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ]
+        ],
+        "outputs": [
+            [
+                " * \n* *"
+            ],
+            [
+                "   *   \n  * *  \n *   * \n* * * *"
+            ],
+            [
+                "       *       \n      * *      \n     *   *     \n    * * * *    \n   *       *   \n  * *     * *  \n *   *   *   * \n* * * * * * * *"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58add662ea140541a50000f7",
+    "difficulty": "introductory",
+    "starter_code": "def sierpinski(n):\n\t"
+}

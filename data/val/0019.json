@@ -1,0 +1,142 @@
+{
+    "problem_id": 2876,
+    "question": "*** No Loops Allowed ***\n\nYou will be given an array (a) and a value (x). All you need to do is check whether the provided array contains the value, without using a loop.\n\nArray can contain numbers or strings. X can be either. Return true if the array contains the value, false if not. With strings you will need to account for case.\n\nLooking for more, loop-restrained fun? Check out the other kata in the series:\n\n https://www.codewars.com/kata/no-loops-1-small-enough\n https://www.codewars.com/kata/no-loops-3-copy-within",
+    "input_output": {
+        "fn_name": "check",
+        "inputs": [
+            [
+                [
+                    66,
+                    101
+                ],
+                66
+            ],
+            [
+                [
+                    80,
+                    117,
+                    115,
+                    104,
+                    45,
+                    85,
+                    112,
+                    115
+                ],
+                45
+            ],
+            [
+                [
+                    "t",
+                    "e",
+                    "s",
+                    "t"
+                ],
+                "e"
+            ],
+            [
+                [
+                    "what",
+                    "a",
+                    "great",
+                    "kata"
+                ],
+                "kat"
+            ],
+            [
+                [
+                    66,
+                    "codewars",
+                    11,
+                    "alex loves pushups"
+                ],
+                "alex loves pushups"
+            ],
+            [
+                [
+                    "come",
+                    "on",
+                    110,
+                    "2500",
+                    10,
+                    "!",
+                    7,
+                    15
+                ],
+                "Come"
+            ],
+            [
+                [
+                    "when's",
+                    "the",
+                    "next",
+                    "Katathon?",
+                    9,
+                    7
+                ],
+                "Katathon?"
+            ],
+            [
+                [
+                    8,
+                    7,
+                    5,
+                    "bored",
+                    "of",
+                    "writing",
+                    "tests",
+                    115
+                ],
+                45
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57cc40b2f8392dbf2a0003ce",
+    "difficulty": "introductory",
+    "starter_code": "def check(a, x):\n\t",
+    "test_cases": {
+        "fn_name": "check",
+        "inputs": [
+            [
+                [
+                    "anyone",
+                    "want",
+                    "to",
+                    "hire",
+                    "me?"
+                ],
+                "me?"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ]
+        ]
+    }
+}

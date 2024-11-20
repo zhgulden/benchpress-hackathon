@@ -1,0 +1,74 @@
+{
+    "problem_id": 3692,
+    "question": "Description:\n\nThe mean (or average) is the most popular measure of central tendency; however it does not behave very well when the data is skewed (i.e. wages distribution). In such cases, it's better to use the median.\n\nYour task for this kata is to find the median of an array consisting of n elements.\n\nYou can assume that all inputs are arrays of numbers in integer format. For the empty array your code should return `NaN` (false in JavaScript/`NULL` in PHP/`nil` in Ruby).\n\nExamples:\n\nInput `[1, 2, 3, 4]` --> Median `2.5`\n\nInput `[3, 4, 1, 2, 5]` --> Median `3`",
+    "input_output": {
+        "fn_name": "median",
+        "inputs": [
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            ],
+            [
+                [
+                    3,
+                    4,
+                    1,
+                    2,
+                    5
+                ]
+            ],
+            [
+                [
+                    10,
+                    29,
+                    23,
+                    94,
+                    76,
+                    96,
+                    5,
+                    85,
+                    4,
+                    33,
+                    47,
+                    41,
+                    87
+                ]
+            ],
+            [
+                [
+                    1
+                ]
+            ],
+            [
+                [
+                    1,
+                    -1
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                2.5
+            ],
+            [
+                3
+            ],
+            [
+                41
+            ],
+            [
+                1
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/582609930626631a9600003e",
+    "difficulty": "introductory",
+    "starter_code": "def median(arr):\n\t"
+}

@@ -1,0 +1,44 @@
+{
+    "problem_id": 4023,
+    "question": "Given a string of words, you need to find the highest scoring word.\n\nEach letter of a word scores points according to its position in the alphabet: `a = 1, b = 2, c = 3` etc.\n\nYou need to return the highest scoring word as a string.\n\nIf two words score the same, return the word that appears earliest in the original string.\n\nAll letters will be lowercase and all inputs will be valid.",
+    "input_output": {
+        "fn_name": "high",
+        "inputs": [
+            [
+                "man i need a taxi up to ubud"
+            ],
+            [
+                "what time are we climbing up the volcano"
+            ],
+            [
+                "take me to semynak"
+            ],
+            [
+                "massage yes massage yes massage"
+            ],
+            [
+                "take two bintang and a dance please"
+            ]
+        ],
+        "outputs": [
+            [
+                "taxi"
+            ],
+            [
+                "volcano"
+            ],
+            [
+                "semynak"
+            ],
+            [
+                "massage"
+            ],
+            [
+                "bintang"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57eb8fcdf670e99d9b000272",
+    "difficulty": "introductory",
+    "starter_code": "def high(x):\n\t"
+}

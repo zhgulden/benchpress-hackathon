@@ -1,0 +1,112 @@
+{
+    "problem_id": 3445,
+    "question": "Given the sum and gcd of two numbers, return those two numbers in ascending order. If the numbers do not exist, return `-1`, (or `NULL` in C, `tuple (-1,-1)` in C#, `pair (-1,-1)` in C++,`None` in Rust, `array {-1,-1} ` in Java and Golang).\n\n```\nFor example: \nGiven sum = 12 and gcd = 4...\n\nsolve(12,4) = [4,8]. The two numbers 4 and 8 sum to 12 and have a gcd of 4.\n\nsolve(12,5) = -1. No two numbers exist that sum to 12 and have gcd of 5.\n\nsolve(10,2) = [2,8]. Note that [4,6] is also a possibility but we pick the one with the lower first element: 2 < 4, so we take [2,8].\n```\n\nMore examples in test cases. \n\nGood luck!",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                6,
+                3
+            ],
+            [
+                8,
+                2
+            ],
+            [
+                10,
+                3
+            ],
+            [
+                12,
+                4
+            ],
+            [
+                12,
+                5
+            ],
+            [
+                50,
+                10
+            ],
+            [
+                50,
+                4
+            ],
+            [
+                10,
+                5
+            ],
+            [
+                100,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    3,
+                    3
+                ]
+            ],
+            [
+                [
+                    2,
+                    6
+                ]
+            ],
+            [
+                -1
+            ],
+            [
+                [
+                    4,
+                    8
+                ]
+            ],
+            [
+                -1
+            ],
+            [
+                [
+                    10,
+                    40
+                ]
+            ],
+            [
+                -1
+            ],
+            [
+                [
+                    5,
+                    5
+                ]
+            ],
+            [
+                [
+                    5,
+                    95
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5dd259444228280032b1ed2a",
+    "difficulty": "introductory",
+    "starter_code": "def solve(s,g):\n\t",
+    "test_cases": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                1000,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    5,
+                    995
+                ]
+            ]
+        ]
+    }
+}

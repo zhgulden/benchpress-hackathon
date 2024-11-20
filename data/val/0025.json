@@ -1,0 +1,296 @@
+{
+    "problem_id": 4026,
+    "question": "### Preface\nYou are currently working together with a local community to build a school teaching children how to code. First plans have been made and the community wants to decide on the best location for the coding school.\nIn order to make this decision data about the location of students and potential locations is collected. \n\n### Problem\nIn order to be able to attract and teach as many students as possible we want to minimize the total traveling distance for potential students. The streets system is organized in a traditional grid system and students can only travel horizontally or vertically (not diagonal).\n\nThe locations of interested students is given as an array with the first value of each entry presenting the x coordinate and the second value presenting the y coordinate:\n```python\nstudents = [[3,7],[2,2],[14,1], ...];\n```\nPotential locations are passed as an array of objects with an unique id, a x and y coordinate:\n```python\nlocations = [{\"id\": 1, \"x\": 3, \"y\": 4}, {\"id\": 2, \"x\": 8, \"y\": 2}, ...];\n```\n\nYour task is now to evaluate which of the school locations would be best to minimize the distance for all potential students to the school.\n\nThe desired output should consist of a string indicating the ID of the best suitable location and the x and y coordinates in the following form:\n\n```\n\"The best location is number 1 with the coordinates x = 3 and y = 4\"\n```",
+    "input_output": {
+        "fn_name": "optimum_location",
+        "inputs": [
+            [
+                [
+                    [
+                        3,
+                        7
+                    ],
+                    [
+                        2,
+                        2
+                    ],
+                    [
+                        14,
+                        1
+                    ]
+                ],
+                [
+                    {
+                        "id": 1,
+                        "x": 3,
+                        "y": 4
+                    },
+                    {
+                        "id": 2,
+                        "x": 8,
+                        "y": 2
+                    }
+                ]
+            ],
+            [
+                [
+                    [
+                        54,
+                        7
+                    ],
+                    [
+                        1,
+                        211
+                    ],
+                    [
+                        14,
+                        44
+                    ],
+                    [
+                        12,
+                        5
+                    ],
+                    [
+                        14,
+                        7
+                    ]
+                ],
+                [
+                    {
+                        "id": 1,
+                        "x": 44,
+                        "y": 55
+                    },
+                    {
+                        "id": 2,
+                        "x": 12,
+                        "y": 57
+                    },
+                    {
+                        "id": 3,
+                        "x": 23,
+                        "y": 66
+                    }
+                ]
+            ],
+            [
+                [
+                    [
+                        152,
+                        7
+                    ],
+                    [
+                        1,
+                        211
+                    ],
+                    [
+                        14,
+                        56
+                    ],
+                    [
+                        12,
+                        4
+                    ],
+                    [
+                        142,
+                        7
+                    ]
+                ],
+                [
+                    {
+                        "id": 1,
+                        "x": 63,
+                        "y": 55
+                    },
+                    {
+                        "id": 2,
+                        "x": 55,
+                        "y": 21
+                    },
+                    {
+                        "id": 3,
+                        "x": 144,
+                        "y": 12
+                    }
+                ]
+            ],
+            [
+                [
+                    [
+                        152,
+                        742
+                    ],
+                    [
+                        466,
+                        2211
+                    ],
+                    [
+                        1412,
+                        564
+                    ],
+                    [
+                        142,
+                        444
+                    ],
+                    [
+                        142,
+                        744
+                    ]
+                ],
+                [
+                    {
+                        "id": 1,
+                        "x": 1263,
+                        "y": 525
+                    },
+                    {
+                        "id": 2,
+                        "x": 55,
+                        "y": 21
+                    },
+                    {
+                        "id": 3,
+                        "x": 537,
+                        "y": 1244
+                    }
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "The best location is number 1 with the coordinates x = 3 and y = 4"
+            ],
+            [
+                "The best location is number 2 with the coordinates x = 12 and y = 57"
+            ],
+            [
+                "The best location is number 2 with the coordinates x = 55 and y = 21"
+            ],
+            [
+                "The best location is number 3 with the coordinates x = 537 and y = 1244"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55738b0cffd95756c3000056",
+    "difficulty": "introductory",
+    "starter_code": "def optimum_location(students, locations):\n\t",
+    "test_cases": {
+        "fn_name": "optimum_location",
+        "inputs": [
+            [
+                [
+                    [
+                        7,
+                        66
+                    ],
+                    [
+                        71,
+                        7
+                    ],
+                    [
+                        0,
+                        94
+                    ],
+                    [
+                        16,
+                        93
+                    ],
+                    [
+                        33,
+                        49
+                    ],
+                    [
+                        49,
+                        81
+                    ],
+                    [
+                        17,
+                        2
+                    ],
+                    [
+                        95,
+                        71
+                    ],
+                    [
+                        32,
+                        14
+                    ],
+                    [
+                        31,
+                        41
+                    ],
+                    [
+                        92,
+                        72
+                    ],
+                    [
+                        12,
+                        79
+                    ]
+                ],
+                [
+                    {
+                        "y": 38,
+                        "x": 32,
+                        "id": 1
+                    },
+                    {
+                        "y": 49,
+                        "x": 73,
+                        "id": 2
+                    },
+                    {
+                        "y": 85,
+                        "x": 50,
+                        "id": 3
+                    },
+                    {
+                        "y": 2,
+                        "x": 79,
+                        "id": 4
+                    },
+                    {
+                        "y": 20,
+                        "x": 44,
+                        "id": 5
+                    },
+                    {
+                        "y": 56,
+                        "x": 17,
+                        "id": 6
+                    },
+                    {
+                        "y": 43,
+                        "x": 26,
+                        "id": 7
+                    },
+                    {
+                        "y": 61,
+                        "x": 89,
+                        "id": 8
+                    },
+                    {
+                        "y": 18,
+                        "x": 15,
+                        "id": 9
+                    },
+                    {
+                        "y": 34,
+                        "x": 41,
+                        "id": 10
+                    },
+                    {
+                        "y": 27,
+                        "x": 99,
+                        "id": 11
+                    }
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "The best location is number 6 with the coordinates x = 17 and y = 56"
+            ]
+        ]
+    }
+}

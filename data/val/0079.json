@@ -1,0 +1,91 @@
+{
+    "problem_id": 4200,
+    "question": "You get a \"text\" and have to shift the vowels by \"n\" positions to the right.\n(Negative value for n should shift to the left.)\n\"Position\" means the vowel's position if taken as one item in a list of all vowels within the string.\nA shift by 1 would mean, that every vowel shifts to the place of the next vowel.\nShifting over the edges of the text should continue at the other edge.\n\nExample:\n\ntext = \"This is a test!\"\nn = 1\noutput = \"Thes is i tast!\"\n\ntext = \"This is a test!\"\nn = 3\noutput = \"This as e tist!\"\n\nIf text is null or empty return exactly this value.\nVowels are \"a,e,i,o,u\".\n\n\n\nHave fun coding it and please don't forget to vote and rank this kata! :-)\n\nI have created other katas. Have a look if you like coding and challenges.",
+    "input_output": {
+        "fn_name": "vowel_shift",
+        "inputs": [
+            [
+                null,
+                0
+            ],
+            [
+                "",
+                0
+            ],
+            [
+                "This is a test!",
+                0
+            ],
+            [
+                "This is a test!",
+                1
+            ],
+            [
+                "This is a test!",
+                3
+            ],
+            [
+                "This is a test!",
+                4
+            ],
+            [
+                "This is a test!",
+                -1
+            ],
+            [
+                "This is a test!",
+                -5
+            ],
+            [
+                "Brrrr",
+                99
+            ]
+        ],
+        "outputs": [
+            [
+                null
+            ],
+            [
+                ""
+            ],
+            [
+                "This is a test!"
+            ],
+            [
+                "Thes is i tast!"
+            ],
+            [
+                "This as e tist!"
+            ],
+            [
+                "This is a test!"
+            ],
+            [
+                "This as e tist!"
+            ],
+            [
+                "This as e tist!"
+            ],
+            [
+                "Brrrr"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/577e277c9fb2a5511c00001d",
+    "difficulty": "introductory",
+    "starter_code": "def vowel_shift(text, n):\n\t",
+    "test_cases": {
+        "fn_name": "vowel_shift",
+        "inputs": [
+            [
+                "AEIOUaeiou",
+                1
+            ]
+        ],
+        "outputs": [
+            [
+                "uAEIOUaeio"
+            ]
+        ]
+    }
+}

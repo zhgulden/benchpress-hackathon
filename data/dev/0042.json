@@ -1,0 +1,54 @@
+{
+    "problem_id": 3209,
+    "question": "# Problem\n\nIn China\uff0cthere is an ancient mathematical book, called \"The Mathematical Classic of Sun Zi\"(\u300a\u5b59\u5b50\u7b97\u7ecf\u300b). In the book, there is a classic math problem: \u201c\u4eca\u6709\u7269\u4e0d\u77e5\u5176\u6570\uff0c\u4e09\u4e09\u6570\u4e4b\u5269\u4e8c\uff0c\u4e94\u4e94\u6570\u4e4b\u5269\u4e09\uff0c\u4e03\u4e03\u6570\u4e4b\u5269\u4e8c\uff0c\u95ee\u7269\u51e0\u4f55\uff1f\u201d \n\nAhh, Sorry. I forgot that you don't know Chinese. Let's translate it to English:\n\nThere is a unkown positive integer `n`. We know: \n\n`n % 3 = 2`, and `n % 5 = 3`, and `n % 7 = 2`. \n\nWhat's the minimum possible positive integer `n`?\n\nThe correct answer is `23`.\n\n# Task\n\nYou are given three non-negative integers `x,y,z`. They represent the remainders of the unknown positive integer `n` divided by 3,5,7.\n\nThat is: `n % 3 = x, n % 5 = y, n % 7 = z`\n\nYour task is to find the minimum possible positive integer `n` and return it.\n\n# Example\n\nFor `x = 2, y = 3, z = 2`, the output should be `23`\n\n`23 % 3 = 2, 23 % 5 = 3, 23 % 7 = 2`\n\nFor `x = 1, y = 2, z = 3`, the output should be `52`\n\n`52 % 3 = 1, 52 % 5 = 2, 52 % 7 = 3`\n\nFor `x = 1, y = 3, z = 5`, the output should be `103`\n\n`103 % 3 = 1, 103 % 5 = 3, 103 % 7 = 5`\n\nFor `x = 0, y = 0, z = 0`, the output should be `105`\n\nFor `x = 1, y = 1, z = 1`, the output should be `1`\n\n# Note\n\n- `0 <= x < 3, 0 <= y < 5, 0 <= z < 7`\n\n- Happy Coding `^_^`",
+    "input_output": {
+        "fn_name": "find_unknown_number",
+        "inputs": [
+            [
+                2,
+                3,
+                2
+            ],
+            [
+                1,
+                2,
+                3
+            ],
+            [
+                1,
+                3,
+                5
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                1,
+                1,
+                1
+            ]
+        ],
+        "outputs": [
+            [
+                23
+            ],
+            [
+                52
+            ],
+            [
+                103
+            ],
+            [
+                105
+            ],
+            [
+                1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59cdb2b3a25c8c6d56000005",
+    "difficulty": "introductory",
+    "starter_code": "def find_unknown_number(x,y,z):\n\t"
+}

@@ -1,0 +1,87 @@
+{
+    "problem_id": 4577,
+    "question": "Take debugging to a whole new level:\n\nGiven a string, remove every *single* bug.\n\nThis means you must remove all instances of the word 'bug' from within a given string, *unless* the word is plural ('bugs').\n\nFor example, given 'obugobugobuoobugsoo', you should return 'ooobuoobugsoo'.\n\nAnother example: given 'obbugugo', you should return 'obugo'.\n\nNote that all characters will be lowercase.\n\nHappy squishing!",
+    "input_output": {
+        "fn_name": "debug",
+        "inputs": [
+            [
+                "obugobugobuoobugsoo"
+            ],
+            [
+                "obbugugo"
+            ],
+            [
+                "bugs bunny"
+            ],
+            [
+                "bugs buggy"
+            ],
+            [
+                "oaiwjefbugoijoijapsbugsdoibugbugjfoijasdfbugsbug"
+            ],
+            [
+                "bugbugbugiahweoifuhiaasnoidfhnbugbugs"
+            ],
+            [
+                "bugsbugswaoeifhiauwehfoiwubugshefjnviouah"
+            ],
+            [
+                "bugbugbugbug"
+            ],
+            [
+                "bugsbugsbugsbugs"
+            ],
+            [
+                "buggybugs"
+            ]
+        ],
+        "outputs": [
+            [
+                "ooobuoobugsoo"
+            ],
+            [
+                "obugo"
+            ],
+            [
+                "bugs bunny"
+            ],
+            [
+                "bugs gy"
+            ],
+            [
+                "oaiwjefoijoijapsbugsdoijfoijasdfbugs"
+            ],
+            [
+                "iahweoifuhiaasnoidfhnbugs"
+            ],
+            [
+                "bugsbugswaoeifhiauwehfoiwubugshefjnviouah"
+            ],
+            [
+                ""
+            ],
+            [
+                "bugsbugsbugsbugs"
+            ],
+            [
+                "gybugs"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a21f943c5e284d4340000cb",
+    "difficulty": "introductory",
+    "starter_code": "def debug(s):\n\t",
+    "test_cases": {
+        "fn_name": "debug",
+        "inputs": [
+            [
+                "oaisjdfowjefpoibugsjsofijeo oi bugs o bug f bug poaj sfd s"
+            ]
+        ],
+        "outputs": [
+            [
+                "oaisjdfowjefpoibugsjsofijeo oi bugs o  f  poaj sfd s"
+            ]
+        ]
+    }
+}

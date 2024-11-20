@@ -1,0 +1,32 @@
+{
+    "problem_id": 3336,
+    "question": "*Debug* \u00a0 function `getSumOfDigits` that takes positive integer to calculate sum of it's digits. Assume that argument is an integer.\n\n### Example\n```\n123  => 6\n223  => 7\n1337 => 15\n```",
+    "input_output": {
+        "fn_name": "get_sum_of_digits",
+        "inputs": [
+            [
+                123
+            ],
+            [
+                223
+            ],
+            [
+                0
+            ]
+        ],
+        "outputs": [
+            [
+                6
+            ],
+            [
+                7
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/563d59dd8e47a5ed220000ba",
+    "difficulty": "introductory",
+    "starter_code": "def get_sum_of_digits(num):\n\t"
+}

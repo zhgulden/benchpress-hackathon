@@ -1,0 +1,95 @@
+{
+    "problem_id": 2674,
+    "question": "You will be given a vector of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.\n\nThe returned value must be a string, and have `\"***\"` between each of its letters.\n\nYou should not remove or add elements from/to the array.",
+    "input_output": {
+        "fn_name": "two_sort",
+        "inputs": [
+            [
+                [
+                    "bitcoin",
+                    "take",
+                    "over",
+                    "the",
+                    "world",
+                    "maybe",
+                    "who",
+                    "knows",
+                    "perhaps"
+                ]
+            ],
+            [
+                [
+                    "turns",
+                    "out",
+                    "random",
+                    "test",
+                    "cases",
+                    "are",
+                    "easier",
+                    "than",
+                    "writing",
+                    "out",
+                    "basic",
+                    "ones"
+                ]
+            ],
+            [
+                [
+                    "lets",
+                    "talk",
+                    "about",
+                    "javascript",
+                    "the",
+                    "best",
+                    "language"
+                ]
+            ],
+            [
+                [
+                    "i",
+                    "want",
+                    "to",
+                    "travel",
+                    "the",
+                    "world",
+                    "writing",
+                    "code",
+                    "one",
+                    "day"
+                ]
+            ],
+            [
+                [
+                    "Lets",
+                    "all",
+                    "go",
+                    "on",
+                    "holiday",
+                    "somewhere",
+                    "very",
+                    "cold"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "b***i***t***c***o***i***n"
+            ],
+            [
+                "a***r***e"
+            ],
+            [
+                "a***b***o***u***t"
+            ],
+            [
+                "c***o***d***e"
+            ],
+            [
+                "L***e***t***s"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57cfdf34902f6ba3d300001e",
+    "difficulty": "introductory",
+    "starter_code": "def two_sort(array):\n\t"
+}

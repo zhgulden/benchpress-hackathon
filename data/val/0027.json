@@ -1,0 +1,53 @@
+{
+    "problem_id": 3975,
+    "question": "#Find the missing letter\n\nWrite a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.\n\nYou will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.\nThe array will always contain letters in only one case.\n\nExample:\n```if-not:swift\n['a','b','c','d','f'] -> 'e'\n['O','Q','R','S'] -> 'P'\n```\n\n(Use the English alphabet with 26 letters!)\n\nHave fun coding it and please don't forget to vote and rank this kata! :-) \n\nI have also created other katas. Take a look if you enjoyed this kata!",
+    "input_output": {
+        "fn_name": "find_missing_letter",
+        "inputs": [
+            [
+                [
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "f"
+                ]
+            ],
+            [
+                [
+                    "O",
+                    "Q",
+                    "R",
+                    "S"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "e"
+            ],
+            [
+                "P"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5839edaa6754d6fec10000a2",
+    "difficulty": "introductory",
+    "starter_code": "def find_missing_letter(chars):\n\t",
+    "test_cases": {
+        "fn_name": "find_missing_letter",
+        "inputs": [
+            [
+                [
+                    "b",
+                    "d"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "c"
+            ]
+        ]
+    }
+}

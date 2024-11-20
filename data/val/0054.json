@@ -1,0 +1,143 @@
+{
+    "problem_id": 2972,
+    "question": "Your task is to write function which takes string and list of delimiters as an input and returns list of strings/characters after splitting given string.\n\nExample:\n```python\nmultiple_split('Hi, how are you?', [' ']) => ['Hi,', 'how', 'are', 'you?']\nmultiple_split('1+2-3', ['+', '-']) => ['1', '2', '3']\n```\n\nList of delimiters is optional and can be empty, so take that into account.\n\nImportant note: Result cannot contain empty string.",
+    "input_output": {
+        "fn_name": "multiple_split",
+        "inputs": [
+            [
+                "Hi everybody!",
+                [
+                    " ",
+                    "!"
+                ]
+            ],
+            [
+                "(1+2)*6-3^9",
+                [
+                    "+",
+                    "-",
+                    "(",
+                    ")",
+                    "^",
+                    "*"
+                ]
+            ],
+            [
+                "Solve_this|kata-very\\quickly!",
+                [
+                    "!",
+                    "|",
+                    "\\",
+                    "_",
+                    "-"
+                ]
+            ],
+            [
+                "",
+                []
+            ],
+            [
+                ""
+            ],
+            [
+                "some strange string"
+            ],
+            [
+                "1_2_3_huhuh_hahaha",
+                [
+                    "_"
+                ]
+            ],
+            [
+                "((1+2))*(6-3)^9",
+                [
+                    "+",
+                    "-",
+                    "(",
+                    ")",
+                    "^",
+                    "*"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    "Hi",
+                    "everybody"
+                ]
+            ],
+            [
+                [
+                    "1",
+                    "2",
+                    "6",
+                    "3",
+                    "9"
+                ]
+            ],
+            [
+                [
+                    "Solve",
+                    "this",
+                    "kata",
+                    "very",
+                    "quickly"
+                ]
+            ],
+            [
+                []
+            ],
+            [
+                []
+            ],
+            [
+                [
+                    "some strange string"
+                ]
+            ],
+            [
+                [
+                    "1",
+                    "2",
+                    "3",
+                    "huhuh",
+                    "hahaha"
+                ]
+            ],
+            [
+                [
+                    "1",
+                    "2",
+                    "6",
+                    "3",
+                    "9"
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/575690ee34a34efb37001796",
+    "difficulty": "introductory",
+    "starter_code": "def multiple_split(string, delimiters=[]):\n\t",
+    "test_cases": {
+        "fn_name": "multiple_split",
+        "inputs": [
+            [
+                "(((1+2)-(3)))",
+                [
+                    "(",
+                    ")"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    "1+2",
+                    "-",
+                    "3"
+                ]
+            ]
+        ]
+    }
+}

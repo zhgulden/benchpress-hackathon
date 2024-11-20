@@ -1,0 +1,79 @@
+{
+    "problem_id": 3208,
+    "question": "There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!\n\n### input\n```if-not:c\n* customers: an array of positive integers representing the queue. Each integer represents a customer, and its value is the amount of time they require to check out.\n* n: a positive integer, the number of checkout tills.\n```\n```if:c\n* customers: a pointer to an array of positive integers representing the queue. Each integer represents a customer, and its value is the amount of time they require to check out.\n* customers_length: the length of the array that `customers` points to.\n* n: a positive integer, the number of checkout tills.\n```\n\n### output\nThe function should return an integer, the total time required.\n\n-------------------------------------------\n\n## Important\n**Please look at the examples and clarifications below, to ensure you understand the task correctly :)**\n\n-------\n\n### Examples\n\n```python\nqueue_time([5,3,4], 1)\n# should return 12\n# because when n=1, the total time is just the sum of the times\n\nqueue_time([10,2,3,3], 2)\n# should return 10\n# because here n=2 and the 2nd, 3rd, and 4th people in the \n# queue finish before the 1st person has finished.\n\nqueue_time([2,3,10], 2)\n# should return 12\n```\n\n### Clarifications\n\n * There is only ONE queue serving many tills, and\n * The order of the queue NEVER changes, and\n * The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.\n\nN.B. You should assume that all the test input will be valid, as specified above.\n\nP.S. The situation in this kata can be likened to the more-computer-science-related idea of a thread pool, with relation to running multiple processes at the same time: https://en.wikipedia.org/wiki/Thread_pool",
+    "input_output": {
+        "fn_name": "queue_time",
+        "inputs": [
+            [
+                [],
+                1
+            ],
+            [
+                [
+                    5
+                ],
+                1
+            ],
+            [
+                [
+                    2
+                ],
+                5
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                1
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                100
+            ],
+            [
+                [
+                    2,
+                    2,
+                    3,
+                    3,
+                    4,
+                    4
+                ],
+                2
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                5
+            ],
+            [
+                2
+            ],
+            [
+                15
+            ],
+            [
+                5
+            ],
+            [
+                9
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57b06f90e298a7b53d000a86",
+    "difficulty": "introductory",
+    "starter_code": "def queue_time(customers, n):\n\t"
+}

@@ -1,0 +1,38 @@
+{
+    "problem_id": 3812,
+    "question": "Make your strings more nerdy: Replace all 'a'/'A' with 4, 'e'/'E' with 3 and 'l' with 1\ne.g. \"Fundamentals\" --> \"Fund4m3nt41s\"\n\n\n```if:csharp\nDocumentation:\nKata.Nerdify Method (String)\n\nNerdifies a string. Returns a copy of the original string with 'a'/'A' characters replaced with '4', 'e'/'E' characters replaced with '3', and 'l' characters replaced with '1'.\n\nSyntax\n\n\npublic\nstatic\nstring Nerdify(\nstring str\n  \u00a0\u00a0)\n  \n\n\n\nParameters\n\nstr\n\nType: System.String\nThe string to be nerdified.\n\nReturn Value\n\nType: System.String\n  The nerdified string.\n\n\nExceptions\n\n\n\nException\nCondition\n\nArgumentNullException\nstr is null.\n\n\n\n```",
+    "input_output": {
+        "fn_name": "nerdify",
+        "inputs": [
+            [
+                "Fund4m3nt41s"
+            ],
+            [
+                "Seven"
+            ],
+            [
+                "Los Angeles"
+            ],
+            [
+                "Seoijselawuue"
+            ]
+        ],
+        "outputs": [
+            [
+                "Fund4m3nt41s"
+            ],
+            [
+                "S3v3n"
+            ],
+            [
+                "Los 4ng313s"
+            ],
+            [
+                "S3oijs314wuu3"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59e9f404fc3c49ab24000112",
+    "difficulty": "introductory",
+    "starter_code": "def nerdify(txt):\n\t"
+}

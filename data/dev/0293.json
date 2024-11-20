@@ -1,0 +1,63 @@
+{
+    "problem_id": 4407,
+    "question": "Write a function that accepts two parameters (a and b) and says whether a is smaller than, bigger than, or equal to b.\n\nHere is an example code:\nvar noIfsNoButs = function (a,b) {\n  if(a > b) return a + \" is greater than \" + b\n  else if(a < b) return a + \" is smaller than \" + b\n  else if(a == b) return a + \" is equal to \" + b\n}\n\n\nThere's only one problem...\n\nYou can't use if statements, and you can't use shorthands like (a < b)?true:false;\n\nin fact the word \"if\" and the character \"?\" are not allowed in the code. \n\n\nInputs are guarenteed to be numbers\n\nYou are always welcome to check out some of my other katas:\n\nVery Easy (Kyu 8)\nAdd Numbers\nEasy (Kyu 7-6)\nConvert Color image to greyscale\nArray Transformations\nBasic Compression\nFind Primes in Range\nNo Ifs No Buts\nMedium (Kyu 5-4)\nIdentify Frames In An Image\nPhotoshop Like - Magic Wand\nScientific Notation\nVending Machine - FSA\nFind Matching Parenthesis\nHard (Kyu 3-2)\nAscii Art Generator",
+    "input_output": {
+        "fn_name": "no_ifs_no_buts",
+        "inputs": [
+            [
+                45,
+                51
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                -3,
+                2
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                100,
+                100
+            ],
+            [
+                100,
+                80
+            ],
+            [
+                20,
+                19
+            ]
+        ],
+        "outputs": [
+            [
+                "45 is smaller than 51"
+            ],
+            [
+                "1 is smaller than 2"
+            ],
+            [
+                "-3 is smaller than 2"
+            ],
+            [
+                "1 is equal to 1"
+            ],
+            [
+                "100 is equal to 100"
+            ],
+            [
+                "100 is greater than 80"
+            ],
+            [
+                "20 is greater than 19"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/592915cc1fad49252f000006",
+    "difficulty": "introductory",
+    "starter_code": "def no_ifs_no_buts(a, b):\n\t"
+}

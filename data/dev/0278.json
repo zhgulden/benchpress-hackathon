@@ -1,0 +1,80 @@
+{
+    "problem_id": 4458,
+    "question": "A new task for you!\n\nYou have to create a method, that corrects a given time string.\nThere was a problem in addition, so many of the time strings are broken.\nTime-Format is european. So from \"00:00:00\" to \"23:59:59\".\n\n\nSome examples:\n\n\"09:10:01\" -> \"09:10:01\"\n\"11:70:10\" -> \"12:10:10\"\n\"19:99:99\" -> \"20:40:39\"\n\"24:01:01\" -> \"00:01:01\"\n\nIf the input-string is null or empty return exactly this value! (empty string for C++)\nIf the time-string-format is invalid, return null. (empty string for C++)\n\nHave fun coding it and please don't forget to vote and rank this kata! :-) \n\nI have created other katas. Have a look if you like coding and challenges.",
+    "input_output": {
+        "fn_name": "time_correct",
+        "inputs": [
+            [
+                null
+            ],
+            [
+                ""
+            ],
+            [
+                "001122"
+            ],
+            [
+                "00;11;22"
+            ],
+            [
+                "0a:1c:22"
+            ],
+            [
+                "09:10:01"
+            ],
+            [
+                "11:70:10"
+            ],
+            [
+                "19:99:99"
+            ],
+            [
+                "24:01:01"
+            ],
+            [
+                "52:01:01"
+            ],
+            [
+                "14:59:94"
+            ]
+        ],
+        "outputs": [
+            [
+                null
+            ],
+            [
+                ""
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                "09:10:01"
+            ],
+            [
+                "12:10:10"
+            ],
+            [
+                "20:40:39"
+            ],
+            [
+                "00:01:01"
+            ],
+            [
+                "04:01:01"
+            ],
+            [
+                "15:00:34"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57873ab5e55533a2890000c7",
+    "difficulty": "introductory",
+    "starter_code": "def time_correct(t):\n\t"
+}

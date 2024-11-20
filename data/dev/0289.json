@@ -1,0 +1,56 @@
+{
+    "problem_id": 3312,
+    "question": "An anagram is a word, a phrase, or a sentence formed from another by rearranging its letters. An example of this is \"angel\", which is an anagram of \"glean\".\n\nWrite a function that receives an array of words, and returns the total number of distinct pairs of anagramic words inside it.\n\nSome examples:\n\n- There are 2 anagrams in the array `[\"dell\", \"ledl\", \"abc\", \"cba\"]`\n- There are 7 anagrams in the array `[\"dell\", \"ledl\", \"abc\", \"cba\", \"bca\", \"bac\"]`",
+    "input_output": {
+        "fn_name": "anagram_counter",
+        "inputs": [
+            [
+                []
+            ],
+            [
+                [
+                    "dell",
+                    "ledl",
+                    "abc",
+                    "cba"
+                ]
+            ],
+            [
+                [
+                    "dell",
+                    "ledl",
+                    "lled",
+                    "cba"
+                ]
+            ],
+            [
+                [
+                    "dell",
+                    "ledl",
+                    "abc",
+                    "cba",
+                    "bca",
+                    "bac",
+                    "cab"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                11
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/587e18b97a25e865530000d8",
+    "difficulty": "introductory",
+    "starter_code": "def anagram_counter(words):\n\t"
+}

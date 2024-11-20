@@ -1,0 +1,61 @@
+{
+    "problem_id": 3272,
+    "question": "## Find Mean\n\nFind the mean (average) of a list of numbers in an array.\n\n## Information\n\nTo find the mean (average) of a set of numbers add all of the numbers together and divide by the number of values in the list.\n\nFor an example list of `1, 3, 5, 7`\n\n1. Add all of the numbers\n\n```\n1+3+5+7 = 16\n```\n\n2. Divide by the number of values in the list. In this example there are 4 numbers in the list.\n\n```\n16/4 = 4\n```\n\n3. The mean (or average) of this list is 4",
+    "input_output": {
+        "fn_name": "find_average",
+        "inputs": [
+            [
+                [
+                    1
+                ]
+            ],
+            [
+                [
+                    1,
+                    3,
+                    5,
+                    7
+                ]
+            ],
+            [
+                [
+                    -1,
+                    3,
+                    5,
+                    -7
+                ]
+            ],
+            [
+                [
+                    5,
+                    7,
+                    3,
+                    7
+                ]
+            ],
+            [
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                1
+            ],
+            [
+                4
+            ],
+            [
+                0
+            ],
+            [
+                5.5
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55d277882e139d0b6000005d",
+    "difficulty": "introductory",
+    "starter_code": "def find_average(nums):\n\t"
+}

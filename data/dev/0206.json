@@ -1,0 +1,66 @@
+{
+    "problem_id": 2717,
+    "question": "Given an array of integers, return the smallest common factors of all integers in the array.\n\nWhen i say **Smallest Common Factor** i mean the smallest number above 1 that can divide all numbers in the array without a remainder.\n\nIf there are no common factors above 1, return 1 (technically 1 is always a common factor).",
+    "input_output": {
+        "fn_name": "scf",
+        "inputs": [
+            [
+                [
+                    200,
+                    30,
+                    18,
+                    8,
+                    64,
+                    34
+                ]
+            ],
+            [
+                [
+                    21,
+                    45,
+                    51,
+                    27,
+                    33
+                ]
+            ],
+            [
+                [
+                    133,
+                    147,
+                    427,
+                    266
+                ]
+            ],
+            [
+                [
+                    3,
+                    5,
+                    7
+                ]
+            ],
+            [
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                7
+            ],
+            [
+                1
+            ],
+            [
+                1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5933af2db328fbc731000010",
+    "difficulty": "introductory",
+    "starter_code": "def scf(lst):\n\t"
+}

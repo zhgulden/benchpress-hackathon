@@ -1,0 +1,80 @@
+{
+    "problem_id": 3543,
+    "question": "Your job is to write a function which increments a string, to create a new string.\n\n- If the string already ends with a number, the number should be incremented by 1.\n- If the string does not end with a number. the number 1 should be appended to the new string.\n\nExamples:\n\n`foo -> foo1`\n\n`foobar23 -> foobar24`\n\n`foo0042 -> foo0043`\n\n`foo9 -> foo10`\n\n`foo099 -> foo100`\n\n*Attention: If the number has leading zeros the amount of digits should be considered.*",
+    "input_output": {
+        "fn_name": "increment_string",
+        "inputs": [
+            [
+                "foo"
+            ],
+            [
+                "foobar001"
+            ],
+            [
+                "foobar1"
+            ],
+            [
+                "foobar00"
+            ],
+            [
+                "foobar99"
+            ],
+            [
+                ""
+            ],
+            [
+                "foobar000"
+            ],
+            [
+                "foobar999"
+            ],
+            [
+                "foobar00999"
+            ],
+            [
+                "1"
+            ],
+            [
+                "009"
+            ]
+        ],
+        "outputs": [
+            [
+                "foo1"
+            ],
+            [
+                "foobar002"
+            ],
+            [
+                "foobar2"
+            ],
+            [
+                "foobar01"
+            ],
+            [
+                "foobar100"
+            ],
+            [
+                "1"
+            ],
+            [
+                "foobar001"
+            ],
+            [
+                "foobar1000"
+            ],
+            [
+                "foobar01000"
+            ],
+            [
+                "2"
+            ],
+            [
+                "010"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54a91a4883a7de5d7800009c",
+    "difficulty": "introductory",
+    "starter_code": "def increment_string(strng):\n\t"
+}

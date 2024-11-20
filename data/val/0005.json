@@ -1,0 +1,115 @@
+{
+    "problem_id": 3094,
+    "question": "Sum all the numbers of the array (in F# and Haskell you get a list) except the highest and the lowest element (the value, not the index!).\n(The highest/lowest element is respectively only one element at each edge, even if there are more than one with the same value!)\nExample:\n```\n{ 6, 2, 1, 8, 10 } => 16\n{ 1, 1, 11, 2, 3 } => 6\n```\n\n\nIf array is empty, null or None, or if only 1 Element exists, return 0.\nNote:In C++ instead null an empty vector is used. In C there is no null. ;-)\n\n\n\n\nHave fun coding it and please don't forget to vote and rank this kata! :-) \n\nI have created other katas. Have a look if you like coding and challenges.",
+    "input_output": {
+        "fn_name": "sum_array",
+        "inputs": [
+            [
+                null
+            ],
+            [
+                []
+            ],
+            [
+                [
+                    3
+                ]
+            ],
+            [
+                [
+                    -3
+                ]
+            ],
+            [
+                [
+                    3,
+                    5
+                ]
+            ],
+            [
+                [
+                    -3,
+                    -5
+                ]
+            ],
+            [
+                [
+                    6,
+                    2,
+                    1,
+                    8,
+                    10
+                ]
+            ],
+            [
+                [
+                    6,
+                    0,
+                    1,
+                    10,
+                    10
+                ]
+            ],
+            [
+                [
+                    -6,
+                    -20,
+                    -1,
+                    -10,
+                    -12
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                16
+            ],
+            [
+                17
+            ],
+            [
+                -28
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/576b93db1129fcf2200001e6",
+    "difficulty": "introductory",
+    "starter_code": "def sum_array(arr):\n\t",
+    "test_cases": {
+        "fn_name": "sum_array",
+        "inputs": [
+            [
+                [
+                    -6,
+                    20,
+                    -1,
+                    10,
+                    -12
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                3
+            ]
+        ]
+    }
+}

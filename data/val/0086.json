@@ -1,0 +1,70 @@
+{
+    "problem_id": 3457,
+    "question": "Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.\n\nThis function should take two arguments:\nexam - grade for exam (from 0 to 100);\nprojects - number of completed projects (from 0 and above);\n\nThis function should return a number (final grade).\nThere are four types of final grades:\n- 100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.\n- 90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.\n- 75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.\n- 0, in other cases\n\nExamples:\n\n~~~if-not:nasm\n```python\nfinal_grade(100, 12)  # 100\nfinal_grade(99, 0)    # 100\nfinal_grade(10, 15)   # 100\nfinal_grade(85, 5)    # 90\nfinal_grade(55, 3)    # 75\nfinal_grade(55, 0)    # 0\nfinal_grade(20, 2)    # 0\n```\n~~~\n\n*Use Comparison and Logical Operators.",
+    "input_output": {
+        "fn_name": "final_grade",
+        "inputs": [
+            [
+                100,
+                12
+            ],
+            [
+                99,
+                0
+            ],
+            [
+                10,
+                15
+            ],
+            [
+                85,
+                5
+            ],
+            [
+                55,
+                3
+            ],
+            [
+                55,
+                0
+            ]
+        ],
+        "outputs": [
+            [
+                100
+            ],
+            [
+                100
+            ],
+            [
+                100
+            ],
+            [
+                90
+            ],
+            [
+                75
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5ad0d8356165e63c140014d4",
+    "difficulty": "introductory",
+    "starter_code": "def final_grade(exam, projects):\n\t",
+    "test_cases": {
+        "fn_name": "final_grade",
+        "inputs": [
+            [
+                20,
+                2
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ]
+        ]
+    }
+}

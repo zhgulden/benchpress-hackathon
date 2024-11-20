@@ -1,0 +1,81 @@
+{
+    "problem_id": 2827,
+    "question": "When provided with a number between 0-9, return it in words.\n\nInput :: 1\n\nOutput :: \"One\".\n\nIf your language supports it, try using a switch statement.",
+    "input_output": {
+        "fn_name": "switch_it_up",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                4
+            ],
+            [
+                5
+            ],
+            [
+                6
+            ],
+            [
+                7
+            ],
+            [
+                8
+            ]
+        ],
+        "outputs": [
+            [
+                "Zero"
+            ],
+            [
+                "One"
+            ],
+            [
+                "Two"
+            ],
+            [
+                "Three"
+            ],
+            [
+                "Four"
+            ],
+            [
+                "Five"
+            ],
+            [
+                "Six"
+            ],
+            [
+                "Seven"
+            ],
+            [
+                "Eight"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5808dcb8f0ed42ae34000031",
+    "difficulty": "introductory",
+    "starter_code": "def switch_it_up(number):\n\t",
+    "test_cases": {
+        "fn_name": "switch_it_up",
+        "inputs": [
+            [
+                9
+            ]
+        ],
+        "outputs": [
+            [
+                "Nine"
+            ]
+        ]
+    }
+}

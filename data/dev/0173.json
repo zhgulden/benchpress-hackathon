@@ -1,0 +1,44 @@
+{
+    "problem_id": 3702,
+    "question": "To celebrate the start of the Rio Olympics (and the return of 'the Last Leg' on C4 tonight) this is an Olympic inspired kata.\n\nGiven a string of random letters, you need to examine each. Some letters naturally have 'rings' in them. 'O' is an obvious example, but 'b', 'p', 'e', 'A', etc are all just as applicable. 'B' even has two!! Please note for this kata you can count lower case 'g' as only one ring.\n\nYour job is to count the 'rings' in each letter and divide the total number by 2. Round the answer down. Once you have your final score:\n\nif score is 1 or less,  return 'Not even a medal!';\nif score is 2, return 'Bronze!';\nif score is 3, return 'Silver!';\nif score is more than 3, return 'Gold!';\n\nDots over i's and any other letters don't count as rings.",
+    "input_output": {
+        "fn_name": "olympic_ring",
+        "inputs": [
+            [
+                "wHjMudLwtoPGocnJ"
+            ],
+            [
+                "eCEHWEPwwnvzMicyaRjk"
+            ],
+            [
+                "JKniLfLW"
+            ],
+            [
+                "EWlZlDFsEIBufsalqof"
+            ],
+            [
+                "IMBAWejlGRTDWetPS"
+            ]
+        ],
+        "outputs": [
+            [
+                "Bronze!"
+            ],
+            [
+                "Bronze!"
+            ],
+            [
+                "Not even a medal!"
+            ],
+            [
+                "Silver!"
+            ],
+            [
+                "Gold!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57d06663eca260fe630001cc",
+    "difficulty": "introductory",
+    "starter_code": "def olympic_ring(string):\n\t"
+}

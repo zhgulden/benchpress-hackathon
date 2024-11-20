@@ -1,0 +1,84 @@
+{
+    "problem_id": 2715,
+    "question": "# Introduction\n\nYou are the developer working on a website which features a large counter on its homepage, proudly displaying the number of happy customers who have downloaded your companies software.\n\nYou have been tasked with adding an effect to this counter to make it more interesting.  \n\nInstead of just displaying the count value immediatley when the page loads, we want to create the effect of each digit cycling through its preceding numbers before stopping on the actual value.\n\n\n\n# Task\n\nAs a step towards achieving this; you have decided to create a function that will produce a multi-dimensional array out of the hit count value.  Each inner dimension of the array represents an individual digit in the hit count, and will include all numbers that come before it, going back to 0.\n\n## Rules\n* The function will take one argument which will be a four character `string` representing hit count\n* The function must return a multi-dimensional array containing four inner arrays\n* The final value in each inner array must be the actual value to be displayed\n* Values returned in the array must be of the type `number`\n\n**Examples**",
+    "input_output": {
+        "fn_name": "counter_effect",
+        "inputs": [
+            [
+                "1250"
+            ],
+            [
+                "0050"
+            ],
+            [
+                "0000"
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    [
+                        0,
+                        1
+                    ],
+                    [
+                        0,
+                        1,
+                        2
+                    ],
+                    [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    [
+                        0
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    [
+                        0
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ]
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57b6f850a6fdc76523001162",
+    "difficulty": "introductory",
+    "starter_code": "def counter_effect(hit_count):\n\t"
+}

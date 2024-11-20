@@ -1,0 +1,192 @@
+{
+    "problem_id": 3481,
+    "question": "Write a method that takes a string as an argument and groups the number of time each character appears in the string as a hash sorted by the highest number of occurrences.\n\nThe characters should be sorted alphabetically e.g:\n\n```python\nget_char_count(\"cba\") == {1: [\"a\", \"b\", \"c\"]}\n```\n\nYou should ignore spaces, special characters and count uppercase letters as lowercase ones.\n\nFor example: \n```python\nget_char_count(\"Mississippi\")           ==  {4: [\"i\", \"s\"], 2: [\"p\"], 1: [\"m\"]}\nget_char_count(\"Hello. Hello? HELLO!\")  ==  {6: [\"l\"], 3: [\"e\", \"h\", \"o\"]}\nget_char_count(\"aaa...bb...c!\")         ==  {3: [\"a\"], 2: [\"b\"], 1: [\"c\"]}\nget_char_count(\"abc123\")                ==  {1: [\"1\", \"2\", \"3\", \"a\", \"b\", \"c\"]}\nget_char_count(\"aaabbbccc\")             ==  {3: [\"a\", \"b\", \"c\"]}\n```",
+    "input_output": {
+        "fn_name": "get_char_count",
+        "inputs": [
+            [
+                "Get me the bacon!"
+            ],
+            [
+                "Codewars is bacon"
+            ],
+            [
+                "France is also bacon"
+            ],
+            [
+                "AaAAaAAabB!B!B3b23jdc"
+            ],
+            [
+                ""
+            ],
+            [
+                "!!!@@@"
+            ],
+            [
+                "Mississippi"
+            ],
+            [
+                "Hello. Hello? HELLO!"
+            ],
+            [
+                "aaa...bb...c!"
+            ],
+            [
+                "abc123"
+            ],
+            [
+                "aaabbbccc"
+            ]
+        ],
+        "outputs": [
+            [
+                {
+                    "3": [
+                        "e"
+                    ],
+                    "2": [
+                        "t"
+                    ],
+                    "1": [
+                        "a",
+                        "b",
+                        "c",
+                        "g",
+                        "h",
+                        "m",
+                        "n",
+                        "o"
+                    ]
+                }
+            ],
+            [
+                {
+                    "2": [
+                        "a",
+                        "c",
+                        "o",
+                        "s"
+                    ],
+                    "1": [
+                        "b",
+                        "d",
+                        "e",
+                        "i",
+                        "n",
+                        "r",
+                        "w"
+                    ]
+                }
+            ],
+            [
+                {
+                    "3": [
+                        "a"
+                    ],
+                    "2": [
+                        "c",
+                        "n",
+                        "o",
+                        "s"
+                    ],
+                    "1": [
+                        "b",
+                        "e",
+                        "f",
+                        "i",
+                        "l",
+                        "r"
+                    ]
+                }
+            ],
+            [
+                {
+                    "8": [
+                        "a"
+                    ],
+                    "5": [
+                        "b"
+                    ],
+                    "2": [
+                        "3"
+                    ],
+                    "1": [
+                        "2",
+                        "c",
+                        "d",
+                        "j"
+                    ]
+                }
+            ],
+            [
+                {}
+            ],
+            [
+                {}
+            ],
+            [
+                {
+                    "4": [
+                        "i",
+                        "s"
+                    ],
+                    "2": [
+                        "p"
+                    ],
+                    "1": [
+                        "m"
+                    ]
+                }
+            ],
+            [
+                {
+                    "6": [
+                        "l"
+                    ],
+                    "3": [
+                        "e",
+                        "h",
+                        "o"
+                    ]
+                }
+            ],
+            [
+                {
+                    "3": [
+                        "a"
+                    ],
+                    "2": [
+                        "b"
+                    ],
+                    "1": [
+                        "c"
+                    ]
+                }
+            ],
+            [
+                {
+                    "1": [
+                        "1",
+                        "2",
+                        "3",
+                        "a",
+                        "b",
+                        "c"
+                    ]
+                }
+            ],
+            [
+                {
+                    "3": [
+                        "a",
+                        "b",
+                        "c"
+                    ]
+                }
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/543e8390386034b63b001f31",
+    "difficulty": "introductory",
+    "starter_code": "def get_char_count(s):\n\t"
+}

@@ -1,0 +1,119 @@
+{
+    "problem_id": 3768,
+    "question": "Naming multiple files can be a pain sometimes.\n\n#### Task:\n\nYour job here is to create a function that will take three parameters, `fmt`, `nbr` and `start`, and create an array of `nbr` elements formatted according to `frm` with the starting index `start`. `fmt` will have `` inserted at various locations; this is where the file index number goes in each file. \n\n#### Description of edge cases:\n\n1. If `nbr` is less than or equal to 0, or not whole, return an empty array.\n2. If `fmt` does not contain `''`, just return an array with `nbr` elements that are all equal to `fmt`. \n3. If `start` is not an integer, return an empty array.\n\n#### What each parameter looks like:\n\n```python\ntype(frm) #=> str\n  : \"text_to_stay_constant_from_file_to_file \"\ntype(nbr) #=> int\n  : number_of_files\ntype(start) #=> int\n  : index_no_of_first_file\ntype(name_file(frm, nbr, start)) #=> list\n```\n\n#### Some examples:\n\n```python\nname_file(\"IMG \", 4, 1)\n  #=> [\"IMG 1\", \"IMG 2\", \"IMG 3\", \"IMG 4\"])\nname_file(\"image #.jpg\", 3, 7)\n  #=> [\"image #7.jpg\", \"image #8.jpg\", \"image #9.jpg\"]\nname_file(\"# #\", 3, -2)\n  #=> [\"#-2 #-2\", \"#-1 #-1\", \"#0 #0\"]\n```\n\nAlso check out my other creations \u2014 [Elections: Weighted Average](https://www.codewars.com/kata/elections-weighted-average), [Identify Case](https://www.codewars.com/kata/identify-case), [Split Without Loss](https://www.codewars.com/kata/split-without-loss), [Adding Fractions](https://www.codewars.com/kata/adding-fractions),\n[Random Integers](https://www.codewars.com/kata/random-integers), [Implement String#transpose](https://www.codewars.com/kata/implement-string-number-transpose), [Implement Array#transpose!](https://www.codewars.com/kata/implement-array-number-transpose), [Arrays and Procs #1](https://www.codewars.com/kata/arrays-and-procs-number-1), and [Arrays and Procs #2](https://www.codewars.com/kata/arrays-and-procs-number-2).\n\nIf you notice any issues or have any suggestions/comments whatsoever, please don't hesitate to mark an issue or just comment. Thanks!",
+    "input_output": {
+        "fn_name": "name_file",
+        "inputs": [
+            [
+                "IMG <index_no>",
+                4,
+                1
+            ],
+            [
+                "image #<index_no>.jpg",
+                3,
+                7
+            ],
+            [
+                "#<index_no> #<index_no>",
+                3,
+                -2
+            ],
+            [
+                "<file> number <index_no>",
+                5,
+                0
+            ],
+            [
+                "<file_no> number <index_no>",
+                2,
+                -1
+            ],
+            [
+                "file",
+                2,
+                3
+            ],
+            [
+                "<file_no> number <index_no>",
+                -1,
+                0
+            ],
+            [
+                "file <index_no>",
+                2,
+                0.1
+            ],
+            [
+                "file <index_no>",
+                0.2,
+                0
+            ],
+            [
+                "file <index_no>",
+                0,
+                0
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    "IMG 1",
+                    "IMG 2",
+                    "IMG 3",
+                    "IMG 4"
+                ]
+            ],
+            [
+                [
+                    "image #7.jpg",
+                    "image #8.jpg",
+                    "image #9.jpg"
+                ]
+            ],
+            [
+                [
+                    "#-2 #-2",
+                    "#-1 #-1",
+                    "#0 #0"
+                ]
+            ],
+            [
+                [
+                    "<file> number 0",
+                    "<file> number 1",
+                    "<file> number 2",
+                    "<file> number 3",
+                    "<file> number 4"
+                ]
+            ],
+            [
+                [
+                    "<file_no> number -1",
+                    "<file_no> number 0"
+                ]
+            ],
+            [
+                [
+                    "file",
+                    "file"
+                ]
+            ],
+            [
+                []
+            ],
+            [
+                []
+            ],
+            [
+                []
+            ],
+            [
+                []
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5829994cd04efd4373000468",
+    "difficulty": "introductory",
+    "starter_code": "def name_file(fmt, nbr, start):\n\t"
+}

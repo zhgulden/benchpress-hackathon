@@ -1,0 +1,32 @@
+{
+    "problem_id": 4053,
+    "question": "I'm sure you're familiar with factorials \u2013 that is, the product of an integer and all the integers below it. \n\nFor example, `5! = 120`, as `5 * 4 * 3 * 2 * 1 = 120`\n\nYour challenge is to create a function that takes any number and returns the number that it is a factorial of. So, if your function receives `120`, it should return `\"5!\"` (as a string).\n\nOf course, not every number is a factorial of another. In this case, your function would return `\"None\"` (as a string).\n\n### Examples\n\n* `120` will return `\"5!\"`\n* `24` will return `\"4!\"`\n* `150` will return `\"None\"`",
+    "input_output": {
+        "fn_name": "reverse_factorial",
+        "inputs": [
+            [
+                120
+            ],
+            [
+                3628800
+            ],
+            [
+                150
+            ]
+        ],
+        "outputs": [
+            [
+                "5!"
+            ],
+            [
+                "10!"
+            ],
+            [
+                "None"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58067088c27998b119000451",
+    "difficulty": "introductory",
+    "starter_code": "def reverse_factorial(num):\n\t"
+}

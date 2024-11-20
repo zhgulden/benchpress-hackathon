@@ -1,0 +1,62 @@
+{
+    "problem_id": 3996,
+    "question": "Write a method `alternate_sq_sum()` (JS: `alternateSqSum` ) that takes an array of integers as input and finds the sum of squares of the elements at even positions (*i.e.,* 2nd, 4th, *etc.*) plus the sum of the rest of the elements at odd position.\n\nNOTE:\nThe values at even *position* need to be squared. For a language with zero-based indices, this will occur at oddly-indexed locations. For instance, in Python, the values at indices 1, 3, 5, *etc.* should be squared because these are the second, fourth, and sixth positions in the list.\nFor Example:\n\n```python\nalternate_sq_sum([11, 12, 13, 14, 15]) #should return 379\n```\n\nExplanation:\n\nElements at indices 0, 2, 4 are 11, 13, 15 and they are at odd positions as 11 is at position #1, 13 is at position #3 and 15 at #5.\n\nElements at indices 1, 3 are 12 and 14 and they are at even position.\nSo we need to add 11, 13, 15 as they are and square of 12 and 14\n\n--> 11 + 13 + 15 + 12^2 + 14^2\n  = 11 + 13 + 15 + 144 + 196\n  = 379\n\nFor empty arrays, result should be 0 (zero) (except for Haskell).",
+    "input_output": {
+        "fn_name": "alternate_sq_sum",
+        "inputs": [
+            [
+                []
+            ],
+            [
+                [
+                    -1,
+                    0,
+                    -3,
+                    0,
+                    -5,
+                    3
+                ]
+            ],
+            [
+                [
+                    -1,
+                    2,
+                    -3,
+                    4,
+                    -5
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                11
+            ],
+            [
+                245
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/559d7951ce5e0da654000073",
+    "difficulty": "introductory",
+    "starter_code": "def alternate_sq_sum(arr):\n\t"
+}

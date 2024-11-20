@@ -1,0 +1,125 @@
+{
+    "problem_id": 3649,
+    "question": "You are a biologist working on the amino acid  composition of proteins. Every protein consists of a long chain of 20 different amino acids with different properties. \nCurrently, you are collecting data on the percentage, various amino acids make up a protein you are working on. As manually counting the occurences of amino acids takes too long (especially when counting more than one amino acid), you decide to write a program for this task:\n\nWrite a function that takes two arguments,\n 1. A (snippet of a) protein sequence\n 2. A list of amino acid residue codes \n\nand returns the rounded percentage of the protein that the given amino acids make up. \nIf no amino acid list is given, return the percentage of hydrophobic amino acid residues [\"A\", \"I\", \"L\", \"M\", \"F\", \"W\", \"Y\", \"V\"].",
+    "input_output": {
+        "fn_name": "aa_percentage",
+        "inputs": [
+            [
+                "MSRSLLLRFLLFLLLLPPLP",
+                [
+                    "M"
+                ]
+            ],
+            [
+                "MSRSLLLRFLLFLLLLPPLP",
+                [
+                    "M",
+                    "L"
+                ]
+            ],
+            [
+                "MSRSLLLRFLLFLLLLPPLP",
+                [
+                    "F",
+                    "S",
+                    "L"
+                ]
+            ],
+            [
+                "MSRSLLLRFLLFLLLLPPLP"
+            ],
+            [
+                "RLMADDFFGQTLMAAAAAAQERRR",
+                [
+                    "A"
+                ]
+            ],
+            [
+                "RLMADDFFGQTLMAAAAAAQERRR",
+                [
+                    "A",
+                    "R",
+                    "D"
+                ]
+            ],
+            [
+                "RLMADDFFGQTLMAAAAAAQERRR"
+            ],
+            [
+                "PLPPLPLLEELELRPFFMAAGGTPLAMMGG",
+                [
+                    "X"
+                ]
+            ],
+            [
+                "PLPPLPLLEELELRPFFMAAGGTPLAMMGG",
+                [
+                    "P",
+                    "L"
+                ]
+            ],
+            [
+                "PLPPLPLLEELELRPFFMAAGGTPLAMMGG",
+                [
+                    "P",
+                    "E",
+                    "L",
+                    "R",
+                    "F",
+                    "M",
+                    "A",
+                    "G",
+                    "T"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                5
+            ],
+            [
+                55
+            ],
+            [
+                70
+            ],
+            [
+                65
+            ],
+            [
+                29
+            ],
+            [
+                54
+            ],
+            [
+                54
+            ],
+            [
+                0
+            ],
+            [
+                43
+            ],
+            [
+                100
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59759761e30a19cfe1000024",
+    "difficulty": "introductory",
+    "starter_code": "def aa_percentage(seq, residues=[\"A\", \"I\", \"L\", \"M\", \"F\", \"W\", \"Y\", \"V\"]):\n\t",
+    "test_cases": {
+        "fn_name": "aa_percentage",
+        "inputs": [
+            [
+                "PLPPLPLLEELELRPFFMAAGGTPLAMMGG"
+            ]
+        ],
+        "outputs": [
+            [
+                50
+            ]
+        ]
+    }
+}

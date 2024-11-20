@@ -1,0 +1,196 @@
+{
+    "problem_id": 3842,
+    "question": "Your job is to write a function that takes a string and a maximum number of characters per line and then inserts line breaks as necessary so that no line in the resulting string is longer than the specified limit.\n\nIf possible, line breaks should not split words. However, if a single word is longer than the limit, it obviously has to be split. In this case, the line break should be placed after the first part of the word (see examples below).\n\nReally long words may need to be split multiple times.\n\n#Input\n\nA word consists of one or more letters.\n\nInput text will be the empty string or a string consisting of one or more words separated by single spaces. It will not contain any punctiation or other special characters.\n\nThe limit will always be an integer greater or equal to one.\n\n#Examples\n\n**Note:** Line breaks in the results have been replaced with two dashes to improve readability.\n\n1. (\"test\", 7) -> \"test\"\n2. (\"hello world\", 7) -> \"hello--world\"\n3. (\"a lot of words for a single line\", 10) -> \"a lot of--words for--a single--line\"\n4. (\"this is a test\", 4) -> \"this--is a--test\"\n5. (\"a longword\", 6) -> \"a long--word\"\n6. (\"areallylongword\", 6) -> \"areall--ylongw--ord\"\n\n**Note:** Sometimes spaces are hard to see in the test results window.",
+    "input_output": {
+        "fn_name": "word_wrap",
+        "inputs": [
+            [
+                "test",
+                7
+            ],
+            [
+                "hello world",
+                7
+            ],
+            [
+                "a lot of words for a single line",
+                10
+            ],
+            [
+                "this is a test",
+                4
+            ],
+            [
+                "a longword",
+                6
+            ],
+            [
+                "areallylongword",
+                6
+            ],
+            [
+                "aa",
+                3
+            ],
+            [
+                "aaa",
+                3
+            ],
+            [
+                "aaaa",
+                3
+            ],
+            [
+                "a a",
+                3
+            ],
+            [
+                "a aa",
+                3
+            ],
+            [
+                "a aaa",
+                3
+            ],
+            [
+                "a aaaa",
+                3
+            ],
+            [
+                "a aaaaa",
+                3
+            ],
+            [
+                "a a a",
+                3
+            ],
+            [
+                "a aa a",
+                3
+            ],
+            [
+                "a aaa a",
+                3
+            ],
+            [
+                "a aaaa a",
+                3
+            ],
+            [
+                "a aaaaa a",
+                3
+            ],
+            [
+                "a a aaa",
+                3
+            ],
+            [
+                "a aa aaa",
+                3
+            ],
+            [
+                "a aaa aaa",
+                3
+            ],
+            [
+                "a aaaa aaa",
+                3
+            ],
+            [
+                "a aaaaa aaa",
+                3
+            ],
+            [
+                "aaa aaaa a",
+                3
+            ],
+            [
+                "a b c dd eee ffff g hhhhh i",
+                3
+            ]
+        ],
+        "outputs": [
+            [
+                "test"
+            ],
+            [
+                "hello\nworld"
+            ],
+            [
+                "a lot of\nwords for\na single\nline"
+            ],
+            [
+                "this\nis a\ntest"
+            ],
+            [
+                "a long\nword"
+            ],
+            [
+                "areall\nylongw\nord"
+            ],
+            [
+                "aa"
+            ],
+            [
+                "aaa"
+            ],
+            [
+                "aaa\na"
+            ],
+            [
+                "a a"
+            ],
+            [
+                "a\naa"
+            ],
+            [
+                "a\naaa"
+            ],
+            [
+                "a a\naaa"
+            ],
+            [
+                "a a\naaa\na"
+            ],
+            [
+                "a a\na"
+            ],
+            [
+                "a\naa\na"
+            ],
+            [
+                "a\naaa\na"
+            ],
+            [
+                "a a\naaa\na"
+            ],
+            [
+                "a a\naaa\na a"
+            ],
+            [
+                "a a\naaa"
+            ],
+            [
+                "a\naa\naaa"
+            ],
+            [
+                "a\naaa\naaa"
+            ],
+            [
+                "a a\naaa\naaa"
+            ],
+            [
+                "a a\naaa\na\naaa"
+            ],
+            [
+                "aaa\naaa\na a"
+            ],
+            [
+                "a b\nc\ndd\neee\nfff\nf g\nhhh\nhh\ni"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55fd8b5e61d47237810000d9",
+    "difficulty": "introductory",
+    "starter_code": "def word_wrap(text, limit):\n\t"
+}

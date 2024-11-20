@@ -1,0 +1,129 @@
+{
+    "problem_id": 4157,
+    "question": "In English and programming, groups can be made using symbols such as `()` and `{}` that change meaning. However, these groups must be closed in the correct order to maintain correct syntax.\n\nYour job in this kata will be to make a program that checks a string for correct grouping. For instance, the following groups are done correctly:\n\n```\n({})\n[[]()]\n[{()}]\n```\n\nThe next are done incorrectly:\n```\n{(})\n([]\n[])\n```\n\nA correct string cannot close groups in the wrong order, open a group but fail to close it, or close a group before it is opened.\n\nYour function will take an input string that may contain any of the symbols `()`, `{}` or `[]` to create groups.\n\nIt should return `True` if the string is empty or otherwise grouped correctly, or `False` if it is grouped incorrectly.",
+    "input_output": {
+        "fn_name": "group_check",
+        "inputs": [
+            [
+                "({})"
+            ],
+            [
+                "[[]()]"
+            ],
+            [
+                "[{()}]"
+            ],
+            [
+                "()"
+            ],
+            [
+                "([])"
+            ],
+            [
+                "{}([])"
+            ],
+            [
+                "{[{}[]()[]{}{}{}{}{}{}()()()()()()()()]{{{[[[((()))]]]}}}}(())[[]]{{}}[][][][][][][]({[]})"
+            ],
+            [
+                ""
+            ],
+            [
+                "{(})"
+            ],
+            [
+                "[{}{}())"
+            ],
+            [
+                "{)[}"
+            ],
+            [
+                "[[[]])"
+            ],
+            [
+                "()[]{]"
+            ],
+            [
+                "{([]})"
+            ],
+            [
+                "([]"
+            ],
+            [
+                "[])"
+            ],
+            [
+                "([]))"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54b80308488cb6cd31000161",
+    "difficulty": "introductory",
+    "starter_code": "def group_check(s):\n\t",
+    "test_cases": {
+        "fn_name": "group_check",
+        "inputs": [
+            [
+                "{{{{{{{{{{{((((((([])))))))}}}}}}}}}}"
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ]
+        ]
+    }
+}

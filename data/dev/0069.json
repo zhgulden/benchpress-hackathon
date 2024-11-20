@@ -1,0 +1,62 @@
+{
+    "problem_id": 4148,
+    "question": "Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.  For example:\n\n```python\n  sum_digits(10)  # Returns 1\n  sum_digits(99)  # Returns 18\n  sum_digits(-32) # Returns 5\n```\n\nLet's assume that all numbers in the input will be integer values.",
+    "input_output": {
+        "fn_name": "sum_digits",
+        "inputs": [
+            [
+                10
+            ],
+            [
+                99
+            ],
+            [
+                -32
+            ],
+            [
+                1234567890
+            ],
+            [
+                0
+            ],
+            [
+                666
+            ],
+            [
+                100000002
+            ],
+            [
+                800000009
+            ]
+        ],
+        "outputs": [
+            [
+                1
+            ],
+            [
+                18
+            ],
+            [
+                5
+            ],
+            [
+                45
+            ],
+            [
+                0
+            ],
+            [
+                18
+            ],
+            [
+                3
+            ],
+            [
+                17
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/52f3149496de55aded000410",
+    "difficulty": "introductory",
+    "starter_code": "def sum_digits(number):\n\t"
+}

@@ -1,0 +1,86 @@
+{
+    "problem_id": 1626,
+    "question": "Consider the following array:\n\n```\n[1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789, 12345678910, 1234567891011...]\n```\n\nIf we join these blocks of numbers, we come up with an infinite sequence which starts with `112123123412345123456...`. The list is infinite.\n\nYou will be given an number (`n`) and your task will be to return the element at that index in the sequence, where `1 \u2264 n \u2264 10^18`. Assume the indexes start with `1`, not `0`.  For example:\n\n```\nsolve(1) = 1, because the first character in the sequence is 1. There is no index 0. \nsolve(2) = 1, because the second character is also 1.\nsolve(3) = 2, because the third character is 2.\n```\n\nMore examples in the test cases. Good luck!",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                100
+            ],
+            [
+                2100
+            ],
+            [
+                31000
+            ],
+            [
+                55
+            ],
+            [
+                123456
+            ],
+            [
+                123456789
+            ],
+            [
+                999999999999999999
+            ],
+            [
+                1000000000000000000
+            ],
+            [
+                999999999999999993
+            ]
+        ],
+        "outputs": [
+            [
+                1
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                2
+            ],
+            [
+                1
+            ],
+            [
+                6
+            ],
+            [
+                3
+            ],
+            [
+                4
+            ],
+            [
+                1
+            ],
+            [
+                7
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5e1ab1b9fe268c0033680e5f",
+    "difficulty": "interview",
+    "starter_code": "def solve(n):\n\t"
+}

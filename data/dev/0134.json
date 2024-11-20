@@ -1,0 +1,74 @@
+{
+    "problem_id": 4481,
+    "question": "Imagine there's a big cube consisting of n^3 small cubes. Calculate, how many small cubes are not visible from outside.\n\nFor example, if we have a cube which has 4 cubes in a row, then the function should return 8, because there are 8 cubes inside our cube (2 cubes in each dimension)",
+    "input_output": {
+        "fn_name": "not_visible_cubes",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                4
+            ],
+            [
+                5
+            ],
+            [
+                7
+            ],
+            [
+                12
+            ],
+            [
+                18
+            ],
+            [
+                10002
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                8
+            ],
+            [
+                27
+            ],
+            [
+                125
+            ],
+            [
+                1000
+            ],
+            [
+                4096
+            ],
+            [
+                1000000000000
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/560d6ebe7a8c737c52000084",
+    "difficulty": "introductory",
+    "starter_code": "def not_visible_cubes(n):\n\t"
+}

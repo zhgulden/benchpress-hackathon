@@ -1,0 +1,74 @@
+{
+    "problem_id": 3164,
+    "question": "Finish the solution so that it takes an input `n` (integer) and returns a string that is the decimal representation of the number grouped by commas after every 3 digits.\n\nAssume: `0 <= n < 2147483647`\n\n## Examples\n\n```\n       1  ->           \"1\"\n      10  ->          \"10\"\n     100  ->         \"100\"\n    1000  ->       \"1,000\"\n   10000  ->      \"10,000\"\n  100000  ->     \"100,000\"\n 1000000  ->   \"1,000,000\"\n35235235  ->  \"35,235,235\"\n```",
+    "input_output": {
+        "fn_name": "group_by_commas",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                12
+            ],
+            [
+                123
+            ],
+            [
+                1234
+            ],
+            [
+                12345
+            ],
+            [
+                123456
+            ],
+            [
+                1234567
+            ],
+            [
+                12345678
+            ],
+            [
+                123456789
+            ],
+            [
+                1234567890
+            ]
+        ],
+        "outputs": [
+            [
+                "1"
+            ],
+            [
+                "12"
+            ],
+            [
+                "123"
+            ],
+            [
+                "1,234"
+            ],
+            [
+                "12,345"
+            ],
+            [
+                "123,456"
+            ],
+            [
+                "1,234,567"
+            ],
+            [
+                "12,345,678"
+            ],
+            [
+                "123,456,789"
+            ],
+            [
+                "1,234,567,890"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5274e122fc75c0943d000148",
+    "difficulty": "introductory",
+    "starter_code": "def group_by_commas(n):\n\t"
+}

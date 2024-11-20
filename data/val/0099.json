@@ -1,0 +1,98 @@
+{
+    "problem_id": 4361,
+    "question": "There are some perfect squares with a particular property.\nFor example the number ```n = 256``` is a perfect square, its square root is ```16```. If we change the position of the digits of n, we may obtain another perfect square``` 625``` (square root = 25).\nWith these three digits ```2```,```5``` and ```6``` we can get two perfect squares: ```[256,625]```\n\nThe number ```1354896``` may generate another ```4``` perfect squares, having with the number itself, a total of five perfect squares: ```[1354896, 3594816, 3481956, 5391684, 6395841]```, being the last one in the list, ```6395841```, the highest value of the set.\n\nYour task is to find the first perfect square above the given lower_limit, that can generate the given k number of perfect squares, and it doesn't contain the digit 0. Then return the maximum perfect square that can be obtained from its digits.\n\nExample with the cases seen above:\n```\nlower_limit = 200\nk = 2 (amount of perfect squares)\nresult = 625\n\nlower_limit = 3550000\nk = 5 (amount of perfect squares)\nresult  = 6395841\n```\nFeatures of the random tests:\n```\n100 <= lower_limit <= 1e6\n2 <= k <= 5\nnumber of tests = 45\n```\nHave a good time!",
+    "input_output": {
+        "fn_name": "next_perfectsq_perm",
+        "inputs": [
+            [
+                100,
+                2
+            ],
+            [
+                100,
+                3
+            ],
+            [
+                100,
+                4
+            ],
+            [
+                500,
+                2
+            ],
+            [
+                1000,
+                3
+            ],
+            [
+                100000,
+                4
+            ],
+            [
+                144,
+                2
+            ],
+            [
+                145,
+                2
+            ],
+            [
+                440,
+                2
+            ],
+            [
+                441,
+                2
+            ]
+        ],
+        "outputs": [
+            [
+                441
+            ],
+            [
+                961
+            ],
+            [
+                81796
+            ],
+            [
+                625
+            ],
+            [
+                9216
+            ],
+            [
+                298116
+            ],
+            [
+                625
+            ],
+            [
+                625
+            ],
+            [
+                441
+            ],
+            [
+                625
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5b2cd515553292a4ff0000c2",
+    "difficulty": "introductory",
+    "starter_code": "def next_perfectsq_perm(lower_limit, k):\n\t",
+    "test_cases": {
+        "fn_name": "next_perfectsq_perm",
+        "inputs": [
+            [
+                257,
+                2
+            ]
+        ],
+        "outputs": [
+            [
+                441
+            ]
+        ]
+    }
+}

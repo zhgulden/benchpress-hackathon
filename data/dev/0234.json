@@ -1,0 +1,170 @@
+{
+    "problem_id": 4050,
+    "question": "Laura really hates people using acronyms in her office and wants to force her colleagues to remove all acronyms before emailing her. She wants you to build a system that will edit out all known acronyms or else will notify the sender if unknown acronyms are present.\n\nAny combination of three or more letters in upper case will be considered an acronym. Acronyms will not be combined with lowercase letters, such as in the case of 'KPIs'. They will be kept isolated as a word/words within a string.\n\nFor any string: \n\nAll instances of 'KPI' must become \"key performance indicators\" \nAll instances of 'EOD' must become \"the end of the day\" \nAll instances of 'TBD' must become \"to be decided\"\nAll instances of 'WAH' must become \"work at home\"\nAll instances of 'IAM' must become \"in a meeting\"\nAll instances of 'OOO' must become \"out of office\"\nAll instances of 'NRN' must become \"no reply necessary\"\nAll instances of 'CTA' must become \"call to action\"\nAll instances of 'SWOT' must become \"strengths, weaknesses, opportunities and threats\"\nIf there are any unknown acronyms in the string, Laura wants you to return only the message:\n'[acronym] is an acronym. I do not like acronyms. Please remove them from your email.'\nSo if the acronym in question was 'BRB', you would return the string:\n'BRB is an acronym. I do not like acronyms. Please remove them from your email.'\nIf there is more than one unknown acronym in the string, return only the first in your answer.\n\nIf all acronyms can be replaced with full words according to the above, however, return only the altered string.\n\nIf this is the case, ensure that sentences still start with capital letters. '!' or '?' will not be used.",
+    "input_output": {
+        "fn_name": "acronym_buster",
+        "inputs": [
+            [
+                "BRB I need to go into a KPI meeting before EOD"
+            ],
+            [
+                "I am IAM so will be OOO until EOD"
+            ],
+            [
+                "Going to WAH today. NRN. OOO"
+            ],
+            [
+                "We're looking at SMB on SM DMs today"
+            ],
+            [
+                "OOO"
+            ],
+            [
+                "KPI"
+            ],
+            [
+                "EOD"
+            ],
+            [
+                "TBD"
+            ],
+            [
+                "TBD by EOD"
+            ],
+            [
+                "BRB I am OOO"
+            ],
+            [
+                "WAH"
+            ],
+            [
+                "IAM"
+            ],
+            [
+                "NRN"
+            ],
+            [
+                "CTA"
+            ],
+            [
+                "Hi PAB"
+            ],
+            [
+                "HATDBEA"
+            ],
+            [
+                "LDS"
+            ],
+            [
+                "PB"
+            ],
+            [
+                "FA"
+            ],
+            [
+                "CTA and HTTP"
+            ],
+            [
+                "SWOT."
+            ],
+            [
+                "HTTP"
+            ],
+            [
+                "Please WAH today. KPI on track"
+            ],
+            [
+                "The advert needs a CTA. NRN before EOD."
+            ],
+            [
+                "I sent you a RFP yesterday."
+            ],
+            [
+                "My SM account needs some work."
+            ]
+        ],
+        "outputs": [
+            [
+                "BRB is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "I am in a meeting so will be out of office until the end of the day"
+            ],
+            [
+                "Going to work at home today. No reply necessary. Out of office"
+            ],
+            [
+                "SMB is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "Out of office"
+            ],
+            [
+                "Key performance indicators"
+            ],
+            [
+                "The end of the day"
+            ],
+            [
+                "To be decided"
+            ],
+            [
+                "To be decided by the end of the day"
+            ],
+            [
+                "BRB is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "Work at home"
+            ],
+            [
+                "In a meeting"
+            ],
+            [
+                "No reply necessary"
+            ],
+            [
+                "Call to action"
+            ],
+            [
+                "PAB is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "HATDBEA is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "LDS is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "PB"
+            ],
+            [
+                "FA"
+            ],
+            [
+                "HTTP is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "Strengths, weaknesses, opportunities and threats."
+            ],
+            [
+                "HTTP is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "Please work at home today. Key performance indicators on track"
+            ],
+            [
+                "The advert needs a call to action. No reply necessary before the end of the day."
+            ],
+            [
+                "RFP is an acronym. I do not like acronyms. Please remove them from your email."
+            ],
+            [
+                "My SM account needs some work."
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58397ee871df657929000209",
+    "difficulty": "introductory",
+    "starter_code": "def acronym_buster(message):\n\t"
+}

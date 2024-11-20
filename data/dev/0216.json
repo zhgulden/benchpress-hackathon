@@ -1,0 +1,103 @@
+{
+    "problem_id": 3225,
+    "question": "Given an array (a list in Python) of integers and an integer `n`, find all occurrences of `n` in the given array and return another array containing all the index positions of `n` in the given array.\n\nIf `n` is not in the given array, return an empty array `[]`.\n\nAssume that `n` and all values in the given array will always be integers.\n\nExample:\n```python\nfind_all([6, 9, 3, 4, 3, 82, 11], 3)\n> [2, 4]\n```",
+    "input_output": {
+        "fn_name": "find_all",
+        "inputs": [
+            [
+                [
+                    6,
+                    9,
+                    3,
+                    4,
+                    3,
+                    82,
+                    11
+                ],
+                3
+            ],
+            [
+                [
+                    6,
+                    9,
+                    3,
+                    4,
+                    3,
+                    82,
+                    11
+                ],
+                99
+            ],
+            [
+                [
+                    10,
+                    16,
+                    20,
+                    6,
+                    14,
+                    11,
+                    20,
+                    2,
+                    17,
+                    16,
+                    14
+                ],
+                16
+            ],
+            [
+                [
+                    20,
+                    20,
+                    10,
+                    13,
+                    15,
+                    2,
+                    7,
+                    2,
+                    20,
+                    3,
+                    18,
+                    2,
+                    3,
+                    2,
+                    16,
+                    10,
+                    9,
+                    9,
+                    7,
+                    5,
+                    15,
+                    5
+                ],
+                20
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    2,
+                    4
+                ]
+            ],
+            [
+                []
+            ],
+            [
+                [
+                    1,
+                    9
+                ]
+            ],
+            [
+                [
+                    0,
+                    1,
+                    8
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59a9919107157a45220000e1",
+    "difficulty": "introductory",
+    "starter_code": "def find_all(array, n):\n\t"
+}

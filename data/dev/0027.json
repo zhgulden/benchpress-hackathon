@@ -1,0 +1,80 @@
+{
+    "problem_id": 3138,
+    "question": "For every positive integer N, there exists a unique sequence starting with 1 and ending with N and such that every number in the sequence is either the double of the preceeding number or the double plus 1. \n\nFor example, given N = 13, the sequence is [1, 3, 6, 13], because . . . :\n```\n 3 =  2*1 +1\n 6 =  2*3\n 13 = 2*6 +1\n```\n\nWrite a function that returns this sequence given a number N. Try generating the elements of the resulting list in ascending order, i.e., without resorting to a list reversal or prependig the elements to a list.",
+    "input_output": {
+        "fn_name": "climb",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                100
+            ],
+            [
+                12345
+            ],
+            [
+                54321
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1
+                ]
+            ],
+            [
+                [
+                    1,
+                    3,
+                    6,
+                    12,
+                    25,
+                    50,
+                    100
+                ]
+            ],
+            [
+                [
+                    1,
+                    3,
+                    6,
+                    12,
+                    24,
+                    48,
+                    96,
+                    192,
+                    385,
+                    771,
+                    1543,
+                    3086,
+                    6172,
+                    12345
+                ]
+            ],
+            [
+                [
+                    1,
+                    3,
+                    6,
+                    13,
+                    26,
+                    53,
+                    106,
+                    212,
+                    424,
+                    848,
+                    1697,
+                    3395,
+                    6790,
+                    13580,
+                    27160,
+                    54321
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/559760bae64c31556c00006b",
+    "difficulty": "introductory",
+    "starter_code": "def climb(n):\n\t"
+}

@@ -1,0 +1,49 @@
+{
+    "problem_id": 3516,
+    "question": "Your colleagues have been good enough(?) to buy you a birthday gift. Even though it is your birthday and not theirs, they have decided to play pass the parcel with it so that everyone has an even chance of winning. There are multiple presents, and you will receive one, but not all are nice... One even explodes and covers you in soil... strange office. To make up for this one present is a dog! Happy days! (do not buy dogs as presents, and if you do, never wrap them).\n\nDepending on the number of passes in the game (y), and the present you unwrap (x), return as follows:\n\nx == goodpresent --> return x with num of passes added to each charCode (turn to charCode, add y to each, turn back)\nx == crap || x == empty --> return string sorted alphabetically\nx == bang --> return string turned to char codes, each code reduced by number of passes and summed to a single figure\nx == badpresent --> return 'Take this back!'\nx == dog, return 'pass out from excitement y times' (where y is the value given for y).",
+    "input_output": {
+        "fn_name": "present",
+        "inputs": [
+            [
+                "badpresent",
+                3
+            ],
+            [
+                "goodpresent",
+                9
+            ],
+            [
+                "crap",
+                10
+            ],
+            [
+                "bang",
+                27
+            ],
+            [
+                "dog",
+                23
+            ]
+        ],
+        "outputs": [
+            [
+                "Take this back!"
+            ],
+            [
+                "pxxmy{n|nw}"
+            ],
+            [
+                "acpr"
+            ],
+            [
+                "300"
+            ],
+            [
+                "pass out from excitement 23 times"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5805f0663f1f9c49be00011f",
+    "difficulty": "introductory",
+    "starter_code": "def present(x,y):\n\t"
+}

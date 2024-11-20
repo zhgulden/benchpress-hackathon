@@ -1,0 +1,32 @@
+{
+    "problem_id": 3668,
+    "question": "We define the sequence ```SF``` in the following way in terms of four previous sequences: ```S1```, ```S2```, ```S3``` and ```ST```\n\n\n\nWe are interested in collecting the terms of SF that are multiple of ten.\n\nThe first term multiple of ten of this sequence is  ```60```\n\nMake the function ```find_mult10_SF()``` that you introduce the ordinal number of a term multiple of 10 of SF and gives us the value of this term.\n\nLet's see some cases: \n```python\nfind_mult10_SF(1) == 60\n\nfind_mult10_SF(2) == 70080\n\nfind_mult10_SF(3) ==  90700800\n```\n``` haskell\nfindMult10SF 1 `shouldBe` 60\nfindMult10SF 2 `shouldBe` 70080\nfindMult10SF 3 `shouldBe` 90700800\n```\nMemoization is advisable to have a more agile code for tests.\n\nYour code will be tested up to the 300-th term, multiple of 10.\n\nHappy coding!!",
+    "input_output": {
+        "fn_name": "find_mult10_SF",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ]
+        ],
+        "outputs": [
+            [
+                60
+            ],
+            [
+                70080
+            ],
+            [
+                90700800
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/561d54055e399e2f62000045",
+    "difficulty": "introductory",
+    "starter_code": "def find_mult10_SF(n):\n\t"
+}

@@ -1,0 +1,54 @@
+{
+    "problem_id": 3452,
+    "question": "The snail crawls up the column. During the day it crawls up some distance. During the night she sleeps, so she slides down for some distance (less than crawls up during the day).\n\nYour function takes three arguments:\n1. The height of the column (meters)\n2. The distance that the snail crawls during the day (meters)\n3. The distance that the snail slides down during the night (meters)\n\nCalculate number of day when the snail will reach the top of the column.",
+    "input_output": {
+        "fn_name": "snail",
+        "inputs": [
+            [
+                3,
+                2,
+                1
+            ],
+            [
+                10,
+                3,
+                1
+            ],
+            [
+                10,
+                3,
+                2
+            ],
+            [
+                100,
+                20,
+                5
+            ],
+            [
+                5,
+                10,
+                3
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ],
+            [
+                5
+            ],
+            [
+                8
+            ],
+            [
+                7
+            ],
+            [
+                1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5b93fecd8463745630001d05",
+    "difficulty": "introductory",
+    "starter_code": "def snail(column, day, night):\n\t"
+}

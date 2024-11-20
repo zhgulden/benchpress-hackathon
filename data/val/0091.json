@@ -1,0 +1,108 @@
+{
+    "problem_id": 3345,
+    "question": "There is an array of strings. All strings contains similar _letters_ except one. Try to find it!\n\n```python\nfind_uniq([ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]) # => 'BbBb'\nfind_uniq([ 'abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba' ]) # => 'foo'\n```\n\nStrings may contain spaces. Spaces is not significant, only non-spaces symbols matters. E.g. string that contains only spaces is like empty string.\n\nIt\u2019s guaranteed that array contains more than 3 strings.\n\nThis is the second kata in series:\n\n1. [Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235)\n2. Find the unique string (this kata)\n3. [Find The Unique](https://www.codewars.com/kata/5862e0db4f7ab47bed0000e5)",
+    "input_output": {
+        "fn_name": "find_uniq",
+        "inputs": [
+            [
+                [
+                    "Aa",
+                    "aaa",
+                    "aaaaa",
+                    "BbBb",
+                    "Aaaa",
+                    "AaAaAa",
+                    "a"
+                ]
+            ],
+            [
+                [
+                    "abc",
+                    "acb",
+                    "bac",
+                    "foo",
+                    "bca",
+                    "cab",
+                    "cba"
+                ]
+            ],
+            [
+                [
+                    "silvia",
+                    "vasili",
+                    "victor"
+                ]
+            ],
+            [
+                [
+                    "Tom Marvolo Riddle",
+                    "I am Lord Voldemort",
+                    "Harry Potter"
+                ]
+            ],
+            [
+                [
+                    "",
+                    "",
+                    "",
+                    "a",
+                    "",
+                    ""
+                ]
+            ],
+            [
+                [
+                    "    ",
+                    "  ",
+                    " ",
+                    "a",
+                    " ",
+                    ""
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "BbBb"
+            ],
+            [
+                "foo"
+            ],
+            [
+                "victor"
+            ],
+            [
+                "Harry Potter"
+            ],
+            [
+                "a"
+            ],
+            [
+                "a"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3",
+    "difficulty": "introductory",
+    "starter_code": "def find_uniq(arr):\n\t",
+    "test_cases": {
+        "fn_name": "find_uniq",
+        "inputs": [
+            [
+                [
+                    "foobar",
+                    "barfo",
+                    "fobara",
+                    "   ",
+                    "fobra",
+                    "oooofrab"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "   "
+            ]
+        ]
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "problem_id": 3206,
+    "question": "Write a function that takes as its parameters *one or more numbers which are the diameters of circles.* \n\nThe function should return the *total area of all the circles*, rounded to the nearest integer in a string that says \"We have this much circle: xyz\". \n\nYou don't know how many circles you will be given, but you can assume it will be at least one.\n\nSo: \n```python\nsum_circles(2) == \"We have this much circle: 3\"\nsum_circles(2, 3, 4) == \"We have this much circle: 23\"\n```\n\nTranslations and comments (and upvotes!) welcome!",
+    "input_output": {
+        "fn_name": "sum_circles",
+        "inputs": [
+            [
+                48,
+                7,
+                8,
+                9,
+                10
+            ],
+            [
+                1
+            ],
+            [
+                1,
+                1,
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            [
+                894,
+                5778,
+                4839,
+                476
+            ],
+            [
+                4.5456,
+                746.5,
+                98.34,
+                344.543
+            ],
+            [
+                1,
+                1,
+                1
+            ],
+            [
+                13.58,
+                14.9,
+                56.99,
+                107.321
+            ],
+            [
+                56894.04839,
+                843975.4839,
+                4.08437403489
+            ],
+            [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                105083,
+                48839,
+                4853,
+                28,
+                483
+            ]
+        ],
+        "outputs": [
+            [
+                "We have this much circle: 2040"
+            ],
+            [
+                "We have this much circle: 1"
+            ],
+            [
+                "We have this much circle: 45"
+            ],
+            [
+                "We have this much circle: 45417233"
+            ],
+            [
+                "We have this much circle: 538519"
+            ],
+            [
+                "We have this much circle: 2"
+            ],
+            [
+                "We have this much circle: 11916"
+            ],
+            [
+                "We have this much circle: 561977165367"
+            ],
+            [
+                "We have this much circle: 10564760498"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56143efa9d32b3aa65000016",
+    "difficulty": "introductory",
+    "starter_code": "def sum_circles(*args):\n\t"
+}

@@ -1,0 +1,44 @@
+{
+    "problem_id": 4055,
+    "question": "Given that \n```\nf0 = '0'\nf1 = '01'\nf2 = '010' = f1 + f0\nf3 = '01001' = f2 + f1\n```\n\nYou will be given a number and your task is to return the `nth` fibonacci string. For example:\n\n```\nsolve(2) = '010'\nsolve(3) = '01001'\n```\n\nMore examples in test cases. Good luck!\n\nIf you like sequence Katas, you will enjoy this Kata: [Simple Prime Streaming](https://www.codewars.com/kata/5a908da30025e995880000e3)",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                "0"
+            ],
+            [
+                "01"
+            ],
+            [
+                "010"
+            ],
+            [
+                "01001"
+            ],
+            [
+                "0100101001001"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5aa39ba75084d7cf45000008",
+    "difficulty": "introductory",
+    "starter_code": "def solve(n):\n\t"
+}

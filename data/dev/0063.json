@@ -1,0 +1,56 @@
+{
+    "problem_id": 3969,
+    "question": "Adding tip to a restaurant bill in a graceful way can be tricky, thats why you need make a function for it.\n\nThe function will receive the restaurant bill (always a positive number) as an argument. You need to 1) **add at least 15%** in tip, 2) round that number up to an *elegant* value and 3) return it.\n\nWhat is an *elegant* number? It depends on the magnitude of the number to be rounded. Numbers below 10 should simply be rounded to whole numbers. Numbers 10 and above should be rounded like this:\n\n10 - 99.99... ---> Round to number divisible by 5\n\n100 - 999.99... ---> Round to number divisible by 50\n\n1000 - 9999.99... ---> Round to number divisible by 500\n\nAnd so on...\n\nGood luck!\n\n## Examples\n```\n 1  -->    2\n 7  -->    9\n12  -->   15\n86  -->  100\n```",
+    "input_output": {
+        "fn_name": "graceful_tipping",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                7
+            ],
+            [
+                12
+            ],
+            [
+                86
+            ],
+            [
+                99
+            ],
+            [
+                1149
+            ],
+            [
+                983212
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ],
+            [
+                9
+            ],
+            [
+                15
+            ],
+            [
+                100
+            ],
+            [
+                150
+            ],
+            [
+                1500
+            ],
+            [
+                1500000
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5eb27d81077a7400171c6820",
+    "difficulty": "introductory",
+    "starter_code": "def graceful_tipping(bill):\n\t"
+}

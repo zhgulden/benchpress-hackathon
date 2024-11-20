@@ -1,0 +1,32 @@
+{
+    "problem_id": 3181,
+    "question": "## If/else syntax debug\n\nWhile making a game, your partner, Greg, decided to create a function to check if the user is still alive called `checkAlive`/`CheckAlive`/`check_alive`. Unfortunately, Greg made some errors while creating the function.\n\n`checkAlive`/`CheckAlive`/`check_alive` should return true if the player's health is greater than 0 or false if it is 0 or below. \n\n```if-not:csharp\nThe function receives one parameter `health` which will always be a whole number between -10 and 10.\n```",
+    "input_output": {
+        "fn_name": "check_alive",
+        "inputs": [
+            [
+                5
+            ],
+            [
+                0
+            ],
+            [
+                -5
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57089707fe2d01529f00024a",
+    "difficulty": "introductory",
+    "starter_code": "def check_alive(health):\n\t"
+}

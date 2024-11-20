@@ -1,0 +1,91 @@
+{
+    "problem_id": 4580,
+    "question": "# Task\nSome children are playing rope skipping game. Children skip the rope at roughly the same speed: `once per second`. If the child fails during the jump, he needs to tidy up the rope and continue. This will take `3 seconds`.\n\nYou are given an array `failedCount`, where each element is the jump count at the failed. ie. `[12,23,45]` means the child failed 3 times in the game process. The 1st mistake occurred when he jumped 12 times; The 2nd mistake occurred when he jumped 23 times; The 3rd mistake occurred when he jumped 45 times.\n\nYour task is to calculate how many times the child jumped in 60 seconds.\n\nNote: Each child persisted at least 60 jumps, which meant it could have been over 60 seconds, but the child continued to skip rope.\n\n# Input/Output\n\n`[input]` integer array `failedCount`\n\n`0 \u2264 failedCount.length \u2264 60`\n\n`1 \u2264 failedCount[i] \u2264 60`\n\n`[output]` an integer\n\nhow many times the child jumped in 60 seconds.\n\n\n# Example\n\nFor `failedCount = []`, the output should be `60`.\n\nThere is no mistake in the game process. So the child jumped 60 times in 60 seconds.\n\nFor `failedCount = [12, 23, 45]`, the output should be `51`.\n```\nThe 1st mistake occurred when he jumped 12 times. --> 12 seconds past.\nTidy up the rope and continue.                    --> 15 seconds past.\nThe 2nd mistake occurred when he jumped 23 times. --> 26 seconds past.\nTidy up the rope and continue.                    --> 29 seconds past.\nThe 3rd mistake occurred when he jumped 45 times. --> 51 seconds past.\nTidy up the rope and continue.                    --> 54 seconds past.\nWhen he jumped 51 times                           --> 60 seconds past.\n```",
+    "input_output": {
+        "fn_name": "tiaosheng",
+        "inputs": [
+            [
+                []
+            ],
+            [
+                [
+                    12,
+                    23,
+                    45
+                ]
+            ],
+            [
+                [
+                    17
+                ]
+            ],
+            [
+                [
+                    10,
+                    20,
+                    30,
+                    40
+                ]
+            ],
+            [
+                [
+                    10,
+                    20,
+                    30,
+                    40,
+                    58
+                ]
+            ],
+            [
+                [
+                    10,
+                    20,
+                    30,
+                    40,
+                    47,
+                    60
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                60
+            ],
+            [
+                51
+            ],
+            [
+                57
+            ],
+            [
+                48
+            ],
+            [
+                48
+            ],
+            [
+                47
+            ],
+            [
+                30
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5925138effaed0de490000cf",
+    "difficulty": "introductory",
+    "starter_code": "def tiaosheng(failed_counter):\n\t"
+}

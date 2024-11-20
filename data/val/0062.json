@@ -1,0 +1,50 @@
+{
+    "problem_id": 4617,
+    "question": "Complete the function that takes a non-negative integer `n` as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to `n` (inclusive).\n\n## Examples\n\n```python\nn = 0  ==> [1]        # [2^0]\nn = 1  ==> [1, 2]     # [2^0, 2^1]\nn = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]\n```",
+    "input_output": {
+        "fn_name": "powers_of_two",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                1
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1
+                ]
+            ],
+            [
+                [
+                    1,
+                    2
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57a083a57cb1f31db7000028",
+    "difficulty": "introductory",
+    "starter_code": "def powers_of_two(n):\n\t",
+    "test_cases": {
+        "fn_name": "powers_of_two",
+        "inputs": [
+            [
+                4
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16
+                ]
+            ]
+        ]
+    }
+}

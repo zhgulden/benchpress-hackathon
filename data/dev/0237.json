@@ -1,0 +1,32 @@
+{
+    "problem_id": 2904,
+    "question": "Write a function taking in a string like `WOW this is REALLY          amazing` and returning `Wow this is really amazing`. String should be capitalized and properly spaced. Using `re` and `string` is not allowed.\n\nExamples:\n\n```python\nfilter_words('HELLO CAN YOU HEAR ME') #=> Hello can you hear me\nfilter_words('now THIS is REALLY interesting') #=> Now this is really interesting\nfilter_words('THAT was EXTRAORDINARY!') #=> That was extraordinary!\n```",
+    "input_output": {
+        "fn_name": "filter_words",
+        "inputs": [
+            [
+                "HELLO world!"
+            ],
+            [
+                "This    will    not    pass "
+            ],
+            [
+                "NOW THIS is a VERY EXCITING test!"
+            ]
+        ],
+        "outputs": [
+            [
+                "Hello world!"
+            ],
+            [
+                "This will not pass"
+            ],
+            [
+                "Now this is a very exciting test!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/587a75dbcaf9670c32000292",
+    "difficulty": "introductory",
+    "starter_code": "def filter_words(st):\n\t"
+}

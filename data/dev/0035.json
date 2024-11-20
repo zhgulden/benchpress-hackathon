@@ -1,0 +1,74 @@
+{
+    "problem_id": 3341,
+    "question": "You will be given a string. \n\nYou need to return an array of three strings by gradually pulling apart the string.\n\nYou should repeat the following steps until the string length is 1:\n\na) remove the final character from the original string, add to solution string 1.\nb) remove the first character from the original string, add to solution string 2.\n\nThe final solution string value is made up of the remaining character from the original string, once originalstring.length == 1.\n\nExample:\n\n\"exampletesthere\"\nbecomes:\n[\"erehtse\",\"example\",\"t\"]\n\nThe Kata title gives a hint of one technique to solve.",
+    "input_output": {
+        "fn_name": "pop_shift",
+        "inputs": [
+            [
+                "reusetestcasesbitcointakeovertheworldmaybewhoknowsperhaps"
+            ],
+            [
+                "turnsoutrandomtestcasesareeasierthanwritingoutbasicones"
+            ],
+            [
+                "exampletesthere"
+            ],
+            [
+                "letstalkaboutjavascriptthebestlanguage"
+            ],
+            [
+                "iwanttotraveltheworldwritingcodeoneday"
+            ],
+            [
+                "letsallgoonholidaysomewhereverycold"
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    "spahrepswonkohwebyamdlroweht",
+                    "reusetestcasesbitcointakeove",
+                    "r"
+                ]
+            ],
+            [
+                [
+                    "senocisabtuognitirwnahtreis",
+                    "turnsoutrandomtestcasesaree",
+                    "a"
+                ]
+            ],
+            [
+                [
+                    "erehtse",
+                    "example",
+                    "t"
+                ]
+            ],
+            [
+                [
+                    "egaugnaltsebehttpir",
+                    "letstalkaboutjavasc",
+                    ""
+                ]
+            ],
+            [
+                [
+                    "yadenoedocgnitirwdl",
+                    "iwanttotravelthewor",
+                    ""
+                ]
+            ],
+            [
+                [
+                    "dlocyreverehwemos",
+                    "letsallgoonholida",
+                    "y"
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57cec34272f983e17800001e",
+    "difficulty": "introductory",
+    "starter_code": "def pop_shift(s):\n\t"
+}

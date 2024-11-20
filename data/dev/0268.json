@@ -1,0 +1,56 @@
+{
+    "problem_id": 2672,
+    "question": "You're playing a game with a friend involving a bag of marbles. In the bag are ten marbles:\n\n* 1 smooth red marble\n* 4 bumpy red marbles\n* 2 bumpy yellow marbles\n* 1 smooth yellow marble\n* 1 bumpy green marble\n* 1 smooth green marble\n\nYou can see that the probability of picking a smooth red marble from the bag is `1 / 10` or `0.10` and the probability of picking a bumpy yellow marble is `2 / 10` or `0.20`.\n\nThe game works like this: your friend puts her hand in the bag, chooses a marble (without looking at it) and tells you whether it's bumpy or smooth. Then you have to guess which color it is before she pulls it out and reveals whether you're correct or not.\n\nYou know that the information about whether the marble is bumpy or smooth changes the probability of what color it is, and you want some help with your guesses.\n\nWrite a function `color_probability()` that takes two arguments: a color (`'red'`, `'yellow'`, or `'green'`) and a texture (`'bumpy'` or `'smooth'`) and returns the probability as a decimal fraction accurate to two places.\n\nThe probability should be a string and should discard any digits after the 100ths place. For example, `2 / 3` or `0.6666666666666666` would become the string `'0.66'`. Note this is different from rounding.\n\nAs a complete example, `color_probability('red', 'bumpy')` should return the string `'0.57'`.",
+    "input_output": {
+        "fn_name": "color_probability",
+        "inputs": [
+            [
+                "red",
+                "bumpy"
+            ],
+            [
+                "green",
+                "bumpy"
+            ],
+            [
+                "yellow",
+                "smooth"
+            ],
+            [
+                "red",
+                "smooth"
+            ],
+            [
+                "green",
+                "smooth"
+            ],
+            [
+                "yellow",
+                "bumpy"
+            ]
+        ],
+        "outputs": [
+            [
+                "0.57"
+            ],
+            [
+                "0.14"
+            ],
+            [
+                "0.33"
+            ],
+            [
+                "0.33"
+            ],
+            [
+                "0.33"
+            ],
+            [
+                "0.28"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5864cdc483f7e6df980001c8",
+    "difficulty": "introductory",
+    "starter_code": "def color_probability(color, texture):\n\t"
+}

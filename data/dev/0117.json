@@ -1,0 +1,44 @@
+{
+    "problem_id": 2850,
+    "question": "Gordon Ramsay shouts. He shouts and swears. There may be something wrong with him.\n\nAnyway, you will be given a string of four words. Your job is to turn them in to Gordon language. \n\nRules:\n\nObviously the words should be Caps,\nEvery word should end with '!!!!',\nAny letter 'a' or 'A' should become '@',\nAny other vowel should become '*'.",
+    "input_output": {
+        "fn_name": "gordon",
+        "inputs": [
+            [
+                "What feck damn cake"
+            ],
+            [
+                "are you stu pid"
+            ],
+            [
+                "i am a chef"
+            ],
+            [
+                "dont you talk tome"
+            ],
+            [
+                "how dare you feck"
+            ]
+        ],
+        "outputs": [
+            [
+                "WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!"
+            ],
+            [
+                "@R*!!!! Y**!!!! ST*!!!! P*D!!!!"
+            ],
+            [
+                "*!!!! @M!!!! @!!!! CH*F!!!!"
+            ],
+            [
+                "D*NT!!!! Y**!!!! T@LK!!!! T*M*!!!!"
+            ],
+            [
+                "H*W!!!! D@R*!!!! Y**!!!! F*CK!!!!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57d1f36705c186d018000813",
+    "difficulty": "introductory",
+    "starter_code": "def gordon(a):\n\t"
+}

@@ -1,0 +1,80 @@
+{
+    "problem_id": 2883,
+    "question": "##Overview\n\nWrite a helper function that takes in a Time object and converts it to a more human-readable format. You need only go up to '_ weeks ago'.\n```python\nto_pretty(0) => \"just now\"\n\nto_pretty(40000) => \"11 hours ago\"\n```\n##Specifics\n - The output will be an amount of time, t, included in one of the following phrases: \"just now\", \"[t] seconds ago\", \"[t] minutes ago\", \"[t] hours ago\", \"[t] days ago\", \"[t] weeks ago\".\n - You will have to handle the singular cases. That is, when t = 1, the phrasing will be one of \"a second ago\", \"a minute ago\", \"an hour ago\", \"a day ago\", \"a week ago\".\n - The amount of time is always rounded down to the nearest integer. For example, if the amount of time is actually 11.73 hours ago, the return value will be \"11 hours ago\".\n - Only times in the past will be given, with the range \"just now\" to \"52 weeks ago\"",
+    "input_output": {
+        "fn_name": "to_pretty",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                30
+            ],
+            [
+                90
+            ],
+            [
+                180
+            ],
+            [
+                4000
+            ],
+            [
+                40000
+            ],
+            [
+                140000
+            ],
+            [
+                400000
+            ],
+            [
+                1000000
+            ],
+            [
+                10000000
+            ]
+        ],
+        "outputs": [
+            [
+                "just now"
+            ],
+            [
+                "a second ago"
+            ],
+            [
+                "30 seconds ago"
+            ],
+            [
+                "a minute ago"
+            ],
+            [
+                "3 minutes ago"
+            ],
+            [
+                "an hour ago"
+            ],
+            [
+                "11 hours ago"
+            ],
+            [
+                "a day ago"
+            ],
+            [
+                "4 days ago"
+            ],
+            [
+                "a week ago"
+            ],
+            [
+                "16 weeks ago"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/53988ee02c2414dbad000baa",
+    "difficulty": "introductory",
+    "starter_code": "def to_pretty(seconds):\n\t"
+}

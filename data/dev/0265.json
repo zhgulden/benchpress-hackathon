@@ -1,0 +1,68 @@
+{
+    "problem_id": 3905,
+    "question": "In this Kata, you will be given a string of numbers in sequence and your task will be to return the missing number. If there is no number\nmissing or there is an error in the sequence, return `-1`.\n\nFor example:\n```Haskell\nmissing(\"123567\") = 4 \nmissing(\"899091939495\") = 92\nmissing(\"9899101102\") = 100\nmissing(\"599600601602\") = -1 -- no number missing\nmissing(\"8990919395\") = -1 -- error in sequence. Both 92 and 94 missing.\n```\nThe sequence will always be in ascending order.\n\nMore examples in the test cases. \n\nGood luck!",
+    "input_output": {
+        "fn_name": "missing",
+        "inputs": [
+            [
+                "123567"
+            ],
+            [
+                "899091939495"
+            ],
+            [
+                "9899101102"
+            ],
+            [
+                "599600601602"
+            ],
+            [
+                "8990919395"
+            ],
+            [
+                "998999100010011003"
+            ],
+            [
+                "99991000110002"
+            ],
+            [
+                "979899100101102"
+            ],
+            [
+                "900001900002900004900005900006"
+            ]
+        ],
+        "outputs": [
+            [
+                4
+            ],
+            [
+                92
+            ],
+            [
+                100
+            ],
+            [
+                -1
+            ],
+            [
+                -1
+            ],
+            [
+                1002
+            ],
+            [
+                10000
+            ],
+            [
+                -1
+            ],
+            [
+                900003
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a28cf591f7f7019a80000de",
+    "difficulty": "introductory",
+    "starter_code": "def missing(s):\n\t"
+}

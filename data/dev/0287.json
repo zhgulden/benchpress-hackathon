@@ -1,0 +1,45 @@
+{
+    "problem_id": 4398,
+    "question": "Imagine you start on the 5th floor of a building, then travel down to the 2nd floor, then back up to the 8th floor. You have travelled a total of 3 + 6 = 9 floors of distance.\n\nGiven an array representing a series of floors you must reach by elevator, return an integer representing the total distance travelled for visiting each floor in the array in order. \n\n```\n// simple examples\nelevatorDistance([5,2,8]) = 9\nelevatorDistance([1,2,3]) = 2\nelevatorDistance([7,1,7,1]) = 18\n\n// if two consecutive floors are the same,\n//distance travelled between them is 0\nelevatorDistance([3,3]) = 0\n```\n\nArray will always contain at least 2 floors. Random tests will contain 2-20 elements in array, and floor values between 0 and 30.",
+    "input_output": {
+        "fn_name": "elevator_distance",
+        "inputs": [
+            [
+                [
+                    5,
+                    2,
+                    8
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3
+                ]
+            ],
+            [
+                [
+                    7,
+                    1,
+                    7,
+                    1
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                9
+            ],
+            [
+                2
+            ],
+            [
+                18
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59f061773e532d0c87000d16",
+    "difficulty": "introductory",
+    "starter_code": "def elevator_distance(array):\n\t"
+}

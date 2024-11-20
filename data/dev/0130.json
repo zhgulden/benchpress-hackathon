@@ -1,0 +1,32 @@
+{
+    "problem_id": 2716,
+    "question": "**Step 1:** Create a function called `encode()` to replace all the lowercase vowels in a given string with numbers according to the following pattern:\n```\na -> 1\ne -> 2\ni -> 3\no -> 4\nu -> 5\n```\n\nFor example, `encode(\"hello\")` would return `\"h2ll4\"`. There is no need to worry about uppercase vowels in this kata.\n\n**Step 2:** Now create a function called `decode()` to turn the numbers back into vowels according to the same pattern shown above.\n\nFor example, `decode(\"h3 th2r2\")` would return `\"hi there\"`.\n\nFor the sake of simplicity, you can assume that any numbers passed into the function will correspond to vowels.",
+    "input_output": {
+        "fn_name": "encode",
+        "inputs": [
+            [
+                "hello"
+            ],
+            [
+                "How are you today?"
+            ],
+            [
+                "This is an encoding test."
+            ]
+        ],
+        "outputs": [
+            [
+                "h2ll4"
+            ],
+            [
+                "H4w 1r2 y45 t4d1y?"
+            ],
+            [
+                "Th3s 3s 1n 2nc4d3ng t2st."
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/53697be005f803751e0015aa",
+    "difficulty": "introductory",
+    "starter_code": "def encode(st):\n\t"
+}

@@ -1,0 +1,45 @@
+{
+    "problem_id": 1624,
+    "question": "The number ```89``` is the first positive integer that has a particular, curious property:\n\nThe square of ```89``` is ```7921```; ```89\u00b2 = 7921```\n\nThe reverse of ```7921``` is ```1297```, and ```1297``` is a prime number.\n\nThe cube of ```89``` is ```704969```; ```89\u00b3 = 704969```\n\nThe reverse of ```704969``` is ```969407```, and ```969407``` is a prime number.\n\nThe first four terms of this sequence having this special property are:\n```\nn-th term      term value\n    1               89 \n    2              271\n    3              325\n    4              328\n```\n\nCreate a function ```sq_cub_rev_prime()```, that receives the ordinal number of the sequence and outputs its correspoding value.\n\nUse the above table to show how the function should work:\n```python \nsq_cub_rev_prime(1) == 89 \nsq_cub_rev_prime(2) == 271\nsq_cub_rev_prime(3) == 325\nsq_cub_rev_prime(4) == 328\n```\nYour code will be tested up to the 250th term\n\nThis is not a registered sequence of OESIS, so if you are one of the first ten people that solve this kata, you may have the privilege to register the sequence at https://oeis.org, with your name. If you do so, please, mention in your biography that you are a Codewarrior.\n\nMemoize your results to pass the tests.\n\nEnjoy it!",
+    "input_output": {
+        "fn_name": "sq_cub_rev_prime",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ]
+        ],
+        "outputs": [
+            [
+                89
+            ],
+            [
+                271
+            ],
+            [
+                325
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5644a69f7849c9c097000073",
+    "difficulty": "interview",
+    "starter_code": "def sq_cub_rev_prime(n):\n\t",
+    "test_cases": {
+        "fn_name": "sq_cub_rev_prime",
+        "inputs": [
+            [
+                4
+            ]
+        ],
+        "outputs": [
+            [
+                328
+            ]
+        ]
+    }
+}

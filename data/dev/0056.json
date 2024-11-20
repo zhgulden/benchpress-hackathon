@@ -1,0 +1,63 @@
+{
+    "problem_id": 3658,
+    "question": "Your job is to change the given string `s` using a non-negative integer `n`.\n\nEach bit in `n` will specify whether or not to swap the case for each alphabetic character in `s`: if the bit is `1`, swap the case; if its `0`, leave it as is. When you finished with the last bit of `n`, start again with the first bit.\n\nYou should skip the checking of bits when a non-alphabetic character is encountered, but they should be preserved in their original positions.\n\n## Examples\n\n```\nswap('Hello world!', 11)  -->  'heLLO wORLd!'\n```\n...because `11` is `1011` in binary, so the 1st, 3rd, 4th, 5th, 7th, 8th and 9th alphabetical characters have to be swapped:\n```\nH e l l o  w o r l d !\n1 0 1 1 1  0 1 1 1 0\n^   ^ ^ ^    ^ ^ ^\n```\n\nMore examples:\n```\nswap(\"gOOd MOrniNg\", 7864)  -->  \"GooD MorNIng\"\nswap('', 11345)  -->  ''\nswap('the lord of the rings', 0)  -->  'the lord of the rings'\n```",
+    "input_output": {
+        "fn_name": "swap",
+        "inputs": [
+            [
+                "Hello world!",
+                11
+            ],
+            [
+                "the quick broWn fox leapt over the fence",
+                9
+            ],
+            [
+                "eVerybody likes ice cReam",
+                85
+            ],
+            [
+                "gOOd MOrniNg",
+                7864
+            ],
+            [
+                "how are you today?",
+                12345
+            ],
+            [
+                "the lord of the rings",
+                0
+            ],
+            [
+                "",
+                11345
+            ]
+        ],
+        "outputs": [
+            [
+                "heLLO wORLd!"
+            ],
+            [
+                "The QUicK BrowN foX LeaPT ovER thE FenCE"
+            ],
+            [
+                "EVErYbODy LiKeS IcE creAM"
+            ],
+            [
+                "GooD MorNIng"
+            ],
+            [
+                "HOw are yoU TOdaY?"
+            ],
+            [
+                "the lord of the rings"
+            ],
+            [
+                ""
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5f3afc40b24f090028233490",
+    "difficulty": "introductory",
+    "starter_code": "def swap(s,n):\n\t"
+}

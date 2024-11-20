@@ -1,0 +1,110 @@
+{
+    "problem_id": 3246,
+    "question": "Goal\nGiven a list of elements [a1, a2, ..., an], with each ai being a string, write a function **majority** that returns the value that appears the most in the list. \n\nIf there's no winner, the function should return None, NULL, nil, etc, based on the programming language.\n\nExample\nmajority([\"A\", \"B\", \"A\"]) returns \"A\"\nmajority([\"A\", \"B\", \"B\", \"A\"]) returns None",
+    "input_output": {
+        "fn_name": "majority",
+        "inputs": [
+            [
+                [
+                    "A",
+                    "B",
+                    "A"
+                ]
+            ],
+            [
+                [
+                    "A",
+                    "B",
+                    "C"
+                ]
+            ],
+            [
+                [
+                    "A",
+                    "B",
+                    "B",
+                    "A"
+                ]
+            ],
+            [
+                [
+                    "A",
+                    "A",
+                    "A",
+                    "A"
+                ]
+            ],
+            [
+                [
+                    "A"
+                ]
+            ],
+            [
+                [
+                    "A",
+                    "A",
+                    "A",
+                    "BBBBBBBB"
+                ]
+            ],
+            [
+                [
+                    "A",
+                    "B",
+                    "C",
+                    "C"
+                ]
+            ],
+            [
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                "A"
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                "A"
+            ],
+            [
+                "A"
+            ],
+            [
+                "A"
+            ],
+            [
+                "C"
+            ],
+            [
+                null
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5af974846bf32304a2000e98",
+    "difficulty": "introductory",
+    "starter_code": "def majority(arr):\n\t",
+    "test_cases": {
+        "fn_name": "majority",
+        "inputs": [
+            [
+                [
+                    "B",
+                    "C",
+                    "",
+                    ""
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                ""
+            ]
+        ]
+    }
+}

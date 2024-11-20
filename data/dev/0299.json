@@ -1,0 +1,56 @@
+{
+    "problem_id": 3385,
+    "question": "Find the longest substring in alphabetical order.\n\nExample: the longest alphabetical substring in `\"asdfaaaabbbbcttavvfffffdf\"` is `\"aaaabbbbctt\"`.\n\nThere are tests with strings up to `10 000` characters long so your code will need to be efficient.\n\nThe input will only consist of lowercase characters and will be at least one letter long.\n\nIf there are multiple solutions, return the one that appears first.\n\nGood luck :)",
+    "input_output": {
+        "fn_name": "longest",
+        "inputs": [
+            [
+                "asd"
+            ],
+            [
+                "nab"
+            ],
+            [
+                "abcdeapbcdef"
+            ],
+            [
+                "asdfaaaabbbbcttavvfffffdf"
+            ],
+            [
+                "asdfbyfgiklag"
+            ],
+            [
+                "z"
+            ],
+            [
+                "zyba"
+            ]
+        ],
+        "outputs": [
+            [
+                "as"
+            ],
+            [
+                "ab"
+            ],
+            [
+                "abcde"
+            ],
+            [
+                "aaaabbbbctt"
+            ],
+            [
+                "fgikl"
+            ],
+            [
+                "z"
+            ],
+            [
+                "z"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a7f58c00025e917f30000f1",
+    "difficulty": "introductory",
+    "starter_code": "def longest(s):\n\t"
+}

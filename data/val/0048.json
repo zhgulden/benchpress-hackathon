@@ -1,0 +1,57 @@
+{
+    "problem_id": 3455,
+    "question": "# Definition\n\n**_Disarium number_** is the number that *The sum of its digits powered with their respective positions is equal to the number itself*.\n\n____\n\n# Task\n\n**_Given_** a number, **_Find if it is Disarium or not_** . \n____\n\n# Warm-up (Highly recommended)\n\n# [Playing With Numbers Series](https://www.codewars.com/collections/playing-with-numbers)\n___\n\n# Notes \n\n* **_Number_** *passed is always*  **_Positive_** .\n* **_Return_** *the result as* **_String_**\n___\n\n# Input >> Output Examples\n\n```\ndisariumNumber(89) ==> return \"Disarium !!\"\n```\n## **_Explanation_**:\n\n* Since , **_8^(1) + 9^(2) = 89_** , thus *output* is `\"Disarium !!\"`\n___\n\n```\ndisariumNumber(564) ==> return \"Not !!\"\n```\n## **_Explanation_**:\n\nSince , **_5^(1) + 6^(2) + 4^(3) = 105 != 564_** ,  thus *output* is `\"Not !!\"`\n\n___\n___\n___\n\n# [Playing with Numbers Series](https://www.codewars.com/collections/playing-with-numbers)\n\n# [Playing With Lists/Arrays Series](https://www.codewars.com/collections/playing-with-lists-slash-arrays)\n\n# [For More Enjoyable Katas](http://www.codewars.com/users/MrZizoScream/authored)\n___\n\n## ALL translations are welcomed\n\n## Enjoy Learning !!\n# Zizou",
+    "input_output": {
+        "fn_name": "disarium_number",
+        "inputs": [
+            [
+                1024
+            ],
+            [
+                1306
+            ],
+            [
+                1999
+            ],
+            [
+                2427
+            ],
+            [
+                1048576
+            ]
+        ],
+        "outputs": [
+            [
+                "Not !!"
+            ],
+            [
+                "Disarium !!"
+            ],
+            [
+                "Not !!"
+            ],
+            [
+                "Disarium !!"
+            ],
+            [
+                "Not !!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a53a17bfd56cb9c14000003",
+    "difficulty": "introductory",
+    "starter_code": "def disarium_number(number):\n\t",
+    "test_cases": {
+        "fn_name": "disarium_number",
+        "inputs": [
+            [
+                2646798
+            ]
+        ],
+        "outputs": [
+            [
+                "Disarium !!"
+            ]
+        ]
+    }
+}

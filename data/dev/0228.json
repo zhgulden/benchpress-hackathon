@@ -1,0 +1,74 @@
+{
+    "problem_id": 3243,
+    "question": "It's been a tough week at work and you are stuggling to get out of bed in the morning.\n\nWhile waiting at the bus stop you realise that if you could time your arrival to the nearest minute you could get valuable extra minutes in bed.\n\nThere is a bus that goes to your office every 15 minute, the first bus is at `06:00`, and the last bus is at `00:00`.\n\nGiven that it takes 5 minutes to walk from your front door to the bus stop, implement a function that when given the curent time will tell you much time is left, before you must leave to catch the next bus.\n\n## Examples\n\n```\n\"05:00\"  =>  55\n\"10:00\"  =>  10\n\"12:10\"  =>  0\n\"12:11\"  =>  14\n```\n\n### Notes\n\n1. Return the number of minutes till the next bus\n2. Input will be formatted as `HH:MM` (24-hour clock)\n3. The input time might be after the buses have stopped running, i.e. after `00:00`",
+    "input_output": {
+        "fn_name": "bus_timer",
+        "inputs": [
+            [
+                "10:00"
+            ],
+            [
+                "10:45"
+            ],
+            [
+                "15:05"
+            ],
+            [
+                "06:10"
+            ],
+            [
+                "05:10"
+            ],
+            [
+                "04:50"
+            ],
+            [
+                "05:55"
+            ],
+            [
+                "23:57"
+            ],
+            [
+                "00:00"
+            ],
+            [
+                "23:55"
+            ]
+        ],
+        "outputs": [
+            [
+                10
+            ],
+            [
+                10
+            ],
+            [
+                5
+            ],
+            [
+                0
+            ],
+            [
+                45
+            ],
+            [
+                65
+            ],
+            [
+                0
+            ],
+            [
+                358
+            ],
+            [
+                355
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5736378e3f3dfd5a820000cb",
+    "difficulty": "introductory",
+    "starter_code": "def bus_timer(current_time):\n\t"
+}

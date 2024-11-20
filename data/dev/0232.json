@@ -1,0 +1,68 @@
+{
+    "problem_id": 3136,
+    "question": "- Kids drink toddy.\n- Teens drink coke.\n- Young adults drink beer.\n- Adults drink whisky.\n\nMake a function that receive age, and return what they drink.\n\n**Rules:**\n\n- Children under 14 old.\n- Teens under 18 old.\n- Young under 21 old.\n- Adults have 21 or more.\n\n**Examples:**\n\n```python\npeople_with_age_drink(13) == \"drink toddy\"\npeople_with_age_drink(17) == \"drink coke\"\npeople_with_age_drink(18) == \"drink beer\"\npeople_with_age_drink(20) == \"drink beer\"\npeople_with_age_drink(30) == \"drink whisky\"\n```",
+    "input_output": {
+        "fn_name": "people_with_age_drink",
+        "inputs": [
+            [
+                13
+            ],
+            [
+                0
+            ],
+            [
+                17
+            ],
+            [
+                15
+            ],
+            [
+                14
+            ],
+            [
+                20
+            ],
+            [
+                18
+            ],
+            [
+                22
+            ],
+            [
+                21
+            ]
+        ],
+        "outputs": [
+            [
+                "drink toddy"
+            ],
+            [
+                "drink toddy"
+            ],
+            [
+                "drink coke"
+            ],
+            [
+                "drink coke"
+            ],
+            [
+                "drink coke"
+            ],
+            [
+                "drink beer"
+            ],
+            [
+                "drink beer"
+            ],
+            [
+                "drink whisky"
+            ],
+            [
+                "drink whisky"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56170e844da7c6f647000063",
+    "difficulty": "introductory",
+    "starter_code": "def people_with_age_drink(age):\n\t"
+}

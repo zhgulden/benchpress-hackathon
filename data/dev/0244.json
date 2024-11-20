@@ -1,0 +1,50 @@
+{
+    "problem_id": 2902,
+    "question": "Very simple, given a number, find its opposite.\n\nExamples:\n```\n1: -1\n14: -14\n-34: 34\n```\n\n~~~if:sql\nYou will be given a table: `opposite`, with a column: `number`. Return a table with a column: `res`.\n~~~",
+    "input_output": {
+        "fn_name": "opposite",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                25.6
+            ],
+            [
+                0
+            ],
+            [
+                1425.2222
+            ],
+            [
+                -3.1458
+            ],
+            [
+                -95858588225
+            ]
+        ],
+        "outputs": [
+            [
+                -1
+            ],
+            [
+                -25.6
+            ],
+            [
+                0
+            ],
+            [
+                -1425.2222
+            ],
+            [
+                3.1458
+            ],
+            [
+                95858588225
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56dec885c54a926dcd001095",
+    "difficulty": "introductory",
+    "starter_code": "def opposite(number):\n\t"
+}

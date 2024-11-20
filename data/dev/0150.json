@@ -1,0 +1,56 @@
+{
+    "problem_id": 3942,
+    "question": "There is enough money available on ATM in nominal value 10, 20, 50, 100, 200 and 500 dollars.\n\nYou are given money in nominal value of `n` with `1<=n<=1500`.\n\nTry to find minimal number of notes that must be used to repay in dollars, or output -1 if it is impossible.\n\nGood Luck!!!",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                770
+            ],
+            [
+                550
+            ],
+            [
+                10
+            ],
+            [
+                1250
+            ],
+            [
+                125
+            ],
+            [
+                666
+            ],
+            [
+                42
+            ]
+        ],
+        "outputs": [
+            [
+                4
+            ],
+            [
+                2
+            ],
+            [
+                1
+            ],
+            [
+                4
+            ],
+            [
+                -1
+            ],
+            [
+                -1
+            ],
+            [
+                -1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5635e7cb49adc7b54500001c",
+    "difficulty": "introductory",
+    "starter_code": "def solve(n):\n\t"
+}

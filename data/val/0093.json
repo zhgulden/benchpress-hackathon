@@ -1,0 +1,133 @@
+{
+    "problem_id": 4495,
+    "question": "I've got a crazy mental illness.\nI dislike numbers a lot. But it's a little complicated:\nThe number I'm afraid of depends on which day of the week it is...\nThis is a concrete description of my mental illness:\n\nMonday     --> 12\n\nTuesday    --> numbers greater than 95\n\nWednesday  --> 34\n\nThursday   --> 0\n\nFriday     --> numbers divisible by 2\n\nSaturday   --> 56\n\nSunday     --> 666 or -666\n\n\nWrite a function which takes a string (day of the week) and an integer (number to be tested) so it tells the doctor if I'm afraid or not. (return a boolean)",
+    "input_output": {
+        "fn_name": "am_I_afraid",
+        "inputs": [
+            [
+                "Monday",
+                13
+            ],
+            [
+                "Monday",
+                12
+            ],
+            [
+                "Tuesday",
+                0
+            ],
+            [
+                "Tuesday",
+                100
+            ],
+            [
+                "Tuesday",
+                95
+            ],
+            [
+                "Wednesday",
+                35
+            ],
+            [
+                "Wednesday",
+                34
+            ],
+            [
+                "Thursday",
+                2
+            ],
+            [
+                "Thursday",
+                0
+            ],
+            [
+                "Friday",
+                5
+            ],
+            [
+                "Friday",
+                4
+            ],
+            [
+                "Saturday",
+                55
+            ],
+            [
+                "Saturday",
+                56
+            ],
+            [
+                "Sunday",
+                55
+            ],
+            [
+                "Sunday",
+                666
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55b1fd84a24ad00b32000075",
+    "difficulty": "introductory",
+    "starter_code": "def am_I_afraid(day,num):\n\t",
+    "test_cases": {
+        "fn_name": "am_I_afraid",
+        "inputs": [
+            [
+                "Sunday",
+                -666
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ]
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "problem_id": 4566,
+    "question": "You need count how many valleys you will pass.\n\nStart is always from zero level.\n\nEvery time you go down below 0 level counts as an entry of a valley, and as you go up to 0 level from valley counts as an exit of a valley.\n\nOne passed valley is equal one entry and one exit of a valley.\n```\ns='FUFFDDFDUDFUFUF'\nU=UP\nF=FORWARD\nD=DOWN\n```\n\nTo represent string above\n```\n(level 1)  __\n(level 0)_/  \\         _(exit we are again on level 0)\n(entry-1)     \\_     _/\n(level-2)       \\/\\_/\n```\nSo here we passed one valley",
+    "input_output": {
+        "fn_name": "counting_valleys",
+        "inputs": [
+            [
+                "UFFFD"
+            ],
+            [
+                "DFFFD"
+            ],
+            [
+                "UFFFU"
+            ],
+            [
+                "DFFFU"
+            ],
+            [
+                "UFFDDFDUDFUFU"
+            ],
+            [
+                "UFFDDFDUDFUFUUFFDDFDUDFUFU"
+            ],
+            [
+                "UFFDDFDUDFUFUUFFDDUFFDDUFFDDUDUDUDUDUDUUUUUUUUU"
+            ],
+            [
+                "UFFDDFDUDFUFUUFFDDFDUDFUFUUFFDDFDUDFUFUUFFDDFDUDFUFU"
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                4
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5da9973d06119a000e604cb6",
+    "difficulty": "introductory",
+    "starter_code": "def counting_valleys(s):\n\t",
+    "test_cases": {
+        "fn_name": "counting_valleys",
+        "inputs": [
+            [
+                "UFFDDFDUDFUFUUFFDDFDUDFUFUUFFDDFDUDFUFUUFFDDFDUDFUFUUFFDDFDUDFUFUUFFDDFDUDFUFU"
+            ]
+        ],
+        "outputs": [
+            [
+                6
+            ]
+        ]
+    }
+}

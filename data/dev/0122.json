@@ -1,0 +1,106 @@
+{
+    "problem_id": 3713,
+    "question": "An ordered sequence of numbers from 1 to N is given. One number might have deleted from it, then the remaining numbers were mixed. Find the number that was deleted.\n\nExample: \n - The starting array sequence is `[1,2,3,4,5,6,7,8,9]`\n - The mixed array with one deleted number is `[3,2,4,6,7,8,1,9]`\n - Your function should return the int `5`.\n\nIf no number was deleted from the array and no difference with it, your function should return the int `0`.\n\nNote that N may be 1 or less (in the latter case, the first array will be `[]`).",
+    "input_output": {
+        "fn_name": "find_deleted_number",
+        "inputs": [
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                [
+                    5,
+                    7,
+                    9,
+                    4,
+                    8,
+                    1,
+                    2,
+                    3
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                [
+                    2,
+                    3,
+                    6,
+                    1,
+                    5,
+                    4,
+                    7
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                [
+                    5,
+                    7,
+                    6,
+                    9,
+                    4,
+                    8,
+                    1,
+                    2,
+                    3
+                ]
+            ],
+            [
+                [
+                    1
+                ],
+                []
+            ],
+            [
+                [],
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                6
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/595aa94353e43a8746000120",
+    "difficulty": "introductory",
+    "starter_code": "def find_deleted_number(arr, mixed_arr):\n\t"
+}

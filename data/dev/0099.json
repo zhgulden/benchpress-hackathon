@@ -1,0 +1,101 @@
+{
+    "problem_id": 4086,
+    "question": "Your task is to find the first element of an array that is not consecutive.\n\nBy not consecutive we mean not exactly 1 larger than the previous element of the array.\n\nE.g. If we have an array `[1,2,3,4,6,7,8]` then `1` then `2` then `3` then `4` are all consecutive but `6` is not, so that's the first non-consecutive number.\n\n```if:c\nIf a non consecutive number is found then return `true` and set the passed in pointer to the number found.\n\nIf the whole array is consecutive then return `false`.\n```\n```if-not:c\nIf the whole array is consecutive then return `null`^(2).\n```\nThe array will always have at least `2` elements^(1) and all elements will be numbers. The numbers will also all be unique and in ascending order. The numbers could be positive or negative and the first non-consecutive could be either too!\n\nIf you like this Kata, maybe try this one next: https://www.codewars.com/kata/represent-array-of-numbers-as-ranges\n\n```if:c\n^(1) Can you write a solution that will return `false` for both `[]` and `[ x ]` (an empty array and one with a single number) though? (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )\n```\n```if-not:c\n^(1) Can you write a solution that will return `null`^(2) for both `[]` and `[ x ]` though?  (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )\n\n^(2)  \nSwift, Ruby and Crystal: `nil`  \nHaskell: `Nothing`  \nPython, Rust: `None`  \nJulia: `nothing`  \nNim: `none(int)` (See [options](https://nim-lang.org/docs/options.html))\n```",
+    "input_output": {
+        "fn_name": "first_non_consecutive",
+        "inputs": [
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    6,
+                    7,
+                    8
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ]
+            ],
+            [
+                [
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    11
+                ]
+            ],
+            [
+                [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    11
+                ]
+            ],
+            [
+                [
+                    31,
+                    32
+                ]
+            ],
+            [
+                [
+                    -3,
+                    -2,
+                    0,
+                    1
+                ]
+            ],
+            [
+                [
+                    -5,
+                    -4,
+                    -3,
+                    -1
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                6
+            ],
+            [
+                null
+            ],
+            [
+                6
+            ],
+            [
+                11
+            ],
+            [
+                null
+            ],
+            [
+                0
+            ],
+            [
+                -1
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58f8a3a27a5c28d92e000144",
+    "difficulty": "introductory",
+    "starter_code": "def first_non_consecutive(arr):\n\t"
+}

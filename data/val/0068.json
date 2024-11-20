@@ -1,0 +1,130 @@
+{
+    "problem_id": 3743,
+    "question": "A grid is a perfect starting point for many games (Chess, battleships, Candy Crush!).\n\nMaking a digital chessboard I think is an interesting way of visualising how loops can work together.\n\nYour task is to write a function that takes two integers `rows` and `columns` and returns a chessboard pattern as a two dimensional array.\n\nSo `chessBoard(6,4)` should return an array like this:\n\n\n    [\n            [\"O\",\"X\",\"O\",\"X\"],\n            [\"X\",\"O\",\"X\",\"O\"],\n            [\"O\",\"X\",\"O\",\"X\"],\n            [\"X\",\"O\",\"X\",\"O\"],\n            [\"O\",\"X\",\"O\",\"X\"],\n            [\"X\",\"O\",\"X\",\"O\"]\n    ]\n\nAnd `chessBoard(3,7)` should return this:\n\n\n    [\n        [\"O\",\"X\",\"O\",\"X\",\"O\",\"X\",\"O\"],\n        [\"X\",\"O\",\"X\",\"O\",\"X\",\"O\",\"X\"],\n        [\"O\",\"X\",\"O\",\"X\",\"O\",\"X\",\"O\"]\n    ]\n\nThe white spaces should be represented by an: `'O'`\n\nand the black an: `'X'`\n\nThe first row should always start with a white space `'O'`",
+    "input_output": {
+        "fn_name": "chess_board",
+        "inputs": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    [
+                        "O"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "O",
+                        "X"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "O"
+                    ],
+                    [
+                        "X"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "O",
+                        "X"
+                    ],
+                    [
+                        "X",
+                        "O"
+                    ]
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56242b89689c35449b000059",
+    "difficulty": "introductory",
+    "starter_code": "def chess_board(rows, columns):\n\t",
+    "test_cases": {
+        "fn_name": "chess_board",
+        "inputs": [
+            [
+                6,
+                6
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    [
+                        "O",
+                        "X",
+                        "O",
+                        "X",
+                        "O",
+                        "X"
+                    ],
+                    [
+                        "X",
+                        "O",
+                        "X",
+                        "O",
+                        "X",
+                        "O"
+                    ],
+                    [
+                        "O",
+                        "X",
+                        "O",
+                        "X",
+                        "O",
+                        "X"
+                    ],
+                    [
+                        "X",
+                        "O",
+                        "X",
+                        "O",
+                        "X",
+                        "O"
+                    ],
+                    [
+                        "O",
+                        "X",
+                        "O",
+                        "X",
+                        "O",
+                        "X"
+                    ],
+                    [
+                        "X",
+                        "O",
+                        "X",
+                        "O",
+                        "X",
+                        "O"
+                    ]
+                ]
+            ]
+        ]
+    }
+}

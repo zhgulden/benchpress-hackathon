@@ -1,0 +1,114 @@
+{
+    "problem_id": 3727,
+    "question": "# Pythagorean Triples\n\nA Pythagorean triplet is a set of three numbers a, b, and c where `a^2 + b^2 = c^2`. In this Kata, you will be tasked with finding the Pythagorean triplets whose product is equal to `n`, the given argument to the function `pythagorean_triplet`.\n\n## Your task\n\nIn this Kata, you will be tasked with finding the Pythagorean triplets whose product is equal to `n`, the given argument to the function, where `0 < n < 10000000`\n\n\n## Examples\n\nOne such triple is `3, 4, 5`. For this challenge, you would be given the value `60` as the argument to your function, and then it would return the Pythagorean triplet in an array `[3, 4, 5]` which is returned in increasing order. `3^2 + 4^2 = 5^2` since `9 + 16 = 25` and then their product (`3 * 4 * 5`) is `60`.\n\n\nMore examples:\n\n| **argument** | **returns** |\n| ---------|---------|\n| 60       | [3, 4, 5] |\n| 780      | [5, 12, 13] |\n| 2040     | [8, 15, 17] |",
+    "input_output": {
+        "fn_name": "pythagorean_triplet",
+        "inputs": [
+            [
+                60
+            ],
+            [
+                780
+            ],
+            [
+                2040
+            ],
+            [
+                4200
+            ],
+            [
+                12180
+            ],
+            [
+                120120
+            ],
+            [
+                192720
+            ],
+            [
+                328860
+            ],
+            [
+                907200
+            ],
+            [
+                1440600
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    3,
+                    4,
+                    5
+                ]
+            ],
+            [
+                [
+                    5,
+                    12,
+                    13
+                ]
+            ],
+            [
+                [
+                    8,
+                    15,
+                    17
+                ]
+            ],
+            [
+                [
+                    7,
+                    24,
+                    25
+                ]
+            ],
+            [
+                [
+                    20,
+                    21,
+                    29
+                ]
+            ],
+            [
+                [
+                    33,
+                    56,
+                    65
+                ]
+            ],
+            [
+                [
+                    48,
+                    55,
+                    73
+                ]
+            ],
+            [
+                [
+                    60,
+                    63,
+                    87
+                ]
+            ],
+            [
+                [
+                    42,
+                    144,
+                    150
+                ]
+            ],
+            [
+                [
+                    49,
+                    168,
+                    175
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59c32c609f0cbce0ea000073",
+    "difficulty": "introductory",
+    "starter_code": "def pythagorean_triplet(n):\n\t"
+}

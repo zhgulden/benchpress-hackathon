@@ -1,0 +1,56 @@
+{
+    "problem_id": 3019,
+    "question": "**This Kata is intended as a small challenge for my students**\n\nAll Star Code Challenge #18\n\nCreate a function called that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one.\n\nIf no occurrences can be found, a count of 0 should be returned.\n\nNotes:\n* The first argument can be an empty string  \n* The second string argument will always be of length 1",
+    "input_output": {
+        "fn_name": "str_count",
+        "inputs": [
+            [
+                "hello",
+                "l"
+            ],
+            [
+                "hello",
+                "e"
+            ],
+            [
+                "codewars",
+                "c"
+            ],
+            [
+                "ggggg",
+                "g"
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ],
+            [
+                1
+            ],
+            [
+                1
+            ],
+            [
+                5
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5865918c6b569962950002a1",
+    "difficulty": "introductory",
+    "starter_code": "def str_count(strng, letter):\n\t",
+    "test_cases": {
+        "fn_name": "str_count",
+        "inputs": [
+            [
+                "hello world",
+                "o"
+            ]
+        ],
+        "outputs": [
+            [
+                2
+            ]
+        ]
+    }
+}

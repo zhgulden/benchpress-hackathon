@@ -1,0 +1,74 @@
+{
+    "problem_id": 4319,
+    "question": "Gigi is a clever monkey, living in the zoo, his teacher (animal keeper) recently taught him some knowledge of \"0\".\n\nIn Gigi's eyes, \"0\" is a character contains some circle(maybe one, maybe two).\n\nSo, a is a \"0\",b is a \"0\",6 is also a \"0\"\uff0cand 8 have two \"0\" ,etc...\n\nNow, write some code to count how many \"0\"s in the text.\n\nLet us see who is smarter? You ? or monkey?\n\nInput always be a string(including words numbers and symbols)\uff0cYou don't need to verify it, but pay attention to the difference between uppercase and lowercase letters.\n\nHere is a table of characters\uff1a\n\none zeroabdegopq069DOPQR \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 () <-- A pair of braces as a zerotwo zero%&B8\n\nOutput will be a number of \"0\".",
+    "input_output": {
+        "fn_name": "countzero",
+        "inputs": [
+            [
+                ""
+            ],
+            [
+                "0"
+            ],
+            [
+                "0oO0oO"
+            ],
+            [
+                "1234567890"
+            ],
+            [
+                "abcdefghijklmnopqrstuvwxyz"
+            ],
+            [
+                "()"
+            ],
+            [
+                "E"
+            ],
+            [
+                "aA"
+            ],
+            [
+                "BRA"
+            ],
+            [
+                "%%"
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                6
+            ],
+            [
+                5
+            ],
+            [
+                8
+            ],
+            [
+                1
+            ],
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                3
+            ],
+            [
+                4
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56c2acc8c44a3ad6e400050a",
+    "difficulty": "introductory",
+    "starter_code": "def countzero(string):\n\t"
+}

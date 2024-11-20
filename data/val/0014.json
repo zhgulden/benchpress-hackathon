@@ -1,0 +1,63 @@
+{
+    "problem_id": 4384,
+    "question": "# Task\nGiven two integers `a` and `b`, return the sum of the numerator and the denominator of the reduced fraction `a/b`.\n\n# Example\n\nFor `a = 2, b = 4`, the result should be `3`\n\nSince `2/4 = 1/2 => 1 + 2 = 3`.\n\nFor `a = 10, b = 100`, the result should be `11`\n\nSince `10/100 = 1/10 => 1 + 10 = 11`.\n\nFor `a = 5, b = 5`, the result should be `2`\n\nSince `5/5 = 1/1 => 1 + 1 = 2`.\n\n# Input/Output\n\n\n- `[input]` integer `a`\n\nThe numerator, `1 \u2264 a \u2264 2000`.\n\n\n- `[input]` integer `b`\n\nThe denominator, `1 \u2264 b \u2264 2000`.\n\n\n- `[output]` an integer\n\nThe sum of the numerator and the denominator of the reduces fraction.",
+    "input_output": {
+        "fn_name": "fraction",
+        "inputs": [
+            [
+                90,
+                120
+            ],
+            [
+                2,
+                4
+            ],
+            [
+                100,
+                1000
+            ],
+            [
+                3,
+                15
+            ],
+            [
+                114,
+                200
+            ]
+        ],
+        "outputs": [
+            [
+                7
+            ],
+            [
+                3
+            ],
+            [
+                11
+            ],
+            [
+                6
+            ],
+            [
+                157
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58b8db810f40ea7788000126",
+    "difficulty": "introductory",
+    "starter_code": "def fraction(a, b):\n\t",
+    "test_cases": {
+        "fn_name": "fraction",
+        "inputs": [
+            [
+                3,
+                118
+            ]
+        ],
+        "outputs": [
+            [
+                121
+            ]
+        ]
+    }
+}

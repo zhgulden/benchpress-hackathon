@@ -1,0 +1,50 @@
+{
+    "problem_id": 3673,
+    "question": "In number theory, Euler's totient is an arithmetic function, introduced in 1763 by Euler, that counts the positive integers less than or equal to `n` that are relatively prime to `n`. Thus, if `n` is a positive integer, then `\u03c6(n)`, notation introduced by Gauss in 1801, is the number of positive integers `k \u2264 n` for which `gcd(n, k) = 1`.  \nThe totient function is important in number theory, mainly because it gives the order of the multiplicative group of integers modulo `n`. The totient function also plays a key role in the definition of the RSA encryption system.\n\nFor example `let n = 9`.  \nThen `gcd(9, 3) = gcd(9, 6) = 3` and `gcd(9, 9) = 9`.  \nThe other six numbers in the range `1 \u2264 k \u2264 9` i.e. `1, 2, 4, 5, 7, 8` are relatively prime to `9`.  \nTherefore, `\u03c6(9) = 6`.  \nAs another example, `\u03c6(1) = 1` since `gcd(1, 1) = 1`.\n\nThere are generally two approaches to this function:\n\n* Iteratively counting the numbers `k \u2264 n` such that `gcd(n,k) = 1`.\n\n* Using the Euler product formula.  \n  This is an explicit formula for calculating `\u03c6(n)` depending on the prime divisor of `n`:  \n  `\u03c6(n) = n * Product (1 - 1/p)` where the product is taken over the primes `p \u2264 n` that divide `n`.  \n  For example: `\u03c6(36) = 36 * (1 - 1/2) * (1 - 1/3) = 36 * 1/2 * 2/3 = 12`.  \n  This second method seems more complex and not likely to be faster, but in practice we will often look for `\u03c6(n)` with `n` prime. It correctly gives `\u03c6(n) = n - 1` if `n` is prime. \n\nYou have to code the Euler totient function, that takes an integer `1 \u2264 n` as input and returns `\u03c6(n)`.\n\n```if:javascript\nYou do have to check if `n` is a number, is an integer and that `1 \u2264 n`; if that is not the case, the function should return `0`.\n```\n\n```if:python\nYou do have to check if `n` is a number, is an integer and that `1 \u2264 n`; if that is not the case, the function should return `0`.\n```\n\n```if:racket\n`n` is always a positive integer.\n```\n\nInput range: `1 \u2264 n \u2264 1e10`",
+    "input_output": {
+        "fn_name": "totient",
+        "inputs": [
+            [
+                15
+            ],
+            [
+                18
+            ],
+            [
+                19
+            ],
+            [
+                false
+            ],
+            [
+                "wow doge"
+            ],
+            [
+                0.0435
+            ]
+        ],
+        "outputs": [
+            [
+                8
+            ],
+            [
+                6
+            ],
+            [
+                18
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/53c9157c689f841d16000c03",
+    "difficulty": "introductory",
+    "starter_code": "def totient(n):\n\t"
+}

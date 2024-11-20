@@ -1,0 +1,44 @@
+{
+    "problem_id": 3700,
+    "question": "A family of kookaburras are in my backyard.\n\nI can't see them all, but I can hear them!\n\n# How many kookaburras are there?\n\n\n\n\n## Hint \n\nThe trick to counting kookaburras is to listen carefully\n\n* The males go ```HaHaHa```...\n\n* The females go ```hahaha```...\n\n* And they always alternate male/female\n\n\n\n^ Kata Note : No validation is necessary; only valid input will be passed :-)",
+    "input_output": {
+        "fn_name": "kooka_counter",
+        "inputs": [
+            [
+                ""
+            ],
+            [
+                "hahahahaha"
+            ],
+            [
+                "hahahahahaHaHaHa"
+            ],
+            [
+                "HaHaHahahaHaHa"
+            ],
+            [
+                "hahahahahahahaHaHa"
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                2
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58e8cad9fd89ea0c6c000258",
+    "difficulty": "introductory",
+    "starter_code": "def kooka_counter(laughing):\n\t"
+}

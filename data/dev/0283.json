@@ -1,0 +1,50 @@
+{
+    "problem_id": 3382,
+    "question": "Your task is simply to count the total number of lowercase letters in a string.\n\n## Examples",
+    "input_output": {
+        "fn_name": "lowercase_count",
+        "inputs": [
+            [
+                "abc"
+            ],
+            [
+                "abcABC123"
+            ],
+            [
+                "abcABC123!@#$%^&*()_-+=}{[]|':;?/>.<,~"
+            ],
+            [
+                ""
+            ],
+            [
+                "ABC123!@#$%^&*()_-+=}{[]|':;?/>.<,~"
+            ],
+            [
+                "abcdefghijklmnopqrstuvwxyz"
+            ]
+        ],
+        "outputs": [
+            [
+                3
+            ],
+            [
+                3
+            ],
+            [
+                3
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                26
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56a946cd7bd95ccab2000055",
+    "difficulty": "introductory",
+    "starter_code": "def lowercase_count(strng):\n\t"
+}

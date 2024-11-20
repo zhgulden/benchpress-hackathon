@@ -1,0 +1,91 @@
+{
+    "problem_id": 3387,
+    "question": "What's in a name?\n..Or rather, what's a name in? For us, a particular string is where we are looking for a name.\n\nTask\n\nTest whether or not the string contains all of the letters which spell a given name, in order.\n\nThe format\nA function passing two strings, searching for one (the name) within the other.\n``function nameInStr(str, name){ return true || false }``\n\nExamples\n\n    nameInStr(\"Across the rivers\", \"chris\") --> true\n                ^      ^  ^^   ^\n                c      h  ri   s\n                \n    Contains all of the letters in \"chris\", in order.\n----------------------------------------------------------\n    nameInStr(\"Next to a lake\", \"chris\") --> false\n    \n    Contains none of the letters in \"chris\".\n--------------------------------------------------------------------\n    nameInStr(\"Under a sea\", \"chris\") --> false\n                   ^   ^\n                   r   s\n                   \n    Contains only some of the letters in \"chris\".\n--------------------------------------------------------------------\n    nameInStr(\"A crew that boards the ship\", \"chris\") --> false\n                 cr    h              s i\n                 cr                h  s i  \n                 c     h      r       s i\n                 ...\n                 \n    Contains all of the letters in \"chris\", but not in order.\n--------------------------------------------------------------------\n    nameInStr(\"A live son\", \"Allison\") --> false\n               ^ ^^   ^^^\n               A li   son\n                 \n    Contains all of the correct letters in \"Allison\", in order, \n    but not enough of all of them (missing an 'l').\n    \n\nNote: testing will _not_ be case-sensitive.",
+    "input_output": {
+        "fn_name": "name_in_str",
+        "inputs": [
+            [
+                "Across the rivers",
+                "chris"
+            ],
+            [
+                "Next to a lake",
+                "chris"
+            ],
+            [
+                "Under a sea",
+                "chris"
+            ],
+            [
+                "A crew that boards the ship",
+                "chris"
+            ],
+            [
+                "A live son",
+                "Allison"
+            ],
+            [
+                "Just enough nice friends",
+                "Jennifer"
+            ],
+            [
+                "thomas",
+                "Thomas"
+            ],
+            [
+                "pippippi",
+                "Pippi"
+            ],
+            [
+                "pipipp",
+                "Pippi"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59daf400beec9780a9000045",
+    "difficulty": "introductory",
+    "starter_code": "def name_in_str(str, name):\n\t",
+    "test_cases": {
+        "fn_name": "name_in_str",
+        "inputs": [
+            [
+                "ppipip",
+                "Pippi"
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ]
+        ]
+    }
+}

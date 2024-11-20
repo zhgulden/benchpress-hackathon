@@ -1,0 +1,38 @@
+{
+    "problem_id": 3870,
+    "question": "In this Kata, we are going to reverse a string while maintaining the spaces (if any) in their original place.\n\nFor example:\n```\nsolve(\"our code\") = \"edo cruo\"\n-- Normal reversal without spaces is \"edocruo\". \n-- However, there is a space at index 3, so the string becomes \"edo cruo\"\n\nsolve(\"your code rocks\") = \"skco redo cruoy\". \nsolve(\"codewars\") = \"srawedoc\"\n```\nMore examples in the test cases. All input will be lower case letters and in some cases spaces.\n\nGood luck!\n\nPlease also try:\n\n[Simple time difference](https://www.codewars.com/kata/5b76a34ff71e5de9db0000f2)\n\n[Simple remove duplicates](https://www.codewars.com/kata/5ba38ba180824a86850000f7)",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                "codewars"
+            ],
+            [
+                "your code"
+            ],
+            [
+                "your code rocks"
+            ],
+            [
+                "i love codewars"
+            ]
+        ],
+        "outputs": [
+            [
+                "srawedoc"
+            ],
+            [
+                "edoc ruoy"
+            ],
+            [
+                "skco redo cruoy"
+            ],
+            [
+                "s rawe docevoli"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a71939d373c2e634200008e",
+    "difficulty": "introductory",
+    "starter_code": "def solve(s):\n\t"
+}

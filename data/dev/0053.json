@@ -1,0 +1,65 @@
+{
+    "problem_id": 2996,
+    "question": "Everybody know that you passed to much time awake during night time...\n\nYour task here is to define how much coffee you need to stay awake after your night. \nYou will have to complete a function that take an array of events in arguments, according to this list you will return the number of coffee you need to stay awake during day time. **Note**: If the count exceed 3 please return 'You need extra sleep'.\n\nThe list of events can contain the following:\n\n- You come here, to solve some kata ('cw').\n\n- You have a dog or a cat that just decide to wake up too early ('dog' | 'cat').\n\n- You just watch a movie ('movie').\n\n- Other events can be present and it will be represent by arbitrary string, just ignore this one.\n\nEach event can be downcase/lowercase, or uppercase. If it is downcase/lowercase you need 1 coffee by events and if it is uppercase you need 2 coffees.",
+    "input_output": {
+        "fn_name": "how_much_coffee",
+        "inputs": [
+            [
+                []
+            ],
+            [
+                [
+                    "cw"
+                ]
+            ],
+            [
+                [
+                    "CW"
+                ]
+            ],
+            [
+                [
+                    "cw",
+                    "CAT"
+                ]
+            ],
+            [
+                [
+                    "cw",
+                    "CAT",
+                    "DOG"
+                ]
+            ],
+            [
+                [
+                    "cw",
+                    "CAT",
+                    "cw=others"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                "You need extra sleep"
+            ],
+            [
+                3
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57de78848a8b8df8f10005b1",
+    "difficulty": "introductory",
+    "starter_code": "def how_much_coffee(events):\n\t"
+}

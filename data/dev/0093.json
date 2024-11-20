@@ -1,0 +1,74 @@
+{
+    "problem_id": 4556,
+    "question": "Given a string of integers, count how many times that integer repeats itself, then return a string showing the count and the integer.\n\n\nExample: `countMe('1123')` (`count_me` in Ruby)\n\n- Here 1 comes twice so `` will be `\"21\"`\n- then 2 comes once so `` will be `\"12\"`\n- then 3 comes once so `` will be `\"13\"`\n\nhence output string will be `\"211213\"`.\n\n\nSimilarly `countMe('211213')` will return `'1221121113'`\n(1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)\n\n\nReturn `\"\"` for empty, nil or non numeric strings",
+    "input_output": {
+        "fn_name": "count_me",
+        "inputs": [
+            [
+                "1123"
+            ],
+            [
+                "1"
+            ],
+            [
+                "11"
+            ],
+            [
+                "a"
+            ],
+            [
+                "a123"
+            ],
+            [
+                "21"
+            ],
+            [
+                "1211"
+            ],
+            [
+                "12322212223443"
+            ],
+            [
+                ""
+            ],
+            [
+                "123a"
+            ]
+        ],
+        "outputs": [
+            [
+                "211213"
+            ],
+            [
+                "11"
+            ],
+            [
+                "21"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                "1211"
+            ],
+            [
+                "111221"
+            ],
+            [
+                "111213321132132413"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/559af787b4b8eac78b000022",
+    "difficulty": "introductory",
+    "starter_code": "def count_me(data):\n\t"
+}

@@ -1,0 +1,44 @@
+{
+    "problem_id": 4544,
+    "question": "# Task\n Consider the following operation:\n \n We take a positive integer `n` and replace it with the sum of its `prime factors` (if a prime number is presented multiple times in the factorization of `n`, then it's counted the same number of times in the sum). \n \n This operation is applied sequentially first to the given number, then to the first result, then to the second result and so on.., until the result remains the same.\n\n  Given number `n`, find the final result of the operation.\n\n# Example\n\n  For `n = 24`, the output should be `5`.\n```\n24 -> (2 + 2 + 2 + 3) = 9 -> (3 + 3) = 6 -> (2 + 3) = 5 -> 5.\nSo the answer for n = 24 is 5.```\n\n# Input/Output\n\n\n - `[input]` integer `n`\n\n  Constraints: `2 \u2264 n \u2264 10000.`\n\n\n - `[output]` an integer",
+    "input_output": {
+        "fn_name": "factor_sum",
+        "inputs": [
+            [
+                24
+            ],
+            [
+                35
+            ],
+            [
+                156
+            ],
+            [
+                4
+            ],
+            [
+                31
+            ]
+        ],
+        "outputs": [
+            [
+                5
+            ],
+            [
+                7
+            ],
+            [
+                5
+            ],
+            [
+                4
+            ],
+            [
+                31
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/589d2bf7dfdef0817e0001aa",
+    "difficulty": "introductory",
+    "starter_code": "def factor_sum(n):\n\t"
+}

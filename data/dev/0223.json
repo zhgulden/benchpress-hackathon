@@ -1,0 +1,65 @@
+{
+    "problem_id": 3080,
+    "question": "Don Drumphet lives in a nice neighborhood, but one of his neighbors has started to let his house go.  Don Drumphet wants to build a wall between his house and his neighbor\u2019s, and is trying to get the neighborhood association to pay for it.  He begins to solicit his neighbors to petition to get the association to build the wall.  Unfortunately for Don Drumphet, he cannot read very well, has a very limited attention span, and can only remember two letters from each of his neighbors\u2019 names.  As he collects signatures, he insists that his neighbors keep truncating their names until two letters remain, and he can finally read them.\n\nYour code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is\"",
+    "input_output": {
+        "fn_name": "who_is_paying",
+        "inputs": [
+            [
+                "Mexico"
+            ],
+            [
+                "Melania"
+            ],
+            [
+                "Melissa"
+            ],
+            [
+                "Me"
+            ],
+            [
+                ""
+            ],
+            [
+                "I"
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    "Mexico",
+                    "Me"
+                ]
+            ],
+            [
+                [
+                    "Melania",
+                    "Me"
+                ]
+            ],
+            [
+                [
+                    "Melissa",
+                    "Me"
+                ]
+            ],
+            [
+                [
+                    "Me"
+                ]
+            ],
+            [
+                [
+                    ""
+                ]
+            ],
+            [
+                [
+                    "I"
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58bf9bd943fadb2a980000a7",
+    "difficulty": "introductory",
+    "starter_code": "def who_is_paying(name):\n\t"
+}

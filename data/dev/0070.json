@@ -1,0 +1,59 @@
+{
+    "problem_id": 4202,
+    "question": "The Ulam sequence `U` is defined by `u0 = u`, `u1 = v`, with the general term `uN` for `N > 2` given by the least integer expressible uniquely as the sum of two distinct earlier terms. In other words, the next number is always the smallest, unique sum of any two previous terms.\n\nComplete the function that creates an Ulam Sequence starting with the given `u0` and `u1`, and contains `n` terms.\n\n## Example\n\nThe first 10 terms of the sequence `U(u0=1, u1=2)` are: 1, 2, 3, 4, 6, 8, 11, 13, 16, 18.\n\nLet's see it in details:\n* The first term after the initial 1, 2 is obviously 3, because 1 + 2 = 3\n* The next term is 1 + 3 = 4 (we don't have to worry about 4 = 2 + 2 since it is a sum of a *single term* instead of *distinct terms*)\n* 5 is not a member of the sequence since it is representable in two ways: 1 + 4 and 2 + 3\n* 6 is a memeber, as 2 + 4 = 6\n* etc.\n\n\nDescription Reference: http://mathworld.wolfram.com/UlamSequence.html\n\n---\n\nPerformance version: https://www.codewars.com/kata/ulam-sequences-performance-edition",
+    "input_output": {
+        "fn_name": "ulam_sequence",
+        "inputs": [
+            [
+                1,
+                2,
+                5
+            ],
+            [
+                3,
+                4,
+                5
+            ],
+            [
+                5,
+                6,
+                8
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    6
+                ]
+            ],
+            [
+                [
+                    3,
+                    4,
+                    7,
+                    10,
+                    11
+                ]
+            ],
+            [
+                [
+                    5,
+                    6,
+                    11,
+                    16,
+                    17,
+                    21,
+                    23,
+                    26
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5995ff073acba5fa3a00011d",
+    "difficulty": "introductory",
+    "starter_code": "def ulam_sequence(u0, u1, n):\n\t"
+}

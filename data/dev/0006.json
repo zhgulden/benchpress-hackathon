@@ -1,0 +1,54 @@
+{
+    "problem_id": 2907,
+    "question": "This kata is an extension of \"Combinations in a Set Using Boxes\":https://www.codewars.com/kata/5b5f7f7607a266914200007c\n\nThe goal for this kata is to get all the possible combinations (or distributions) (with no empty boxes) of a certain number of balls, but now, **with different amount of boxes.** In the previous kata, the number of boxes was always the same\n\nJust to figure the goal for this kata, we can see in the picture below the combinations for four balls using the diagram of Hasse:\n\n\n\nPoints that are isolated represent balls that are unique in a box.\nk points that are bonded in an area respresent a subset that is content in a box.\n\nThe unique square at the bottom of the diagram, means that there is only one possible combination for four balls in four boxes.\n\nThe above next line with 6 squares, means that we have 6 possible distributions of the four balls in 3 boxes. These six distributions have something in common, all of them have one box with 2 balls.\n\nGoing up one line more, we find the 7 possible distributions of the four balls in 2 boxes. As it is shown, we will have 7 distributions with: three balls in a box and only one ball in the another box, or two balls in each box.\n\nFinally, we find again at the top, an unique square, that represents, the only possible distribution, having one box, the four balls together in the only available box.\n\nSo, for a set of 4 labeled balls, we have a total of 15 possible distributions (as always with no empty boxes) and with a maximum of 7 possible distributions for the case of two boxes.\n\nPrepare a code that for a given number of balls (an integer), may output an array with required data in the following order:\n```\n[total_amount_distributions, maximum_amount_distributions_case_k_boxes, k_boxes]\n```\nJust see how it would be for the example given above:\n```\ncombs_non_empty_boxesII(4) == [15, 7, 2] # A total of 15 combinations            \n                                         #The case with maximum distributions is 7 using 2 boxes.\n\n```\nFeatures of the random tests:\n```\n1 < n <= 1800 (python)\n1 < n <= 1200 (ruby)\n```\nYou may see the example tests for more cases.\nEnjoy it!\nRuby version will be published soon.",
+    "input_output": {
+        "fn_name": "combs_non_empty_boxesII",
+        "inputs": [
+            [
+                4
+            ],
+            [
+                3
+            ],
+            [
+                2
+            ],
+            [
+                20
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    15,
+                    7,
+                    2
+                ]
+            ],
+            [
+                [
+                    5,
+                    3,
+                    2
+                ]
+            ],
+            [
+                [
+                    2,
+                    1,
+                    2
+                ]
+            ],
+            [
+                [
+                    51724158235372,
+                    15170932662679,
+                    8
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5b61e9306d0db7d097000632",
+    "difficulty": "introductory",
+    "starter_code": "def combs_non_empty_boxesII(n):\n\t"
+}

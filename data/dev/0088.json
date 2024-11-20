@@ -1,0 +1,62 @@
+{
+    "problem_id": 2918,
+    "question": "Let us begin with an example:\n\nA man has a rather old car being worth $2000. \nHe saw a secondhand car being worth $8000. He wants to keep his old car until he can buy the secondhand one.\n\nHe thinks he can save $1000 each month but the prices of his old \ncar and of the new one decrease of 1.5 percent per month.\nFurthermore this percent of loss increases of `0.5` percent \nat the end of every two months.\nOur man finds it difficult to make all these calculations.\n\n**Can you help him?**\n\nHow many months will it take him to save up enough money to buy the car he wants, and how much money will he have left over?\n\n**Parameters and return of function:**\n```\nparameter (positive int or float, guaranteed) startPriceOld (Old car price)\nparameter (positive int or float, guaranteed) startPriceNew (New car price)\nparameter (positive int or float, guaranteed) savingperMonth \nparameter (positive float or int, guaranteed) percentLossByMonth\n\nnbMonths(2000, 8000, 1000, 1.5) should return [6, 766] or (6, 766)\n```\n###  Detail of the above example:\n```\nend month 1: percentLoss 1.5 available -4910.0\nend month 2: percentLoss 2.0 available -3791.7999...\nend month 3: percentLoss 2.0 available -2675.964\nend month 4: percentLoss 2.5 available -1534.06489...\nend month 5: percentLoss 2.5 available -395.71327...\nend month 6: percentLoss 3.0 available 766.158120825...\nreturn [6, 766] or (6, 766)\n\n```\n\nwhere `6` is the number of months at **the end of which** he can buy the new car and `766` is the nearest integer to `766.158...` (rounding `766.158` gives `766`).\n\n**Note:** \n\nSelling, buying and saving are normally done at end of month.\nCalculations are processed at the end of each considered month\nbut if, by chance from the start, the value of the old car is bigger than the value of the new one or equal there is no saving to be made, no need to wait so he can at the beginning of the month buy the new car:\n```\nnbMonths(12000, 8000, 1000, 1.5) should return [0, 4000]\nnbMonths(8000, 8000, 1000, 1.5) should return [0, 0]\n```\n\nWe don't take care of a deposit of savings in a bank:-)",
+    "input_output": {
+        "fn_name": "nbMonths",
+        "inputs": [
+            [
+                2000,
+                8000,
+                1000,
+                1.5
+            ],
+            [
+                8000,
+                12000,
+                500,
+                1
+            ],
+            [
+                18000,
+                32000,
+                1500,
+                1.25
+            ],
+            [
+                7500,
+                32000,
+                300,
+                1.55
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    6,
+                    766
+                ]
+            ],
+            [
+                [
+                    8,
+                    597
+                ]
+            ],
+            [
+                [
+                    8,
+                    332
+                ]
+            ],
+            [
+                [
+                    25,
+                    122
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/554a44516729e4d80b000012",
+    "difficulty": "introductory",
+    "starter_code": "def nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMonth):\n\t"
+}

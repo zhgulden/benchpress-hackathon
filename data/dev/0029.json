@@ -1,0 +1,109 @@
+{
+    "problem_id": 4505,
+    "question": "Create an identity matrix of the specified size( >= 0).\n\nSome examples:\n\n```\n(1)  =>  [[1]]\n\n(2) => [ [1,0],\n         [0,1] ]\n\n       [ [1,0,0,0,0],\n         [0,1,0,0,0],\n(5) =>   [0,0,1,0,0],\n         [0,0,0,1,0],\n         [0,0,0,0,1] ]   \n\n```",
+    "input_output": {
+        "fn_name": "get_matrix",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                1
+            ],
+            [
+                2
+            ],
+            [
+                3
+            ],
+            [
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                []
+            ],
+            [
+                [
+                    [
+                        1
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a34da5dee1aae516d00004a",
+    "difficulty": "introductory",
+    "starter_code": "def get_matrix(n):\n\t"
+}

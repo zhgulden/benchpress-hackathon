@@ -1,0 +1,81 @@
+{
+    "problem_id": 4365,
+    "question": "An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.\n\n```python\nis_isogram(\"Dermatoglyphics\" ) == true\nis_isogram(\"aba\" ) == false\nis_isogram(\"moOse\" ) == false # -- ignore letter case\n```\n```C\nis_isogram(\"Dermatoglyphics\" ) == true;\nis_isogram(\"aba\" ) == false;\nis_isogram(\"moOse\" ) == false; // -- ignore letter case\n```",
+    "input_output": {
+        "fn_name": "is_isogram",
+        "inputs": [
+            [
+                "Dermatoglyphics"
+            ],
+            [
+                "isogram"
+            ],
+            [
+                "moose"
+            ],
+            [
+                "isIsogram"
+            ],
+            [
+                "aba"
+            ],
+            [
+                "moOse"
+            ],
+            [
+                "thumbscrewjapingly"
+            ],
+            [
+                "abcdefghijklmnopqrstuvwxyz"
+            ],
+            [
+                "abcdefghijklmnopqrstuwwxyz"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54ba84be607a92aa900000f1",
+    "difficulty": "introductory",
+    "starter_code": "def is_isogram(string):\n\t",
+    "test_cases": {
+        "fn_name": "is_isogram",
+        "inputs": [
+            [
+                ""
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ]
+        ]
+    }
+}

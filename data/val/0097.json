@@ -1,0 +1,57 @@
+{
+    "problem_id": 4077,
+    "question": "The new football league season is coming and the Football Association need some help resetting the league standings. Normally the initial league standing is done in alphabetical order (from A to Z) but this year the FA have decided to freshen it up. \n\nIt has been decided that team who finished first last season will begin the next season in first place. Regardless of what letter their club begins with. e.g. if Manchester City were in first place last year, they will begin the season in position one. All other teams should be in alphabetical order. \n\nThe teams will be fed in as an object ({}). The key will be will be their position from last season and the value is the club's name e.g. Arsenal. \n\nThe output should be an object ({}) with the key as the club's starting position for the new season and the value should be club's name e.g. Arsenal.\n\nFor example. If in the previous season the standings were:\n\n1:'Leeds United'\n2:'Liverpool'\n3:'Manchester City'\n4:'Coventry'\n5:'Arsenal' \n\nThen the new season standings should \n\n1:'Leeds United' (first last season)\n2:'Arsenal' (alphabetical)\n3:'Coventry' (alphabetical) \n4:'Liverpool' (alphabetical) \n5:'Manchester City' (alphabetical)",
+    "input_output": {
+        "fn_name": "premier_league_standings",
+        "inputs": [
+            [
+                {
+                    "1": "Arsenal"
+                }
+            ],
+            [
+                {
+                    "2": "Arsenal",
+                    "3": "Accrington Stanley",
+                    "1": "Leeds United"
+                }
+            ]
+        ],
+        "outputs": [
+            {
+                "1": "Arsenal"
+            },
+            {
+                "3": "Arsenal",
+                "2": "Accrington Stanley",
+                "1": "Leeds United"
+            }
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58de08d376f875dbb40000f1",
+    "difficulty": "introductory",
+    "starter_code": "def premier_league_standings(teams):\n\t",
+    "test_cases": {
+        "fn_name": "premier_league_standings",
+        "inputs": [
+            [
+                {
+                    "1": "Leeds United",
+                    "2": "Liverpool",
+                    "3": "Manchester City",
+                    "4": "Coventry",
+                    "5": "Arsenal"
+                }
+            ]
+        ],
+        "outputs": [
+            {
+                "1": "Leeds United",
+                "2": "Arsenal",
+                "3": "Coventry",
+                "4": "Liverpool",
+                "5": "Manchester City"
+            }
+        ]
+    }
+}

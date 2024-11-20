@@ -1,0 +1,84 @@
+{
+    "problem_id": 2835,
+    "question": "Consider a sequence made up of the consecutive prime numbers. This infinite sequence would start with: \n```python\n\"2357111317192329313741434753596167717379...\"\n```\n\nYou will be given two numbers: `a` and `b`, and your task will be to return `b` elements starting from index `a` in this sequence.\n```\nFor example:\nsolve(10,5) == `19232` Because these are 5 elements from index 10 in the sequence.\n```\n\nTests go up to about index `20000`.\n\nMore examples in test cases. Good luck!\n\nPlease also try [Simple time difference](https://www.codewars.com/kata/5b76a34ff71e5de9db0000f2)",
+    "input_output": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                2,
+                2
+            ],
+            [
+                10,
+                5
+            ],
+            [
+                10,
+                3
+            ],
+            [
+                20,
+                9
+            ],
+            [
+                30,
+                12
+            ],
+            [
+                40,
+                8
+            ],
+            [
+                50,
+                6
+            ],
+            [
+                10000,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                "57"
+            ],
+            [
+                "19232"
+            ],
+            [
+                "192"
+            ],
+            [
+                "414347535"
+            ],
+            [
+                "616771737983"
+            ],
+            [
+                "83899710"
+            ],
+            [
+                "031071"
+            ],
+            [
+                "02192"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a908da30025e995880000e3",
+    "difficulty": "introductory",
+    "starter_code": "def solve(a, b):\n\t",
+    "test_cases": {
+        "fn_name": "solve",
+        "inputs": [
+            [
+                20000,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                "09334"
+            ]
+        ]
+    }
+}

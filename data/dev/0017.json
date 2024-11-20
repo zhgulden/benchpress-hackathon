@@ -1,0 +1,74 @@
+{
+    "problem_id": 4650,
+    "question": "Write a function that accepts a string, and returns true if it is in the form of a phone number. Assume that any integer from 0-9 in any of the spots will produce a valid phone number.\n\nOnly worry about the following format:\n(123) 456-7890   (don't forget the space after the close parentheses)  \nExamples:\n\n```\nvalidPhoneNumber(\"(123) 456-7890\")  =>  returns true\nvalidPhoneNumber(\"(1111)555 2345\")  => returns false\nvalidPhoneNumber(\"(098) 123 4567\")  => returns false\n```",
+    "input_output": {
+        "fn_name": "validPhoneNumber",
+        "inputs": [
+            [
+                "(123) 456-7890"
+            ],
+            [
+                "(1111)555 2345"
+            ],
+            [
+                "(098) 123 4567"
+            ],
+            [
+                "(123)456-7890"
+            ],
+            [
+                "abc(123)456-7890"
+            ],
+            [
+                "(123)456-7890abc"
+            ],
+            [
+                "abc(123)456-7890abc"
+            ],
+            [
+                "abc(123) 456-7890"
+            ],
+            [
+                "(123) 456-7890abc"
+            ],
+            [
+                "abc(123) 456-7890abc"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/525f47c79f2f25a4db000025",
+    "difficulty": "introductory",
+    "starter_code": "def validPhoneNumber(phoneNumber):\n\t"
+}

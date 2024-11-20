@@ -1,0 +1,77 @@
+{
+    "problem_id": 3939,
+    "question": "# Rock Paper Scissors\n\nLet's play! You have to return which player won! In case of a draw return `Draw!`.\n\nExamples:\n\n![rockpaperscissors](http://i.imgur.com/aimOQVX.png)",
+    "input_output": {
+        "fn_name": "rps",
+        "inputs": [
+            [
+                "rock",
+                "scissors"
+            ],
+            [
+                "scissors",
+                "paper"
+            ],
+            [
+                "paper",
+                "rock"
+            ],
+            [
+                "scissors",
+                "rock"
+            ],
+            [
+                "paper",
+                "scissors"
+            ],
+            [
+                "rock",
+                "paper"
+            ],
+            [
+                "rock",
+                "rock"
+            ],
+            [
+                "scissors",
+                "scissors"
+            ],
+            [
+                "paper",
+                "paper"
+            ]
+        ],
+        "outputs": [
+            [
+                "Player 1 won!"
+            ],
+            [
+                "Player 1 won!"
+            ],
+            [
+                "Player 1 won!"
+            ],
+            [
+                "Player 2 won!"
+            ],
+            [
+                "Player 2 won!"
+            ],
+            [
+                "Player 2 won!"
+            ],
+            [
+                "Draw!"
+            ],
+            [
+                "Draw!"
+            ],
+            [
+                "Draw!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5672a98bdbdd995fad00000f",
+    "difficulty": "introductory",
+    "starter_code": "def rps(p1, p2):\n\t"
+}

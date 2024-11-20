@@ -1,0 +1,63 @@
+{
+    "problem_id": 3088,
+    "question": "An NBA game runs 48 minutes (Four 12 minute quarters). Players do not typically play the full game, subbing in and out as necessary. Your job is to extrapolate a player's points per game if they played the full 48 minutes.\n\nWrite a function that takes two arguments, ppg (points per game) and mpg (minutes per game) and returns a straight extrapolation of ppg per 48 minutes rounded to the nearest tenth. Return 0 if 0.\n\nExamples:\n```python\nnba_extrap(12, 20) # 28.8\nnba_extrap(10, 10) # 48\nnba_extrap(5, 17) # 14.1\nnba_extrap(0, 0) # 0\n```\n\nNotes:\nAll inputs will be either be an integer or float.\nFollow your dreams!",
+    "input_output": {
+        "fn_name": "nba_extrap",
+        "inputs": [
+            [
+                2,
+                5
+            ],
+            [
+                3,
+                9
+            ],
+            [
+                16,
+                27
+            ],
+            [
+                11,
+                19
+            ],
+            [
+                14,
+                33
+            ],
+            [
+                1,
+                7.5
+            ],
+            [
+                6,
+                13
+            ]
+        ],
+        "outputs": [
+            [
+                19.2
+            ],
+            [
+                16.0
+            ],
+            [
+                28.4
+            ],
+            [
+                27.8
+            ],
+            [
+                20.4
+            ],
+            [
+                6.4
+            ],
+            [
+                22.2
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/587c2d08bb65b5e8040004fd",
+    "difficulty": "introductory",
+    "starter_code": "def nba_extrap(ppg, mpg):\n\t"
+}

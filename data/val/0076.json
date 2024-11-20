@@ -1,0 +1,86 @@
+{
+    "problem_id": 4064,
+    "question": "Create a function with two arguments that will return an array of the first (n) multiples of (x). \n\nAssume both the given number and the number of times to count will be positive numbers greater than 0. \n\nReturn the results as an array (or list in Python, Haskell or Elixir).\n\nExamples:\n\n```python\ncount_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]\ncount_by(2,5) #should return [2,4,6,8,10]\n```",
+    "input_output": {
+        "fn_name": "count_by",
+        "inputs": [
+            [
+                1,
+                5
+            ],
+            [
+                2,
+                5
+            ],
+            [
+                3,
+                5
+            ],
+            [
+                50,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            ],
+            [
+                [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10
+                ]
+            ],
+            [
+                [
+                    3,
+                    6,
+                    9,
+                    12,
+                    15
+                ]
+            ],
+            [
+                [
+                    50,
+                    100,
+                    150,
+                    200,
+                    250
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5513795bd3fafb56c200049e",
+    "difficulty": "introductory",
+    "starter_code": "def count_by(x, n):\n\t",
+    "test_cases": {
+        "fn_name": "count_by",
+        "inputs": [
+            [
+                100,
+                5
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    100,
+                    200,
+                    300,
+                    400,
+                    500
+                ]
+            ]
+        ]
+    }
+}

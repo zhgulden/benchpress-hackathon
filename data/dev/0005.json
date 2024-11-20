@@ -1,0 +1,112 @@
+{
+    "problem_id": 4195,
+    "question": "Remember the game 2048?\n\nThe main part of this game is merging identical tiles in a row. \n\n* Implement a function that models the process of merging all of the tile values in a single row.  \n* This function takes the array line as a parameter and returns a new array with the tile values from line slid towards the front of the array (index 0) and merged.\n* A given tile can only merge once.\n* Empty grid squares are represented as zeros.\n* Your function should work on arrays containing arbitrary number of elements.\n\n\n## Examples\n\n```\nmerge([2,0,2,2])  -->  [4,2,0,0]\n```\n\nAnother example with repeated merges: \n\n```\nmerge([4,4,8,16])  -->  [8,8,16,0]\nmerge([8,8,16,0])  -->  [16,16,0,0]\nmerge([16,16,0,0]) -->  [32,0,0,0]\n```",
+    "input_output": {
+        "fn_name": "merge",
+        "inputs": [
+            [
+                [
+                    2,
+                    0,
+                    2,
+                    2
+                ]
+            ],
+            [
+                [
+                    2,
+                    0,
+                    2,
+                    4
+                ]
+            ],
+            [
+                [
+                    0,
+                    0,
+                    2,
+                    2
+                ]
+            ],
+            [
+                [
+                    2,
+                    2,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
+                ]
+            ],
+            [
+                [
+                    8,
+                    16,
+                    16,
+                    8
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    4,
+                    2,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    4,
+                    4,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    4,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    4,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    4,
+                    4,
+                    2,
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    8,
+                    32,
+                    8,
+                    0
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55e1990978c60e5052000011",
+    "difficulty": "introductory",
+    "starter_code": "def merge(line):\n\t"
+}

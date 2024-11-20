@@ -1,0 +1,44 @@
+{
+    "problem_id": 2754,
+    "question": "Oh no!  You have stumbled upon a mysterious signal consisting of beeps of various lengths, and it is of utmost importance that you find out the secret message hidden in the beeps.  There are long and short beeps, the longer ones roughly three times as long as the shorter ones.  Hmm... that sounds familiar.\n\nThat's right: your job is to implement a decoder for the Morse alphabet.  Rather than dealing with actual beeps, we will use a common string encoding of Morse.  A long beep is represened by a dash (`-`) and a short beep by a dot (`.`).  A series of long and short beeps make up a letter, and letters are separated by spaces (` `).  Words are separated by double spaces.\n\nYou should implement the International Morse Alphabet.  You need to support letters a-z and digits 0-9 as follows:\n\n    a .-      h ....    o ---     u ..-      1 .----     6 -....\n    b -...    i ..      p .--.    v ...-     2 ..---     7 --...\n    c -.-.    j .---    q --.-    w .--      3 ...--     8 ---..\n    d -..     k -.-     r .-.     x -..-     4 ....-     9 ----.\n    e .       l .-..    s ...     y -.--     5 .....     0 -----\n    f ..-.    m --      t -       z --..\n    g --.     n -.\n\n\n## Examples\n\n    .... . .-.. .-.. ---  .-- --- .-. .-.. -..   \u2192 \"hello world\"\n    .---- ... -  .- -. -..  ..--- -. -..         \u2192 \"1st and 2nd\"\n\n```if:python\nA dictionnary `TOME` is preloaded for you, with the information above to convert morse code to letters.\n```\n```if:javascrip\nAn object `TOME` is preloaded for you, with the information above to convert morse code to letters.\n```\n```if:ruby\nA Hashmap `$dict` is preloaded for you, with the information above to convert morse code to letters.\n```",
+    "input_output": {
+        "fn_name": "decode",
+        "inputs": [
+            [
+                ".... . .-.. .-.. ---  .-- --- .-. .-.. -.."
+            ],
+            [
+                ".---- ... -  .- -. -..  ..--- -. -.."
+            ],
+            [
+                "..  .- --  .-  - . ... -"
+            ],
+            [
+                ".- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.. ----- .---- ..--- ...-- ....- ..... -.... --... ---.. ----."
+            ],
+            [
+                ""
+            ]
+        ],
+        "outputs": [
+            [
+                "hello world"
+            ],
+            [
+                "1st and 2nd"
+            ],
+            [
+                "i am a test"
+            ],
+            [
+                "abcdefghijklmnopqrstuvwxyz0123456789"
+            ],
+            [
+                ""
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54b0306c56f22d0bf9000ffb",
+    "difficulty": "introductory",
+    "starter_code": "def decode(s):\n\t"
+}

@@ -1,0 +1,53 @@
+{
+    "problem_id": 3230,
+    "question": "You're a programmer in a SEO company. The SEO specialist of your company gets the list of all project keywords everyday, then he looks for the longest keys to analyze them.\n\nYou will get the list with keywords and must write a simple function that returns the biggest search keywords and sorts them in lexicographical order.\n\nFor instance you might get:\n```python\n'key1', 'key2', 'key3', 'key n', 'bigkey2', 'bigkey1'\n```\n\nAnd your function should return:\n```python\n\"'bigkey1', 'bigkey2'\"\n```\n\nDon't forget to rate this kata! Thanks :)",
+    "input_output": {
+        "fn_name": "the_biggest_search_keys",
+        "inputs": [
+            [
+                "key1",
+                "key22",
+                "key333"
+            ],
+            [
+                "coding",
+                "sorting",
+                "tryruby"
+            ],
+            [
+                "small keyword",
+                "how to coding?",
+                "very nice kata",
+                "a lot of keys",
+                "I like Ruby!!!"
+            ]
+        ],
+        "outputs": [
+            [
+                "'key333'"
+            ],
+            [
+                "'sorting', 'tryruby'"
+            ],
+            [
+                "'I like Ruby!!!', 'how to coding?', 'very nice kata'"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58ac1abdff4e78738f000805",
+    "difficulty": "introductory",
+    "starter_code": "def the_biggest_search_keys(*keys):\n\t",
+    "test_cases": {
+        "fn_name": "the_biggest_search_keys",
+        "inputs": [
+            [
+                "pippi"
+            ]
+        ],
+        "outputs": [
+            [
+                "'pippi'"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "problem_id": 3779,
+    "question": "Clock shows 'h' hours, 'm' minutes and 's' seconds after midnight.\n\nYour task is to make 'Past' function which returns time converted to milliseconds.\n\n## Example:\n\n```python\npast(0, 1, 1) == 61000\n```\n\nInput constraints: `0 <= h <= 23`, `0 <= m <= 59`, `0 <= s <= 59`",
+    "input_output": {
+        "fn_name": "past",
+        "inputs": [
+            [
+                0,
+                1,
+                1
+            ],
+            [
+                1,
+                1,
+                1
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                1,
+                0,
+                1
+            ]
+        ],
+        "outputs": [
+            [
+                61000
+            ],
+            [
+                3661000
+            ],
+            [
+                0
+            ],
+            [
+                3601000
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a",
+    "difficulty": "introductory",
+    "starter_code": "def past(h, m, s):\n\t",
+    "test_cases": {
+        "fn_name": "past",
+        "inputs": [
+            [
+                1,
+                0,
+                0
+            ]
+        ],
+        "outputs": [
+            [
+                3600000
+            ]
+        ]
+    }
+}

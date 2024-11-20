@@ -1,0 +1,51 @@
+{
+    "problem_id": 3386,
+    "question": "Hi there! \nYou have to implement the \n\n`String get_column_title(int num) // syntax depends on programming language`\n\nfunction that takes an integer number (index of the Excel column) and returns the string represents the title of this column.\n\n#Intro\nIn the MS Excel lines are numbered by decimals, columns - by sets of letters.\n\nFor example, the first column has the title \"A\", second column - \"B\", 26th - \"Z\", 27th - \"AA\". \n\n\"BA\"(53) comes after \"AZ\"(52), \"AAA\" comes after \"ZZ\".\n\n\n\n\nExcel? Columns? More details [here](https://en.wikipedia.org/wiki/Microsoft_Excel)\n\n#Input\nIt takes only one argument - column decimal index number.\nArgument `num` is a natural number.\n\n#Output\nOutput is the upper-case string represents the title of column. It contains the English letters: A..Z\n\n#Errors\nFor cases `num < 1` your function should throw/raise `IndexError`. In case of non-integer argument you should throw/raise `TypeError`.\n\nIn Java, you should throw `Exceptions`.\n\nNothing should be returned in Haskell.\n\n#Examples\nPython, Ruby:\n```\n>>> get_column_title(52)\n\"AZ\"\n>>> get_column_title(1337)\n\"AYK\"\n>>> get_column_title(432778)\n\"XPEH\"\n>>> get_column_title()\nTypeError:\n>>> get_column_title(\"123\")\nTypeError:\n>>> get_column_title(0)\nIndexError:\n```\nJS, Java:\n```\n>>> getColumnTitle(52)\n\"AZ\"\n>>> getColumnTitle(1337)\n\"AYK\"\n>>> getColumnTitle(432778)\n\"XPEH\"\n>>> getColumnTitle()\nTypeError:\n>>> getColumnTitle(\"123\")\nTypeError:\n>>> getColumnTitle(0)\nIndexError:\n```\n\n#Hint\nThe difference between the 26-digits notation and Excel columns numeration that in the first system, after \"Z\" there are \"BA\", \"BB\", ..., while in the Excel columns scale there is a range of 26 elements: AA, AB, ... , AZ between Z and BA. \n\nIt is as if in the decimal notation was the following order: 0, 1, 2, .., 9, 00, 01, 02, .., 09, 10, 11, .., 19, 20..29..99, 000, 001 and so on.\n\n#Also\nThe task is really sapid and hard. If you're stuck - write to the discussion board, there are many smart people willing to help.",
+    "input_output": {
+        "fn_name": "get_column_title",
+        "inputs": [
+            [
+                1
+            ],
+            [
+                26
+            ],
+            [
+                52
+            ],
+            [
+                53
+            ]
+        ],
+        "outputs": [
+            [
+                "A"
+            ],
+            [
+                "Z"
+            ],
+            [
+                "AZ"
+            ],
+            [
+                "BA"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56d082c24f60457198000e77",
+    "difficulty": "introductory",
+    "starter_code": "def get_column_title(num):\n\t",
+    "test_cases": {
+        "fn_name": "get_column_title",
+        "inputs": [
+            [
+                702
+            ]
+        ],
+        "outputs": [
+            [
+                "ZZ"
+            ]
+        ]
+    }
+}

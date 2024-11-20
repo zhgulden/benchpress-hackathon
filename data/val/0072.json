@@ -1,0 +1,57 @@
+{
+    "problem_id": 2669,
+    "question": "Consider the following series:\n\n`1, 2, 4, 8, 16, 22, 26, 38, 62, 74, 102, 104, 108, 116, 122`\n\nIt is generated as follows:\n\n* For single digit integers, add the number to itself to get the next element.\n* For other integers, multiply all the non-zero digits and add the result to the original number to get the next element.\n\nFor example: `16 + (6 * 1) = 22` and `104 + (4 * 1) = 108`. \n\nLet's begin the same series with a seed value of `3` instead of `1`:\n\n`3, 6, 12, 14, 18, 26, 38, 62, 74, 102, 104, 108, 116, 122`\n\nNotice that the two sequences converge at `26` and are identical therefter. We will call the series seeded by a value of `1` the \"base series\" and the other series the \"test series\". \n\nYou will be given a seed value for the test series and your task will be to return the number of integers that have to be generated in the test series before it converges to the base series. In the case above:\n```Python\nconvergence(3) = 5, the length of [3, 6, 12, 14, 18]. \n```  \n\nGood luck!\n\nIf you like this Kata, please try:\n\n[Simple Prime Streaming](https://www.codewars.com/kata/5a908da30025e995880000e3)\n\n[Unique digit sequence](https://www.codewars.com/kata/599688d0e2800dda4e0001b0)\n\n[Divisor harmony](https://www.codewars.com/kata/59bf97cd4f98a8b1cd00007e)",
+    "input_output": {
+        "fn_name": "convergence",
+        "inputs": [
+            [
+                3
+            ],
+            [
+                5
+            ],
+            [
+                10
+            ],
+            [
+                15
+            ],
+            [
+                500
+            ]
+        ],
+        "outputs": [
+            [
+                5
+            ],
+            [
+                6
+            ],
+            [
+                5
+            ],
+            [
+                2
+            ],
+            [
+                29
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59971e64bfccc70748000068",
+    "difficulty": "introductory",
+    "starter_code": "def convergence(n):\n\t",
+    "test_cases": {
+        "fn_name": "convergence",
+        "inputs": [
+            [
+                5000
+            ]
+        ],
+        "outputs": [
+            [
+                283
+            ]
+        ]
+    }
+}

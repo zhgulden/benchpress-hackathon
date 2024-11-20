@@ -1,0 +1,56 @@
+{
+    "problem_id": 4121,
+    "question": "You are making your very own boardgame. The game is played by two opposing players, featuring a 6 x 6 tile system, with the players taking turns to move their pieces (similar to chess). The design is finished, now it's time to actually write and implement the features. Being the good programmer you are, you carefully plan the procedure and break the program down into smaller managable sections. You decide to start coding the logic for resolving \"fights\" when two pieces engage in combat on a tile. \n\nYour boardgame features four unique pieces: \n\nSwordsman, Cavalry, Archer and Pikeman\n\nEach piece has unique movement and has advantages and weaknesses in combat against one of the other pieces. \n\nTask\n\nYou must write a function ```fightResolve``` that takes the attacking and defending piece as input parameters, and returns the winning piece. It may be the case that both the attacking and defending piece belong to the same player, after which you must return an error value to indicate an illegal move. \n\nIn C++ and C, the pieces will be represented as ```chars```. Values will be case-sensitive to display ownership. Let the following char values represent each piece from their respective player.\n\nPlayer 1:  ```p```= Pikeman, ```k```= Cavalry, ```a```= Archer, ```s```= Swordsman \n\nPlayer 2:  ```P```= Pikeman, ```K```= Cavalry, ```A```= Archer, ```S```= Swordsman \n\nThe outcome of the fight between two pieces depends on which piece attacks, the type of the attacking piece and the type of the defending piece. Archers always win against swordsmens, swordsmen always win against pikemen, pikemen always win against cavalry and cavalry always win against archers. If a matchup occurs that was not previously mentioned (for example Archers vs Pikemen) the attacker will always win. This table represents the winner of each possible engagement between an attacker and a defender.\n\n\n(Attacker\u2192)\n    (Defender\u2193)\nArcher\nPikeman\nSwordsman\nKnight\n\n\nKnight\nDefender\nAttacker\nAttacker\nAttacker\n\n\nSwordsman\nAttacker\nDefender\nAttacker\nAttacker\n\n\nArcher\nAttacker\nAttacker\nDefender\nAttacker\n\n\nPikeman\nAttacker\nAttacker\nAttacker\nDefender\n\n\n\nIf two pieces from the same player engage in combat, i.e P vs S or k vs a, the function must return -1 to signify and illegal move. Otherwise assume that no other illegal values will be passed.\n\nExamples\n\nFunction prototype: fightResolve(defender, attacker)\n1. fightResolve('a', 'P') outputs 'P'. No interaction defined between Pikemen and Archer. Pikemen is the winner here because it is the attacking piece.\n\n2. fightResolve('k', 'A') outputs 'k'. Knights always defeat archers, even if Archer is the attacking piece here.\n\n3. fightResolve('S', 'A') outputs -1. Friendly units don't fight. Return -1 to indicate error.",
+    "input_output": {
+        "fn_name": "fight_resolve",
+        "inputs": [
+            [
+                "K",
+                "A"
+            ],
+            [
+                "S",
+                "A"
+            ],
+            [
+                "k",
+                "s"
+            ],
+            [
+                "a",
+                "a"
+            ],
+            [
+                "k",
+                "A"
+            ],
+            [
+                "K",
+                "a"
+            ]
+        ],
+        "outputs": [
+            [
+                -1
+            ],
+            [
+                -1
+            ],
+            [
+                -1
+            ],
+            [
+                -1
+            ],
+            [
+                "k"
+            ],
+            [
+                "K"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58558673b6b0e5a16b000028",
+    "difficulty": "introductory",
+    "starter_code": "def fight_resolve(defender, attacker):\n\t"
+}

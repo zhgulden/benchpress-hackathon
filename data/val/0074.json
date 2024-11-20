@@ -1,0 +1,76 @@
+{
+    "problem_id": 3676,
+    "question": "You get an array of different numbers to sum up. But there is one problem, those numbers all have different bases.\nFor example:\n```python\nYou get an array of numbers with their base as an input:\n\n[[\"101\",16],[\"7640\",8],[\"1\",9]]\n```\n\nThe output should be the sum as an integer value with a base of 10, so according to the example this would be:\n\n4258\n```python\nA few more examples:\n[[\"101\",2], [\"10\",8]] --> 13\n[[\"ABC\",16], [\"11\",2]] --> 2751\n```\nBases can be between 2 and 36 (2<=base<=36)",
+    "input_output": {
+        "fn_name": "sum_it_up",
+        "inputs": [
+            [
+                [
+                    [
+                        "101",
+                        2
+                    ],
+                    [
+                        "10",
+                        8
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "ABC",
+                        16
+                    ],
+                    [
+                        "11",
+                        2
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "101",
+                        16
+                    ],
+                    [
+                        "7640",
+                        8
+                    ],
+                    [
+                        "1",
+                        9
+                    ]
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                13
+            ],
+            [
+                2751
+            ],
+            [
+                4258
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a005f4fba2a14897f000086",
+    "difficulty": "introductory",
+    "starter_code": "def sum_it_up(numbers_with_bases):\n\t",
+    "test_cases": {
+        "fn_name": "sum_it_up",
+        "inputs": [
+            [
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                0
+            ]
+        ]
+    }
+}

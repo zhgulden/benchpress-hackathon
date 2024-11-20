@@ -1,0 +1,74 @@
+{
+    "problem_id": 3109,
+    "question": "Background\nThere is a message that is circulating via public media that claims a reader can easily read a message where the inner letters of each words is scrambled, as long as the first and last letters remain the same and the word contains all the letters.\n\nAnother example shows that it is quite difficult to read the text where all the letters are reversed rather than scrambled.\n\nIn this kata we will make a generator that generates text in a similar pattern, but instead of scrambled or reversed, ours will be sorted alphabetically\n\nRequirement\nreturn a string where:\n1) the first and last characters remain in original place for each word\n2) characters between the first and last characters must be sorted alphabetically\n3) punctuation should remain at the same place as it started, for example: shan't -> sahn't\nAssumptions\n1) words are seperated by single spaces\n2) only spaces separate words, special characters do not,  for example: tik-tak -> tai-ktk\n3) special characters do not take the position of the non special characters, for example: -dcba  ->  -dbca\n4) for this kata puctuation is limited to 4 characters: hyphen(-), apostrophe('), comma(,) and period(.) \n5) ignore capitalisation\n\n\nfor reference: http://en.wikipedia.org/wiki/Typoglycemia",
+    "input_output": {
+        "fn_name": "scramble_words",
+        "inputs": [
+            [
+                "professionals"
+            ],
+            [
+                "i"
+            ],
+            [
+                ""
+            ],
+            [
+                "me"
+            ],
+            [
+                "you"
+            ],
+            [
+                "card-carrying"
+            ],
+            [
+                "shan't"
+            ],
+            [
+                "-dcba"
+            ],
+            [
+                "dcba."
+            ],
+            [
+                "you've gotta dance like there's nobody watching, love like you'll never be hurt, sing like there's nobody listening, and live like it's heaven on earth."
+            ]
+        ],
+        "outputs": [
+            [
+                "paefilnoorsss"
+            ],
+            [
+                "i"
+            ],
+            [
+                ""
+            ],
+            [
+                "me"
+            ],
+            [
+                "you"
+            ],
+            [
+                "caac-dinrrryg"
+            ],
+            [
+                "sahn't"
+            ],
+            [
+                "-dbca"
+            ],
+            [
+                "dbca."
+            ],
+            [
+                "you've gotta dacne like teehr's nbdooy wachintg, love like ylo'ul neevr be hrut, sing like teehr's nbdooy leiinnstg, and live like it's haeevn on earth."
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55953e906851cf2441000032",
+    "difficulty": "introductory",
+    "starter_code": "def scramble_words(words):\n\t"
+}

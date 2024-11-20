@@ -1,0 +1,32 @@
+{
+    "problem_id": 4508,
+    "question": "A *Vampire number* is a positive integer `z` with a factorization `x * y = z` such that\n\n- `x` and `y` have the same number of digits and\n- the multiset of digits of `z` is equal to the multiset of digits of `x` and `y`.\n- Additionally, to avoid trivialities, `x` and `y` may not both end with `0`.\n\nIn this case, `x` and `y` are called *fangs* of `z`. (The fangs of a Vampire number may not be unique, but this shouldn't bother us.) The first three Vampire numbers are\n\n```\n1260 = 21*60\n1395 = 15*93\n1435 = 35*41\n```\n\nWrite an algorithm that on input `k` returns the `k`th Vampire number. To avoid time-outs, the Python version will test with `1 <= k <= 155`.\n\nPS: In the OEIS, the Vampire numbers are sequence [A014575](https://oeis.org/A014575).\n\nPPS: So called *Pseudo-Vampire Numbers* are treated in [this kata](http://www.codewars.com/kata/vampire-numbers-1).",
+    "input_output": {
+        "fn_name": "VampireNumber",
+        "inputs": [
+            [
+                10
+            ],
+            [
+                100
+            ],
+            [
+                155
+            ]
+        ],
+        "outputs": [
+            [
+                105210
+            ],
+            [
+                336960
+            ],
+            [
+                939658
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/558d5c71c68d1e86b000010f",
+    "difficulty": "introductory",
+    "starter_code": "def VampireNumber(k):\n\t"
+}

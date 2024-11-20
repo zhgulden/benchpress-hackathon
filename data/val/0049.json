@@ -1,0 +1,45 @@
+{
+    "problem_id": 4230,
+    "question": "# Task\n Given a string `str`, reverse it omitting all non-alphabetic characters.\n\n# Example\n\n For `str = \"krishan\"`, the output should be `\"nahsirk\"`.\n \n For `str = \"ultr53o?n\"`, the output should be `\"nortlu\"`.\n \n# Input/Output\n\n\n - `[input]` string `str`\n\n  A string consists of lowercase latin letters, digits and symbols.\n\n \n - `[output]` a string",
+    "input_output": {
+        "fn_name": "reverse_letter",
+        "inputs": [
+            [
+                "krishan"
+            ],
+            [
+                "ultr53o?n"
+            ],
+            [
+                "ab23c"
+            ]
+        ],
+        "outputs": [
+            [
+                "nahsirk"
+            ],
+            [
+                "nortlu"
+            ],
+            [
+                "cba"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/58b8c94b7df3f116eb00005b",
+    "difficulty": "introductory",
+    "starter_code": "def reverse_letter(string):\n\t",
+    "test_cases": {
+        "fn_name": "reverse_letter",
+        "inputs": [
+            [
+                "krish21an"
+            ]
+        ],
+        "outputs": [
+            [
+                "nahsirk"
+            ]
+        ]
+    }
+}

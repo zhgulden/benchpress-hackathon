@@ -1,0 +1,86 @@
+{
+    "problem_id": 3881,
+    "question": "The central dogma of molecular biology is that DNA is transcribed into RNA, which is then tranlsated into protein. RNA, like DNA, is a long strand of nucleic acids held together by a sugar backbone (ribose in this case). Each segment of three bases is called a codon. Molecular machines called ribosomes translate the RNA codons into amino acid chains, called polypeptides which are then folded into a protein. \n\nProtein sequences are easily visualized in much the same way that DNA and RNA are, as large strings of letters. An important thing to note is that the 'Stop' codons do not encode for a specific amino acid. Their only function is to stop translation of the protein, as such they are not incorporated into the polypeptide chain. 'Stop' codons should not be in the final protein sequence. To save a you a lot of unnecessary (and boring) typing the keys and values for your amino acid dictionary are provided.\n                         \nGiven a string of RNA, create a funciton which translates the RNA into its protein sequence. Note: the test cases will always produce a valid string.\n\n```python\nprotein('UGCGAUGAAUGGGCUCGCUCC') returns 'CDEWARS'\n```\n\nIncluded as test cases is a real world example! The last example test case encodes for a protein called green fluorescent protein; once spliced into the genome of another organism, proteins like GFP allow biologists to visualize cellular processes!\n\nAmino Acid Dictionary\n----------------------\n\n```python\n    # Phenylalanine\n    'UUC':'F', 'UUU':'F',\n    # Leucine\n    'UUA':'L', 'UUG':'L', 'CUU':'L', 'CUC':'L','CUA':'L','CUG':'L', \n    # Isoleucine\n    'AUU':'I', 'AUC':'I', 'AUA':'I', \n    # Methionine\n    'AUG':'M', \n    # Valine\n    'GUU':'V', 'GUC':'V', 'GUA':'V', 'GUG':'V', \n    # Serine\n    'UCU':'S', 'UCC':'S', 'UCA':'S', 'UCG':'S', 'AGU':'S', 'AGC':'S', \n    # Proline\n    'CCU':'P', 'CCC':'P', 'CCA':'P', 'CCG':'P', \n    # Threonine\n    'ACU':'T', 'ACC':'T', 'ACA':'T', 'ACG':'T',\n    # Alanine\n    'GCU':'A', 'GCC':'A', 'GCA':'A', 'GCG':'A', \n    # Tyrosine\n    'UAU':'Y', 'UAC':'Y', \n    # Histidine\n    'CAU':'H', 'CAC':'H',\n    # Glutamine\n    'CAA':'Q', 'CAG':'Q', \n    # Asparagine\n    'AAU':'N', 'AAC':'N', \n    # Lysine\n    'AAA':'K', 'AAG':'K',\n    # Aspartic Acid\n    'GAU':'D', 'GAC':'D', \n    # Glutamic Acid\n    'GAA':'E', 'GAG':'E',\n    # Cystine\n    'UGU':'C', 'UGC':'C',\n    # Tryptophan\n    'UGG':'W', \n    # Arginine\n    'CGU':'R', 'CGC':'R', 'CGA':'R', 'CGG':'R', 'AGA':'R', 'AGG':'R', \n    # Glycine\n    'GGU':'G',  'GGC':'G', 'GGA':'G', 'GGG':'G', \n    # Stop codon\n    'UAA':'Stop', 'UGA':'Stop', 'UAG':'Stop'\n```",
+    "input_output": {
+        "fn_name": "protein",
+        "inputs": [
+            [
+                "AUGUGA"
+            ],
+            [
+                "AUGUAUAAA"
+            ],
+            [
+                "UGCGAUGAAUGGGCUCGCUCC"
+            ],
+            [
+                "AUGUUAAUUUGA"
+            ],
+            [
+                "AUGUCCUUCCAUCAAGGAAACCAUGCGCGUUCAGCUUUCUGA"
+            ],
+            [
+                "AUGCUUCAAGUGCACUGGAAAAGGAGAGGGAAAACCAGUUGA"
+            ],
+            [
+                "AUGGCGUUCAGCUUUCUAUGGAGGGUAGUGUACCCAUGCUGA"
+            ],
+            [
+                "AUGCAGCUUUCUAUGGAGGGUAGUGUUAACUACCACGCCUGA"
+            ],
+            [
+                "AUGCUAUGGAGGGUAGUGUUAACUACCACGCCCAGUACUUGA"
+            ],
+            [
+                "AUGCUGAUUAUGGUUGUUGUAUCUUCCUAUCAAAAUAAAACUACCACAUGA"
+            ],
+            [
+                "AUGGAGCACAAUAAAAUACCAAUACCACUCACUCUCUACCCUACUCUACUCUCAUGA"
+            ],
+            [
+                "AUGUAUCCUUCCAUCAAGGAAACCAUGCGCGUUCAGCUUUCUAUGGAGGGUAGUGUUAACUACCACGCCUUCAAGUGCACUGGAAAAGGAGAGGGAAAACCAUACGAAGGCACCCAAAGCCUGAAUAUUACAAUAACUGAAGGAGGUCCUCUGCCAUUUGCUUUUGACAUUCUGUCACACGCCUUUCAGUAUGGCAUCAAGGUCUUCGCCAAGUACCCCAAAGAAAUUCCUGACUUCUUUAAGCAGUCUCUACCUGGUGGUUUUUCUUGGGAAAGAGUAAGCACCUAUGAAGAUGGAGGAGUGCUUUCAGCUACCCAAGAAACAAGUUUGCAGGGUGAUUGCAUCAUCUGCAAAGUUAAAGUCCUUGGCACCAAUUUUCCCGCAAACGGUCCAGUGAUGCAAAAGAAGACCUGUGGAUGGGAGCCAUCAACUGAAACAGUCAUCCCACGAGAUGGUGGACUUCUGCUUCGCGAUACCCCCGCACUUAUGCUGGCUGACGGAGGUCAUCUUUCUUGCUUCAUGGAAACAACUUACAAGUCGAAGAAAGAGGUAAAGCUUCCAGAACUUCACUUUCAUCAUUUGCGUAUGGAAAAGCUGAACAUAAGUGACGAUUGGAAGACCGUUGAGCAGCACGAGUCUGUGGUGGCUAGCUACUCCCAAGUGCCUUCGAAAUUAGGACAUAACUGA"
+            ]
+        ],
+        "outputs": [
+            [
+                "M"
+            ],
+            [
+                "MYK"
+            ],
+            [
+                "CDEWARS"
+            ],
+            [
+                "MLI"
+            ],
+            [
+                "MSFHQGNHARSAF"
+            ],
+            [
+                "MLQVHWKRRGKTS"
+            ],
+            [
+                "MAFSFLWRVVYPC"
+            ],
+            [
+                "MQLSMEGSVNYHA"
+            ],
+            [
+                "MLWRVVLTTTPST"
+            ],
+            [
+                "MLIMVVVSSYQNKTTT"
+            ],
+            [
+                "MEHNKIPIPLTLYPTLLS"
+            ],
+            [
+                "MYPSIKETMRVQLSMEGSVNYHAFKCTGKGEGKPYEGTQSLNITITEGGPLPFAFDILSHAFQYGIKVFAKYPKEIPDFFKQSLPGGFSWERVSTYEDGGVLSATQETSLQGDCIICKVKVLGTNFPANGPVMQKKTCGWEPSTETVIPRDGGLLLRDTPALMLADGGHLSCFMETTYKSKKEVKLPELHFHHLRMEKLNISDDWKTVEQHESVVASYSQVPSKLGHN"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/555a03f259e2d1788c000077",
+    "difficulty": "introductory",
+    "starter_code": "def protein(rna):\n\t"
+}

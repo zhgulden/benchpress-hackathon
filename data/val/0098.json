@@ -1,0 +1,63 @@
+{
+    "problem_id": 4009,
+    "question": "Given an integer, take the (mean) average of each pair of consecutive digits. Repeat this process until you have a single integer, then return that integer. e.g.\n\nNote: if the average of two digits is not an integer, round the result **up** (e.g. the average of 8 and 9 will be 9)\n\n## Examples\n\n```\ndigitsAverage(246)  ==>  4\n\noriginal: 2   4   6\n           \\ / \\ /\n1st iter:   3   5\n             \\ /\n2nd iter:     4\n\n\ndigitsAverage(89)  ==>  9\n\noriginal: 8   9\n           \\ /\n1st iter:   9\n```\n\np.s. for a bigger challenge, check out the [one line version](https://www.codewars.com/kata/one-line-task-digits-average) of this kata by myjinxin2015!",
+    "input_output": {
+        "fn_name": "digits_average",
+        "inputs": [
+            [
+                246
+            ],
+            [
+                89
+            ],
+            [
+                2
+            ],
+            [
+                245
+            ],
+            [
+                345
+            ],
+            [
+                346
+            ]
+        ],
+        "outputs": [
+            [
+                4
+            ],
+            [
+                9
+            ],
+            [
+                2
+            ],
+            [
+                4
+            ],
+            [
+                5
+            ],
+            [
+                5
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a32526ae1ce0ec0f10000b2",
+    "difficulty": "introductory",
+    "starter_code": "def digits_average(input):\n\t",
+    "test_cases": {
+        "fn_name": "digits_average",
+        "inputs": [
+            [
+                3700
+            ]
+        ],
+        "outputs": [
+            [
+                4
+            ]
+        ]
+    }
+}

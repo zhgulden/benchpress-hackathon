@@ -1,0 +1,71 @@
+{
+    "problem_id": 4109,
+    "question": "In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.\n\n### Example\n\n```python\nfilter_list([1,2,'a','b']) == [1,2]\nfilter_list([1,'a','b',0,15]) == [1,0,15]\nfilter_list([1,2,'aasf','1','123',123]) == [1,2,123]\n```",
+    "input_output": {
+        "fn_name": "filter_list",
+        "inputs": [
+            [
+                [
+                    1,
+                    2,
+                    "a",
+                    "b"
+                ]
+            ],
+            [
+                [
+                    1,
+                    "a",
+                    "b",
+                    0,
+                    15
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    "aasf",
+                    "1",
+                    "123",
+                    123
+                ]
+            ],
+            [
+                [
+                    "a",
+                    "b",
+                    "1"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    1,
+                    2
+                ]
+            ],
+            [
+                [
+                    1,
+                    0,
+                    15
+                ]
+            ],
+            [
+                [
+                    1,
+                    2,
+                    123
+                ]
+            ],
+            [
+                []
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/53dbd5315a3c69eed20002dd",
+    "difficulty": "introductory",
+    "starter_code": "def filter_list(l):\n\t"
+}

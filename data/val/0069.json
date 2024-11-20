@@ -1,0 +1,84 @@
+{
+    "problem_id": 3431,
+    "question": "# A wolf in sheep's clothing\n\nWolves have been reintroduced to Great Britain. You are a sheep farmer, and are now plagued by wolves which pretend to be sheep. Fortunately, you are good at spotting them. \n\nWarn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing **at the front of the queue** which is at the end of the array:\n\n```\n[sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]      (YOU ARE HERE AT THE FRONT OF THE QUEUE)\n   7      6      5      4      3            2      1\n```\n\nIf the wolf is the closest animal to you, return `\"Pls go away and stop eating my sheep\"`. Otherwise, return `\"Oi! Sheep number N! You are about to be eaten by a wolf!\"` where `N` is the sheep's position in the queue.\n\n**Note:** there will always be exactly one wolf in the array.\n\n## Examples\n\n```python\nwarn_the_sheep([\"sheep\", \"sheep\", \"sheep\", \"wolf\", \"sheep\"]) == 'Oi! Sheep number 1! You are about to be eaten by a wolf!'\n\nwarn_the_sheep(['sheep', 'sheep', 'wolf']) == 'Pls go away and stop eating my sheep'\n```",
+    "input_output": {
+        "fn_name": "warn_the_sheep",
+        "inputs": [
+            [
+                [
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "wolf",
+                    "sheep",
+                    "sheep"
+                ]
+            ],
+            [
+                [
+                    "sheep",
+                    "wolf",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep"
+                ]
+            ],
+            [
+                [
+                    "wolf",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep",
+                    "sheep"
+                ]
+            ],
+            [
+                [
+                    "sheep",
+                    "wolf",
+                    "sheep"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "Oi! Sheep number 2! You are about to be eaten by a wolf!"
+            ],
+            [
+                "Oi! Sheep number 5! You are about to be eaten by a wolf!"
+            ],
+            [
+                "Oi! Sheep number 6! You are about to be eaten by a wolf!"
+            ],
+            [
+                "Oi! Sheep number 1! You are about to be eaten by a wolf!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15",
+    "difficulty": "introductory",
+    "starter_code": "def warn_the_sheep(queue):\n\t",
+    "test_cases": {
+        "fn_name": "warn_the_sheep",
+        "inputs": [
+            [
+                [
+                    "sheep",
+                    "sheep",
+                    "wolf"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                "Pls go away and stop eating my sheep"
+            ]
+        ]
+    }
+}

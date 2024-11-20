@@ -1,0 +1,74 @@
+{
+    "problem_id": 3811,
+    "question": "This kata is part of the collection [Mary's Puzzle Books](https://www.codewars.com/collections/marys-puzzle-books).\n\n# Zero Terminated Sum\n\nMary has another puzzle book, and it's up to you to help her out! This book is filled with zero-terminated substrings, and you have to find the substring with the largest sum of its digits. For example, one puzzle looks like this:\n```\n\"72102450111111090\"\n```\nHere, there are 4 different substrings: `721`, `245`, `111111`, and `9`. The sums of their digits are `10`, `11`, `6`, and `9` respectively. Therefore, the substring with the largest sum of its digits is `245`, and its sum is `11`.\n\nWrite a function `largest_sum` which takes a string and returns the maximum of the sums of the substrings. In the example above, your function should return `11`.\n\n### Notes:\n\n- A substring can have length 0. For example, `123004560` has three substrings, and the middle one has length 0.\n- All inputs will be valid strings of digits, and the last digit will always be `0`.",
+    "input_output": {
+        "fn_name": "largest_sum",
+        "inputs": [
+            [
+                "72102450111111090"
+            ],
+            [
+                "123004560"
+            ],
+            [
+                "0"
+            ],
+            [
+                "4755843230"
+            ],
+            [
+                "3388049750"
+            ],
+            [
+                "3902864190"
+            ],
+            [
+                "4098611970"
+            ],
+            [
+                "5628206860"
+            ],
+            [
+                "5891002970"
+            ],
+            [
+                "0702175070"
+            ]
+        ],
+        "outputs": [
+            [
+                11
+            ],
+            [
+                15
+            ],
+            [
+                0
+            ],
+            [
+                41
+            ],
+            [
+                25
+            ],
+            [
+                30
+            ],
+            [
+                41
+            ],
+            [
+                23
+            ],
+            [
+                23
+            ],
+            [
+                15
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a2d70a6f28b821ab4000004",
+    "difficulty": "introductory",
+    "starter_code": "def largest_sum(s):\n\t"
+}

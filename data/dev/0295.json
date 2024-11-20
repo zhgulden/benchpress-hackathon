@@ -1,0 +1,50 @@
+{
+    "problem_id": 2851,
+    "question": "Oh no! Ghosts have reportedly swarmed the city. It's your job to get rid of them and save the day!\n\nIn this kata, strings represent buildings while whitespaces within those strings represent ghosts.\n\nSo what are you waiting for? Return the building(string) without any ghosts(whitespaces)!\n\nExample:\n\nShould return:\n\nIf the building contains no ghosts, return the string:",
+    "input_output": {
+        "fn_name": "ghostbusters",
+        "inputs": [
+            [
+                "Factor y"
+            ],
+            [
+                "O  f fi ce"
+            ],
+            [
+                "BusStation"
+            ],
+            [
+                "Suite "
+            ],
+            [
+                "YourHouse"
+            ],
+            [
+                "H o t e l "
+            ]
+        ],
+        "outputs": [
+            [
+                "Factory"
+            ],
+            [
+                "Office"
+            ],
+            [
+                "You just wanted my autograph didn't you?"
+            ],
+            [
+                "Suite"
+            ],
+            [
+                "You just wanted my autograph didn't you?"
+            ],
+            [
+                "Hotel"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5668e3800636a6cd6a000018",
+    "difficulty": "introductory",
+    "starter_code": "def ghostbusters(building):\n\t"
+}

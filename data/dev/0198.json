@@ -1,0 +1,74 @@
+{
+    "problem_id": 3134,
+    "question": "Given a string, determine if it's a valid identifier.\n\n## Here is the syntax for valid identifiers:\n* Each identifier must have at least one character.\n* The first character must be picked from: alpha, underscore, or dollar sign. The first character cannot be a digit.\n* The rest of the characters (besides the first) can be from: alpha, digit, underscore, or dollar sign. In other words, it can be any valid identifier character.\n\n### Examples of valid identifiers:\n* i\n* wo_rd\n* b2h\n\n### Examples of invalid identifiers:\n* 1i\n* wo rd \n* !b2h",
+    "input_output": {
+        "fn_name": "is_valid",
+        "inputs": [
+            [
+                "okay_ok1"
+            ],
+            [
+                "$ok"
+            ],
+            [
+                "___"
+            ],
+            [
+                "str_STR"
+            ],
+            [
+                "myIdentf"
+            ],
+            [
+                "1ok0okay"
+            ],
+            [
+                "!Ok"
+            ],
+            [
+                ""
+            ],
+            [
+                "str-str"
+            ],
+            [
+                "no no"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/563a8656d52a79f06c00001f",
+    "difficulty": "introductory",
+    "starter_code": "def is_valid(idn):\n\t"
+}

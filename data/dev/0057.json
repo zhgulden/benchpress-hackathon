@@ -1,0 +1,60 @@
+{
+    "problem_id": 4644,
+    "question": "Take a string and return a hash with all the ascii values of the characters in the string.\nReturns nil if the string is empty.\nThe key is the character, and the value is the ascii value of the character.\nRepeated characters are to be ignored and non-alphebetic characters as well.",
+    "input_output": {
+        "fn_name": "char_to_ascii",
+        "inputs": [
+            [
+                ""
+            ],
+            [
+                "a"
+            ],
+            [
+                "aaa"
+            ],
+            [
+                "hello world"
+            ],
+            [
+                "ABaa ^"
+            ]
+        ],
+        "outputs": [
+            [
+                null
+            ],
+            [
+                {
+                    "a": 97
+                }
+            ],
+            [
+                {
+                    "a": 97
+                }
+            ],
+            [
+                {
+                    "h": 104,
+                    "e": 101,
+                    "l": 108,
+                    "o": 111,
+                    "w": 119,
+                    "r": 114,
+                    "d": 100
+                }
+            ],
+            [
+                {
+                    "A": 65,
+                    "B": 66,
+                    "a": 97
+                }
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55e9529cbdc3b29d8c000016",
+    "difficulty": "introductory",
+    "starter_code": "def char_to_ascii(string):\n\t"
+}

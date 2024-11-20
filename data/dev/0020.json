@@ -1,0 +1,35 @@
+{
+    "problem_id": 3764,
+    "question": "When multiple master devices are connected to a single bus (https://en.wikipedia.org/wiki/System_bus), there needs to be an arbitration in order to choose which of them can have access to the bus (and 'talk' with a slave).\n\nWe implement here a very simple model of bus mastering. Given `n`, a number representing the number of **masters** connected to the bus, and a fixed priority order (the first master has more access priority than the second and so on...), the task is to choose the selected master.\nIn practice, you are given a string `inp` of length `n` representing the `n` masters' requests to get access to the bus, and you should return a string representing the masters, showing which (only one) of them was granted access:\n\n```\nThe string 1101 means that master 0, master 1 and master 3 have requested\naccess to the bus. \nKnowing that master 0 has the greatest priority, the output of the function should be: 1000\n```\n\n## Examples\n\n## Notes\n\n* The resulting string (`char* `) should be allocated in the `arbitrate` function, and will be free'ed in the tests.\n\n* `n` is always greater or equal to 1.",
+    "input_output": {
+        "fn_name": "arbitrate",
+        "inputs": [
+            [
+                "001000101",
+                9
+            ],
+            [
+                "000000101",
+                9
+            ],
+            [
+                "0000",
+                4
+            ]
+        ],
+        "outputs": [
+            [
+                "001000000"
+            ],
+            [
+                "000000100"
+            ],
+            [
+                "0000"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5a0366f12b651dbfa300000c",
+    "difficulty": "introductory",
+    "starter_code": "def arbitrate(s, n):\n\t"
+}

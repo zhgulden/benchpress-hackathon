@@ -1,0 +1,44 @@
+{
+    "problem_id": 3365,
+    "question": "You have a collection of lovely poems. Unfortuantely they aren't formatted very well. They're all on one line, like this:\n\n```\nBeautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated.\n```\nWhat you want is to present each sentence on a new line, so that it looks like this:\n```\nBeautiful is better than ugly.\nExplicit is better than implicit.\nSimple is better than complex.\nComplex is better than complicated.\n```\nWrite a function, `format_poem()` that takes a string like the one line example as an argument and returns a new string that is formatted across multiple lines with each new sentence starting on a new line when you print it out.\n\nTry to solve this challenge with the [str.split()](https://docs.python.org/3/library/stdtypes.html#str.split) and the [str.join()](https://docs.python.org/3/library/stdtypes.html#str.join) string methods.\n\nEvery sentence will end with a period, and every new sentence will have one space before the previous period. Be careful about trailing whitespace in your solution.",
+    "input_output": {
+        "fn_name": "format_poem",
+        "inputs": [
+            [
+                "Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated."
+            ],
+            [
+                "Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules."
+            ],
+            [
+                "Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess."
+            ],
+            [
+                "There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than *right* now."
+            ],
+            [
+                "If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let's do more of those!"
+            ]
+        ],
+        "outputs": [
+            [
+                "Beautiful is better than ugly.\nExplicit is better than implicit.\nSimple is better than complex.\nComplex is better than complicated."
+            ],
+            [
+                "Flat is better than nested.\nSparse is better than dense.\nReadability counts.\nSpecial cases aren't special enough to break the rules."
+            ],
+            [
+                "Although practicality beats purity.\nErrors should never pass silently.\nUnless explicitly silenced.\nIn the face of ambiguity, refuse the temptation to guess."
+            ],
+            [
+                "There should be one-- and preferably only one --obvious way to do it.\nAlthough that way may not be obvious at first unless you're Dutch.\nNow is better than never.\nAlthough never is often better than *right* now."
+            ],
+            [
+                "If the implementation is hard to explain, it's a bad idea.\nIf the implementation is easy to explain, it may be a good idea.\nNamespaces are one honking great idea -- let's do more of those!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/585af8f645376cda59000200",
+    "difficulty": "introductory",
+    "starter_code": "def format_poem(poem):\n\t"
+}

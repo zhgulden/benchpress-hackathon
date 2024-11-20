@@ -1,0 +1,51 @@
+{
+    "problem_id": 3587,
+    "question": "# Task\n\nJohn has an important number, and he doesn't want others to see it.\n\nHe decided to encrypt the number, using the following steps:\n```\nHis number is always a non strict increasing sequence\nie. \"123\"\n\nHe converted each digit into English words.\nie. \"123\"--> \"ONETWOTHREE\"\n\nAnd then, rearrange the letters randomly.\nie. \"ONETWOTHREE\" --> \"TTONWOHREEE\"\n```\n\nJohn felt that his number were safe in doing so. In fact, such encryption can be easily decrypted :(\n\nGiven the encrypted string `s`, your task is to decrypt it, return the original number in string format.\n\nNote, You can assume that the input string `s` is always valid; It contains only uppercase Letters; The decrypted numbers are arranged in ascending order; The leading zeros are allowed.\n\n\n# Example\n\nFor `s = \"ONE\"`, the output should be `1`.\n\nFor `s = \"EON\"`, the output should be `1` too.\n\nFor `s = \"ONETWO\"`, the output should be `12`.\n\nFor `s = \"OONETW\"`, the output should be `12` too.\n\nFor `s = \"ONETWOTHREE\"`, the output should be `123`.\n\nFor `s = \"TTONWOHREEE\"`, the output should be `123` too.",
+    "input_output": {
+        "fn_name": "original_number",
+        "inputs": [
+            [
+                "ONE"
+            ],
+            [
+                "OEN"
+            ],
+            [
+                "ONETWO"
+            ],
+            [
+                "OONETW"
+            ]
+        ],
+        "outputs": [
+            [
+                "1"
+            ],
+            [
+                "1"
+            ],
+            [
+                "12"
+            ],
+            [
+                "12"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5959b637030042889500001d",
+    "difficulty": "introductory",
+    "starter_code": "def original_number(s):\n\t",
+    "test_cases": {
+        "fn_name": "original_number",
+        "inputs": [
+            [
+                "TTONWOHREEE"
+            ]
+        ],
+        "outputs": [
+            [
+                "123"
+            ]
+        ]
+    }
+}

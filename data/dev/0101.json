@@ -1,0 +1,122 @@
+{
+    "problem_id": 3747,
+    "question": "Implement `String#ipv4_address?`, which should return true if given object is an IPv4 address - four numbers (0-255) separated by dots.\n\nIt should only accept addresses in canonical representation, so no leading `0`s, spaces etc.",
+    "input_output": {
+        "fn_name": "ipv4_address",
+        "inputs": [
+            [
+                ""
+            ],
+            [
+                "127.0.0.1"
+            ],
+            [
+                "0.0.0.0"
+            ],
+            [
+                "255.255.255.255"
+            ],
+            [
+                "10.20.30.40"
+            ],
+            [
+                "10.256.30.40"
+            ],
+            [
+                "10.20.030.40"
+            ],
+            [
+                "127.0.1"
+            ],
+            [
+                "127.0.0.0.1"
+            ],
+            [
+                "..255.255"
+            ],
+            [
+                "127.0.0.1\n"
+            ],
+            [
+                "\n127.0.0.1"
+            ],
+            [
+                " 127.0.0.1"
+            ],
+            [
+                "127.0.0.1 "
+            ],
+            [
+                " 127.0.0.1 "
+            ],
+            [
+                "127.0.0.1."
+            ],
+            [
+                ".127.0.0.1"
+            ],
+            [
+                "127..0.1"
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/567fe8b50c201947bc000056",
+    "difficulty": "introductory",
+    "starter_code": "def ipv4_address(address):\n\t"
+}

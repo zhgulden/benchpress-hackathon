@@ -1,0 +1,70 @@
+{
+    "problem_id": 4526,
+    "question": "*SCHEDULE YOUR DA(RRA)Y*\n        \nThe best way to have a productive day is to plan out your work schedule. Given the following three inputs, please create an an array of time alloted to work, broken up with time alloted with breaks:\n        \nInput 1: Hours - Number of hours available to you to get your work done! \nInput 2: Tasks - How many tasks you have to do througout the day\nInput 3: Duration (minutes)- How long each of your tasks will take to complete\nCriteria to bear in mind:\n- Your schedule should start with work and end with work.\n- It should also be in minutes, rounded to the nearest whole minute. \n- If your work is going to take more time than you have, return \"You're not sleeping tonight!\"\nExample:\n\n```python\nday_plan(8, 5, 30) == [ 30, 82, 30, 82, 30, 82, 30, 82, 30 ]\nday_plan(3, 5, 60) == \"You're not sleeping tonight!\"\n```",
+    "input_output": {
+        "fn_name": "day_plan",
+        "inputs": [
+            [
+                8,
+                5,
+                30
+            ],
+            [
+                3,
+                5,
+                60
+            ],
+            [
+                2,
+                2,
+                60
+            ],
+            [
+                2,
+                1,
+                60
+            ],
+            [
+                2,
+                0,
+                60
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    30,
+                    82,
+                    30,
+                    82,
+                    30,
+                    82,
+                    30,
+                    82,
+                    30
+                ]
+            ],
+            [
+                "You're not sleeping tonight!"
+            ],
+            [
+                [
+                    60,
+                    0,
+                    60
+                ]
+            ],
+            [
+                [
+                    60
+                ]
+            ],
+            [
+                []
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/581de9a5b7bad5d369000150",
+    "difficulty": "introductory",
+    "starter_code": "def day_plan(hours, tasks, duration):\n\t"
+}

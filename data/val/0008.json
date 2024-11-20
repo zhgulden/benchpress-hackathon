@@ -1,0 +1,164 @@
+{
+    "problem_id": 3937,
+    "question": "We want to find the numbers higher or equal than 1000 that the sum of every four consecutives digits cannot be higher than a certain given value.\nIf the number is ``` num = d1d2d3d4d5d6 ```, and the maximum sum of 4 contiguous digits is ```maxSum```, then:\n```python\nd1 + d2 + d3 + d4 <= maxSum\nd2 + d3 + d4 + d5 <= maxSum\nd3 + d4 + d5 + d6 <= maxSum\n```\nFor that purpose, we need to create a function, ```max_sumDig()```, that receives ```nMax```, as the max value of the interval to study (the range (1000, nMax) ), and a certain value, ```maxSum```, the maximum sum that every four consecutive digits should be less or equal to. The function should output the following list with the data detailed bellow:\n\n```[(1), (2), (3)]```\n\n(1) - the amount of numbers that satisfy the constraint presented above \n\n(2) - the closest number to the mean of the results, if there are more than one, the smallest number should be chosen.\n\n(3) - the total sum of all the found numbers\n\nLet's see a case with all the details:\n```\nmax_sumDig(2000, 3) -------> [11, 1110, 12555]\n\n(1) -There are 11 found numbers: 1000, 1001, 1002, 1010, 1011, 1020, 1100, 1101, 1110, 1200 and 2000\n\n(2) - The mean of all the found numbers is:\n      (1000 + 1001 + 1002 + 1010 + 1011 + 1020 + 1100 + 1101 + 1110 + 1200 + 2000) /11 = 1141.36363,  \n      so 1110 is the number that is closest to that mean value.\n\n(3) - 12555 is the sum of all the found numbers\n      1000 + 1001 + 1002 + 1010 + 1011 + 1020 + 1100 + 1101 + 1110 + 1200 + 2000 = 12555\n\nFinally, let's see another cases\n```\nmax_sumDig(2000, 4) -----> [21, 1120, 23665]\n\nmax_sumDig(2000, 7) -----> [85, 1200, 99986]\n\nmax_sumDig(3000, 7) -----> [141, 1600, 220756]\n```\n\nHappy coding!!",
+    "input_output": {
+        "fn_name": "max_sumDig",
+        "inputs": [
+            [
+                2000,
+                3
+            ],
+            [
+                2000,
+                4
+            ],
+            [
+                2000,
+                7
+            ],
+            [
+                3000,
+                7
+            ],
+            [
+                4000,
+                4
+            ],
+            [
+                5000,
+                2
+            ],
+            [
+                5000,
+                3
+            ],
+            [
+                5000,
+                4
+            ],
+            [
+                5000,
+                5
+            ],
+            [
+                5000,
+                6
+            ],
+            [
+                5000,
+                7
+            ],
+            [
+                5000,
+                8
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    11,
+                    1110,
+                    12555
+                ]
+            ],
+            [
+                [
+                    21,
+                    1120,
+                    23665
+                ]
+            ],
+            [
+                [
+                    85,
+                    1200,
+                    99986
+                ]
+            ],
+            [
+                [
+                    141,
+                    1600,
+                    220756
+                ]
+            ],
+            [
+                [
+                    35,
+                    2000,
+                    58331
+                ]
+            ],
+            [
+                [
+                    5,
+                    1100,
+                    6111
+                ]
+            ],
+            [
+                [
+                    15,
+                    1200,
+                    21666
+                ]
+            ],
+            [
+                [
+                    35,
+                    2000,
+                    58331
+                ]
+            ],
+            [
+                [
+                    70,
+                    2000,
+                    132216
+                ]
+            ],
+            [
+                [
+                    122,
+                    2010,
+                    244875
+                ]
+            ],
+            [
+                [
+                    196,
+                    2110,
+                    413306
+                ]
+            ],
+            [
+                [
+                    296,
+                    2200,
+                    649951
+                ]
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55f5efd21ad2b48895000040",
+    "difficulty": "introductory",
+    "starter_code": "def max_sumDig(nMax, maxSum):\n\t",
+    "test_cases": {
+        "fn_name": "max_sumDig",
+        "inputs": [
+            [
+                5000,
+                9
+            ]
+        ],
+        "outputs": [
+            [
+                [
+                    426,
+                    2250,
+                    967696
+                ]
+            ]
+        ]
+    }
+}

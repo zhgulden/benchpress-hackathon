@@ -1,0 +1,74 @@
+{
+    "problem_id": 4126,
+    "question": "# Story\n\nDue to lack of maintenance the minute-hand has fallen off Town Hall clock face.\n\nAnd because the local council has lost most of our tax money to a Nigerian email scam there are no funds to fix the clock properly. \n\nInstead, they are asking for volunteer programmers to write some code that tell the time by only looking at the remaining hour-hand!\n\nWhat a bunch of cheapskates!\n\nCan you do it?\n\n# Kata\n\nGiven the ```angle``` (in degrees) of the hour-hand, return the time in HH:MM format. Round _down_ to the nearest minute.\n\n# Examples\n\n* ```12:00``` = 0 degrees\n\n\n* ```03:00``` = 90 degrees\n\n\n* ```06:00``` = 180 degrees\n\n\n* ```09:00``` = 270 degrees\n\n\n* ```12:00``` = 360 degrees\n\n# Notes\n\n* 0 <= ```angle``` <= 360",
+    "input_output": {
+        "fn_name": "what_time_is_it",
+        "inputs": [
+            [
+                0
+            ],
+            [
+                360
+            ],
+            [
+                90
+            ],
+            [
+                180
+            ],
+            [
+                270
+            ],
+            [
+                30
+            ],
+            [
+                40
+            ],
+            [
+                45
+            ],
+            [
+                50
+            ],
+            [
+                60
+            ]
+        ],
+        "outputs": [
+            [
+                "12:00"
+            ],
+            [
+                "12:00"
+            ],
+            [
+                "03:00"
+            ],
+            [
+                "06:00"
+            ],
+            [
+                "09:00"
+            ],
+            [
+                "01:00"
+            ],
+            [
+                "01:20"
+            ],
+            [
+                "01:30"
+            ],
+            [
+                "01:40"
+            ],
+            [
+                "02:00"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/59752e1f064d1261cb0000ec",
+    "difficulty": "introductory",
+    "starter_code": "def what_time_is_it(angle):\n\t"
+}

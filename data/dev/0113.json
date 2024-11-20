@@ -1,0 +1,74 @@
+{
+    "problem_id": 4408,
+    "question": "Description\n\nLets imagine a yoga classroom as a Square 2D Array of Integers ```classroom```, with each integer representing a person, and the value representing their skill level.\n\n```\nclassroom = [\n            [3,2,1,3],\n            [1,3,2,1],\n            [1,1,1,2],\n            ]\n            \nposes = [1,7,5,9,10,21,4,3]\n```\n\nDuring a yoga class the instructor gives a list of integers ```poses``` representing a yoga pose that each person in the class will attempt to complete.\n\nA person can complete a yoga pose if the sum of their row and their skill level is greater than or equal to the value of the pose.\n\n Task\n\nYour task is to return the total amount poses completed for the entire ```classroom```.\n\nExample\n\n```\nclassroom = [\n            [1,1,0,1], #sum = 3\n            [2,0,6,0], #sum = 8\n            [0,2,2,0], #sum = 4\n            ]\n                    \nposes = [4, 0, 20, 10]\n\n3 people in row 1 can complete the first pose\nEverybody in row 1 can complete the second pose\nNobody in row 1 can complete the third pose\nNobody in row 1 can complete the fourth pose\n\nThe total poses completed for row 1 is 7\n\nYou'll need to return the total for all rows and all poses.\n```\n\nTranslations are welcomed!",
+    "input_output": {
+        "fn_name": "yoga",
+        "inputs": [
+            [
+                [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    3,
+                    0,
+                    1,
+                    5
+                ]
+            ],
+            [
+                [],
+                [
+                    1,
+                    3,
+                    4
+                ]
+            ],
+            [
+                [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                []
+            ],
+            [
+                [],
+                []
+            ]
+        ],
+        "outputs": [
+            [
+                8
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ],
+            [
+                0
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5c79c07b4ba1e100097f4e1a",
+    "difficulty": "introductory",
+    "starter_code": "def yoga(classroom, poses):\n\t"
+}

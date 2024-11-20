@@ -1,0 +1,50 @@
+{
+    "problem_id": 3068,
+    "question": "You need to play around with the provided string (s).\n\nMove consonants forward 9 places through the alphabet.\nIf they pass 'z', start again at 'a'.\n\nMove vowels back 5 places through the alphabet.\nIf they pass 'a', start again at 'z'.\nFor our Polish friends this kata does not count 'y' as a vowel.\n\nExceptions:\n\nIf the character is 'c' or 'o', move it back 1 place.\nFor 'd' move it back 3, and for 'e', move it back 4.\n\nIf a moved letter becomes 'c', 'o', 'd' or 'e', revert it back to it's original value.\n\nProvided string will always be lower case, won't be empty and will have no special characters.",
+    "input_output": {
+        "fn_name": "vowel_back",
+        "inputs": [
+            [
+                "testcase"
+            ],
+            [
+                "codewars"
+            ],
+            [
+                "exampletesthere"
+            ],
+            [
+                "returnofthespacecamel"
+            ],
+            [
+                "bringonthebootcamp"
+            ],
+            [
+                "weneedanofficedog"
+            ]
+        ],
+        "outputs": [
+            [
+                "tabtbvba"
+            ],
+            [
+                "bnaafvab"
+            ],
+            [
+                "agvvyuatabtqaaa"
+            ],
+            [
+                "aatpawnftqabyvbabvvau"
+            ],
+            [
+                "kaiwpnwtqaknntbvvy"
+            ],
+            [
+                "fawaaavwnffibaanp"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57cfd92c05c1864df2001563",
+    "difficulty": "introductory",
+    "starter_code": "def vowel_back(st):\n\t"
+}

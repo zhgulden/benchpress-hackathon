@@ -1,0 +1,66 @@
+{
+    "problem_id": 4567,
+    "question": "Apparently \"Put A Pillow On Your Fridge Day is celebrated on the 29th of May each year, in Europe and the U.S. The day is all about prosperity, good fortune, and having bit of fun along the way.\"\n\nAll seems very weird to me.\n\nNevertheless, you will be given an array of two strings (s). First find out if the first string contains a fridge... (i've deemed this as being 'n', as it looks like it could hold something).\n\nThen check that the second string has a pillow - deemed 'B' (struggled to get the obvious pillow-esque character).\n\nIf the pillow is on top of the fridge - it must be May 29th! Or a weird house... Return true; For clarity, on top means right on top, ie in the same index position.\n\nIf the pillow is anywhere else in the 'house', return false;\n\nThere may be multiple fridges, and multiple pillows. But you need at least 1 pillow ON TOP of a fridge to return true. Multiple pillows on fridges should return true also.\n\n100 random tests",
+    "input_output": {
+        "fn_name": "pillow",
+        "inputs": [
+            [
+                [
+                    "EvH/KNikBiyxfeyK/miCMj",
+                    "I/HwjnHlFLlahMOKNadps"
+                ]
+            ],
+            [
+                [
+                    "\\DjQ\\[zv]SpG]Z/[Qm\\eLL",
+                    "amwZArsaGRmibriXBgTRZp"
+                ]
+            ],
+            [
+                [
+                    "n",
+                    "B"
+                ]
+            ],
+            [
+                [
+                    "yF[CeAAiNihWEmKxJc/NRMVn",
+                    "rMeIa\\KAfbjuLiTnAQxNw[XB"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                true
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57d147bcc98a521016000320",
+    "difficulty": "introductory",
+    "starter_code": "def pillow(s):\n\t",
+    "test_cases": {
+        "fn_name": "pillow",
+        "inputs": [
+            [
+                [
+                    "inECnBMAA/u",
+                    "ABAaIUOUx/M"
+                ]
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ]
+        ]
+    }
+}

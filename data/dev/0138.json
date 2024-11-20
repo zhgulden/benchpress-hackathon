@@ -1,0 +1,104 @@
+{
+    "problem_id": 2874,
+    "question": "JavaScript provides a built-in parseInt method.\n\nIt can be used like this:\n\n- `parseInt(\"10\")` returns `10`\n- `parseInt(\"10 apples\")` also returns `10`\n\nWe would like it to return `\"NaN\"` (as a string) for the second case because the input string is not a valid number.\n\nYou are asked to write a `myParseInt` method with the following rules:\n\n- It should make the conversion if the given string only contains a single integer value (and possibly spaces - including tabs, line feeds... - at both ends)\n- For all other strings (including the ones representing float values), it should return NaN\n- It should assume that all numbers are not signed and written in base 10",
+    "input_output": {
+        "fn_name": "my_parse_int",
+        "inputs": [
+            [
+                "9"
+            ],
+            [
+                "09"
+            ],
+            [
+                "009"
+            ],
+            [
+                "  9"
+            ],
+            [
+                "  9  "
+            ],
+            [
+                "\t9\n"
+            ],
+            [
+                "5 friends"
+            ],
+            [
+                "5friends"
+            ],
+            [
+                "I <3 u"
+            ],
+            [
+                "17.42"
+            ],
+            [
+                "0x10"
+            ],
+            [
+                "123~~"
+            ],
+            [
+                "1 1"
+            ],
+            [
+                "1 2 3"
+            ],
+            [
+                "1.0"
+            ]
+        ],
+        "outputs": [
+            [
+                9
+            ],
+            [
+                9
+            ],
+            [
+                9
+            ],
+            [
+                9
+            ],
+            [
+                9
+            ],
+            [
+                9
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ],
+            [
+                "NaN"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/54fdadc8762e2e51e400032c",
+    "difficulty": "introductory",
+    "starter_code": "def my_parse_int(string):\n\t"
+}

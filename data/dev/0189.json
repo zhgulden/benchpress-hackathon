@@ -1,0 +1,32 @@
+{
+    "problem_id": 2697,
+    "question": "Complete the solution so that the function will break up camel casing, using a space between words.\n\n### Example \n\n```\nsolution(\"camelCasing\")  ==  \"camel Casing\"\n```",
+    "input_output": {
+        "fn_name": "solution",
+        "inputs": [
+            [
+                "helloWorld"
+            ],
+            [
+                "camelCase"
+            ],
+            [
+                "breakCamelCase"
+            ]
+        ],
+        "outputs": [
+            [
+                "hello World"
+            ],
+            [
+                "camel Case"
+            ],
+            [
+                "break Camel Case"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/5208f99aee097e6552000148",
+    "difficulty": "introductory",
+    "starter_code": "def solution(s):\n\t"
+}

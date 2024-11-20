@@ -1,0 +1,61 @@
+{
+    "problem_id": 2655,
+    "question": "You've arrived at a carnival and head straight for the duck shooting tent. Why wouldn't you?\n\nYou will be given a set amount of ammo, and an aim rating of between 1 and 0. No your aim is not always perfect - hey maybe someone fiddled with the sights on the gun...\n\nAnyway your task is to calculate how many successful shots you will be able to make given the available ammo and your aim score, then return a string representing the pool of ducks, with those ducks shot marked with 'X' and those that survived left unchanged. You will always shoot left to right.\n\nExample of start and end duck string with two successful shots:\n\nStart ---> |~~~~~22~2~~~~~|\n\n**Bang!! Bang!!**\n\nEnd  --->  |~~~~~XX~2~~~~~|\n\nAll inputs will be correct type and never empty.",
+    "input_output": {
+        "fn_name": "duck_shoot",
+        "inputs": [
+            [
+                4,
+                0.64,
+                "|~~2~~~22~2~~22~2~~~~2~~~|"
+            ],
+            [
+                9,
+                0.22,
+                "|~~~~~~~2~2~~~|"
+            ],
+            [
+                6,
+                0.41,
+                "|~~~~~22~2~~~~~|"
+            ],
+            [
+                8,
+                0.05,
+                "|2~~~~|"
+            ]
+        ],
+        "outputs": [
+            [
+                "|~~X~~~X2~2~~22~2~~~~2~~~|"
+            ],
+            [
+                "|~~~~~~~X~2~~~|"
+            ],
+            [
+                "|~~~~~XX~2~~~~~|"
+            ],
+            [
+                "|2~~~~|"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/57d27a0a26427672b900046f",
+    "difficulty": "introductory",
+    "starter_code": "def duck_shoot(ammo, aim, ducks):\n\t",
+    "test_cases": {
+        "fn_name": "duck_shoot",
+        "inputs": [
+            [
+                8,
+                0.92,
+                "|~~~~2~2~~~~~22~~2~~~~2~~~2|"
+            ]
+        ],
+        "outputs": [
+            [
+                "|~~~~X~X~~~~~XX~~X~~~~X~~~X|"
+            ]
+        ]
+    }
+}

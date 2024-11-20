@@ -1,0 +1,98 @@
+{
+    "problem_id": 3201,
+    "question": "Write a regex to validate a 24 hours time string.\nSee examples to figure out what you should check for:\n\nAccepted:\n01:00 - 1:00  \n\nNot accepted:\n\n24:00\n\nYou should check for correct length and no spaces.",
+    "input_output": {
+        "fn_name": "validate_time",
+        "inputs": [
+            [
+                "1:00"
+            ],
+            [
+                "13:1"
+            ],
+            [
+                "12:60"
+            ],
+            [
+                "12: 60"
+            ],
+            [
+                "24:00"
+            ],
+            [
+                "00:00"
+            ],
+            [
+                "24o:00"
+            ],
+            [
+                "24:000"
+            ],
+            [
+                ""
+            ],
+            [
+                "09:00"
+            ],
+            [
+                "2400"
+            ],
+            [
+                "foo12:00bar"
+            ],
+            [
+                "010:00"
+            ],
+            [
+                "1;00"
+            ]
+        ],
+        "outputs": [
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                true
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ],
+            [
+                false
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/56a4a3d4043c316002000042",
+    "difficulty": "introductory",
+    "starter_code": "def validate_time(time):\n\t"
+}

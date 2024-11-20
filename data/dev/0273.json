@@ -1,0 +1,38 @@
+{
+    "problem_id": 4272,
+    "question": "Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.\n\nCan you help her?",
+    "input_output": {
+        "fn_name": "greet",
+        "inputs": [
+            [
+                "James"
+            ],
+            [
+                "Jane"
+            ],
+            [
+                "Jim"
+            ],
+            [
+                "Johnny"
+            ]
+        ],
+        "outputs": [
+            [
+                "Hello, James!"
+            ],
+            [
+                "Hello, Jane!"
+            ],
+            [
+                "Hello, Jim!"
+            ],
+            [
+                "Hello, my love!"
+            ]
+        ]
+    },
+    "url": "https://www.codewars.com/kata/55225023e1be1ec8bc000390",
+    "difficulty": "introductory",
+    "starter_code": "def greet(name):\n\t"
+}
