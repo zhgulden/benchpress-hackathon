@@ -129,7 +129,11 @@ Parts of the code are adapted from APPS.
 
 - It is forbidden to use any of the other samples besides the provided ones from the APPS dataset!
 - It is forbidden to use any other LLM besides the two provided ones (llama3.1-8b. llama3.1-70b)
-- Please be gentle and do not waste compute
+- Please be gentle and do not waste compute. 
+  - Set max tokens
+  - only have a max of ten requests in flight
+  - use llama3.1-8b for debugging of your scripts (rather than 70b)
+  - Please refer also to https://docs.aleph-alpha.com/docs/best-practices/
 - Your solution is tested against a secret test set, which contains 200 additional samples. Keep the global timeout of 10 minutes in mind
 
 
