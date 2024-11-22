@@ -1,8 +1,6 @@
 # Benchpress Hackathon
 
-```
-TODO: Introduction
-```
+Welcome to the Benchpress Hackathon. The goal is to build an agent that excels in solving hard coding problems.
 
 ## Installation
 
@@ -120,9 +118,7 @@ passed_problems, passed_test_cases = score(
 The evaluation is done by running the generated code against a set of test cases. 
 You can evaluate your function on the provided validation set by running the scoring function in the notebook.
 
-```
-TODO: Outline process for submission of the solution.
-```
+If you want to test your solution, you can send it to us via email and we will run it against the test set.
 
 ## Attribution
 
@@ -130,5 +126,11 @@ The dataset is based on the [APPS dataset](https://github.com/hendrycks/apps), w
 Parts of the code are adapted from APPS.
 
 ## Caution: Important Notice
+
+- It is forbidden to use any of the other samples besides the provided ones from the APPS dataset!
+- It is forbidden to use any other LLM besides the two provided ones (llama3.1-8b. llama3.1-70b)
+- Please be gentle and do not waste compute
+- Your solution is tested against a secret test set, which contains 200 additional samples. Keep the global timeout of 10 minutes in mind
+
 
 Have fun!
